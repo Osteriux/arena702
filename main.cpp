@@ -30,7 +30,7 @@ int main()
 
     bool isGameStarted = false;
     bool isGameExit = false;
-    StartMenu startMenu(window.getSize(), &isGameStarted, &isGameExit);
+    StartMenu startMenu(&window, window.getSize(), &isGameStarted, &isGameExit);
 
     bool isGamePaused = false;
     // TODO  pause menu
@@ -44,11 +44,10 @@ int main()
             {
                 window.close();
             }
-            if(isGameStarted){
-                eventManager.handleEvent(event);
-            }else{
+            if(!isGameStarted){
                 startMenu.handleInput(event.key.code, event.type == sf::Event::KeyPressed);
             }
+            eventManager.handleEvent(event);
         }
 
         sf::Time deltaTime = clock.restart();
@@ -66,7 +65,7 @@ int main()
         }else{ // start menu loop
             window.draw(*player);
             std::cout << "isGameStarted: " << isGameStarted << std::endl;
-            startMenu.draw(window);
+            startMenu.draw();
             player->update(dt, sf::Vector2f(sf::Mouse::getPosition(window)));
         }
         hud.update(dt);

@@ -36,7 +36,7 @@ float* EnemyStatSupplier::getRocketStat(int gameStage)
     stats[0] = 200.0f + gameStage * 100.0f; // health
     stats[1] = 200.0f + gameStage * 5.0f; // speed
     stats[2] = 15.0f + gameStage * 3.0f; // damage
-    stats[3] = 20.0f + gameStage * -0.1f; // fire rate
+    stats[3] = 15.0f + gameStage * -1.0f; // fire rate
     return stats;
 }
 
