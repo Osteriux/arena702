@@ -32,10 +32,6 @@ void StartMenu::draw() const
     window->draw(exit);
 }
 
-void StartMenu::update()
-{
-}
-
 void StartMenu::handleInput(sf::Keyboard::Key key, bool isPressed)
 {
     if (key == sf::Keyboard::Enter && isPressed)

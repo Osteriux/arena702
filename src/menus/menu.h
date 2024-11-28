@@ -12,7 +12,6 @@ protected:
 public:
     Menu(sf::RenderWindow* window, sf::Vector2u windowSize);
     virtual void draw() const;
-    virtual void update() = 0;
     virtual void handleInput(sf::Keyboard::Key key, bool isPressed) = 0;
     ~Menu() = default;
 };

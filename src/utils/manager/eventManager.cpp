@@ -1,9 +1,10 @@
 #include "eventManager.h"
 #include "gameObjectManager.h"
 
-EventManager::EventManager(Player* player)
+EventManager::EventManager(Player* player, bool* isGamePaused)
 {
     this->player = player;
+    this->isGamePaused = isGamePaused;
 }
 
 void EventManager::handleEvent(sf::Event event) const
@@ -40,8 +41,11 @@ void EventManager::handleKeyDownEvent(sf::Event::KeyEvent keyEvent) const
     case sf::Keyboard::LShift:
         this->player->dash();
         break;
-    case sf::Keyboard::R:
-        this->player->gameObjectManager->spawnShieldShip();
+    // case sf::Keyboard::R:
+    //     this->player->gameObjectManager->spawnShieldShip();
+    //     break;
+    case sf::Keyboard::Escape:
+        *this->isGamePaused = true;
         break;
     default:
         break;

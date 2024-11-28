@@ -23,7 +23,8 @@ class GameObjectManager;
 class Entity : public sf::Sprite
 {
 protected:
-    /// @brief pointeur vers l'GameObjectManager
+    /// @brief pointeur vers le GameObjectManager
+    GameObjectManager* gameObjectManager;
 
     /// @brief texture de l'entité
     sf::Texture texture;
@@ -85,7 +86,6 @@ protected:
     /// @param entity entité avec laquelle l'entité est entrée en collision
     virtual void bounceBack(Entity* entity); 
 public:
-    GameObjectManager* gameObjectManager;
     /// @brief Constructeur d'Entity
     /// @param size taille de l'entité (rayon du cercle)
     /// @param gameObjectManager pointeur vers l'GameObjectManager

@@ -6,6 +6,7 @@
 #include "src/utils/display/hud.h"
 #include "src/utils/display/score.h"
 #include "src/menus/startMenu.h"
+#include "src/menus/pauseMenu.h"
 
 
 int main()
@@ -20,20 +21,19 @@ int main()
     background.setPosition(0, 50);
     sf::Vector2u arenaSize = background.getTexture()->getSize();
     arenaSize = sf::Vector2u(arenaSize.x * 1.5, (arenaSize.y * 1.5) + 50);
+    bool isGameStarted = false;
+    bool isGameExit = false;
+    bool isGamePaused = false;
     
     Score score;
     GameObjectManager gameObjectManager(&window, arenaSize, &score);
     Player* player = new Player(&gameObjectManager, arenaSize);
     gameObjectManager.setPlayer(player);
-    EventManager eventManager(player);
+    EventManager eventManager(player, &isGamePaused);
     HUD hud(&window, player, &score);
 
-    bool isGameStarted = false;
-    bool isGameExit = false;
     StartMenu startMenu(&window, window.getSize(), &isGameStarted, &isGameExit);
-
-    bool isGamePaused = false;
-    // TODO  pause menu
+    PauseMenu pauseMenu(&window, window.getSize(), &isGamePaused, &isGameExit);
 
     while (window.isOpen())
     {
@@ -58,15 +58,14 @@ int main()
         window.draw(background);
 
         hud.draw();
-        if(isGameStarted){ // main game loop
-            gameObjectManager.draw();
+        gameObjectManager.draw();
+        if(isGamePaused){ // pause menu loop
+            pauseMenu.draw();
+        }else if(isGameStarted){ // main game loop
             gameObjectManager.collide();
             gameObjectManager.update(dt, sf::Mouse::getPosition(window));
         }else{ // start menu loop
-            window.draw(*player);
-            std::cout << "isGameStarted: " << isGameStarted << std::endl;
             startMenu.draw();
-            player->update(dt, sf::Vector2f(sf::Mouse::getPosition(window)));
         }
         hud.update(dt);
 

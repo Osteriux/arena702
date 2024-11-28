@@ -19,6 +19,8 @@ private:
     /// @brief pointeur vers le joueur
     Player* player;
 
+    bool* isGamePaused;
+
     /// @brief gère l'évènement de pression d'une touche
     /// @param keyEvent évènement de la touche pressée
     void handleKeyDownEvent(sf::Event::KeyEvent keyEvent) const;
@@ -37,7 +39,7 @@ private:
 public:
     /// @brief Constructeur de EventManager
     /// @param player pointeur vers le joueur
-    EventManager(Player* player);
+    EventManager(Player* player, bool* isGamePaused);
 
     /// @brief gère un évènement
     /// @param event évènement à gérer
