@@ -14,12 +14,12 @@ StartMenu::StartMenu(sf::RenderWindow* window, sf::Vector2u windowSize, bool *is
     start = sf::Text("Start -> Enter", font);
     start.setCharacterSize(50);
     start.setFillColor(sf::Color::White);
-    start.setPosition(200, 300);
+    start.setPosition(150, 300);
 
     exit = sf::Text("Exit -> Esc", font);
     exit.setCharacterSize(50);
     exit.setFillColor(sf::Color::White);
-    exit.setPosition(200, 500);
+    exit.setPosition(150, 500);
 }
 
 void StartMenu::draw() const
