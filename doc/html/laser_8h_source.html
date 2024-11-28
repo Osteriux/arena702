@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>arena702:  Fichier source de src/weapons/attacks/laser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="player.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">arena702<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">space arena shoot them all</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c018b80a05878f09a66028d0a10c06ac.html">weapons</a></li><li class="navelem"><a class="el" href="dir_b029421b9b8539208f1cb98ba3ff6ae8.html">attacks</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">laser.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="laser_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="attack_8h.html">attack.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="entity_8h.html">../../entitys/entity.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_laser.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_laser.html">Laser</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_attack.html">Attack</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">float</span> distance;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">float</span> offset;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> lineIntersectsRect(sf::Vector2f p1, sf::Vector2f p2, sf::FloatRect rect) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">bool</span> lineIntersectsLine(sf::Vector2f p1, sf::Vector2f p2, sf::Vector2f p3, sf::Vector2f p4) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="class_laser.html#a4a4ad1dd8ed1d107b36ad4eeb8b9a423">Laser</a>(<a class="code hl_class" href="class_entity.html">Entity</a>* <a class="code hl_variable" href="class_attack.html#a07cbe6fdbfff2454db0a7efecbc6b699">owner</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_attack.html#aebc541003702819369c4645d425b8ba0">damage</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_attack.html#a176039a1130f292101a937f640366f2f">duration</a>, sf::Color color, <span class="keywordtype">float</span> offset);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_laser.html#a28ed12b64e42441cb02f2d9503557e63">collidesWith</a>(<span class="keyword">const</span> sf::FloatRect&amp; rectangle) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_laser.html#a0d62449049eb5e909d3dffcd6389bcaa">onCollision</a>(<a class="code hl_class" href="class_entity.html">Entity</a>* entity) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_laser.html#ad2750a22c36f22c5674a97e7f920f326">update</a>(<span class="keywordtype">float</span> dt) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_laser.html#a754800b6b4bed242b03b35b129af32b9">   17</a></span>    <a class="code hl_function" href="class_laser.html#a754800b6b4bed242b03b35b129af32b9">~Laser</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="ttc" id="aattack_8h_html"><div class="ttname"><a href="attack_8h.html">attack.h</a></div><div class="ttdoc">Déclaration de la classe Attack pour la gestion des attaques dans le jeu.</div></div>
+<div class="ttc" id="aclass_attack_html"><div class="ttname"><a href="class_attack.html">Attack</a></div><div class="ttdoc">classe abstraite qui permet de gérer une attaque.   La classe Attack est une classe abstraite qui per...</div><div class="ttdef"><b>Definition</b> attack.h:24</div></div>
+<div class="ttc" id="aclass_attack_html_a07cbe6fdbfff2454db0a7efecbc6b699"><div class="ttname"><a href="class_attack.html#a07cbe6fdbfff2454db0a7efecbc6b699">Attack::owner</a></div><div class="ttdeci">Entity * owner</div><div class="ttdoc">entité qui a lancé l'attaque</div><div class="ttdef"><b>Definition</b> attack.h:30</div></div>
+<div class="ttc" id="aclass_attack_html_a176039a1130f292101a937f640366f2f"><div class="ttname"><a href="class_attack.html#a176039a1130f292101a937f640366f2f">Attack::duration</a></div><div class="ttdeci">float duration</div><div class="ttdoc">durée de vie de l'attaque</div><div class="ttdef"><b>Definition</b> attack.h:39</div></div>
+<div class="ttc" id="aclass_attack_html_aebc541003702819369c4645d425b8ba0"><div class="ttname"><a href="class_attack.html#aebc541003702819369c4645d425b8ba0">Attack::damage</a></div><div class="ttdeci">float damage</div><div class="ttdoc">dégâts causés par l'attaque</div><div class="ttdef"><b>Definition</b> attack.h:33</div></div>
+<div class="ttc" id="aclass_entity_html"><div class="ttname"><a href="class_entity.html">Entity</a></div><div class="ttdoc">classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...</div><div class="ttdef"><b>Definition</b> entity.h:24</div></div>
+<div class="ttc" id="aclass_laser_html"><div class="ttname"><a href="class_laser.html">Laser</a></div><div class="ttdef"><b>Definition</b> laser.h:5</div></div>
+<div class="ttc" id="aclass_laser_html_a0d62449049eb5e909d3dffcd6389bcaa"><div class="ttname"><a href="class_laser.html#a0d62449049eb5e909d3dffcd6389bcaa">Laser::onCollision</a></div><div class="ttdeci">void onCollision(Entity *entity) override</div><div class="ttdoc">appelé lorsqu'une attaque entre en collision avec une entité</div><div class="ttdef"><b>Definition</b> laser.cpp:27</div></div>
+<div class="ttc" id="aclass_laser_html_a28ed12b64e42441cb02f2d9503557e63"><div class="ttname"><a href="class_laser.html#a28ed12b64e42441cb02f2d9503557e63">Laser::collidesWith</a></div><div class="ttdeci">bool collidesWith(const sf::FloatRect &amp;rectangle) override</div><div class="ttdef"><b>Definition</b> laser.cpp:20</div></div>
+<div class="ttc" id="aclass_laser_html_a4a4ad1dd8ed1d107b36ad4eeb8b9a423"><div class="ttname"><a href="class_laser.html#a4a4ad1dd8ed1d107b36ad4eeb8b9a423">Laser::Laser</a></div><div class="ttdeci">Laser(Entity *owner, float damage, float duration, sf::Color color, float offset)</div><div class="ttdef"><b>Definition</b> laser.cpp:3</div></div>
+<div class="ttc" id="aclass_laser_html_a754800b6b4bed242b03b35b129af32b9"><div class="ttname"><a href="class_laser.html#a754800b6b4bed242b03b35b129af32b9">Laser::~Laser</a></div><div class="ttdeci">~Laser()=default</div></div>
+<div class="ttc" id="aclass_laser_html_ad2750a22c36f22c5674a97e7f920f326"><div class="ttname"><a href="class_laser.html#ad2750a22c36f22c5674a97e7f920f326">Laser::update</a></div><div class="ttdeci">bool update(float dt) override</div><div class="ttdoc">met à jour l'attaque en fonction du temps écoulé</div><div class="ttdef"><b>Definition</b> laser.cpp:32</div></div>
+<div class="ttc" id="aentity_8h_html"><div class="ttname"><a href="entity_8h.html">entity.h</a></div><div class="ttdoc">Déclaration de la classe Entity pour la gestion des entités dans le jeu.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

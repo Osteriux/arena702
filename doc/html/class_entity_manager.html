@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>arena702: Référence de la classe EntityManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="player.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">arena702<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">space arena shoot them all</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="class_entity_manager-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe EntityManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>gestionnaire des entités du jeu &amp; autres. <br  />
+ La classe <a class="el" href="class_entity_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">EntityManager</a> est responsable de la gestion des différentes entités telles que les ennemis, les attaques, les animations et les onomatopées. Elle maintient un pointeur vers un objet <a class="el" href="class_player.html" title="représente le joueur.   La classe Player est responsable de la gestion du joueur dans le jeu....">Player</a> pour interagir avec le joueur et un pointeur vers la fenêtre de jeu pour dessiner les entités.  
+ <a href="#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="entity_manager_8h_source.html">entityManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a0ad9a35c5f24a7f5fb36d961e1bd4a52" id="r_a0ad9a35c5f24a7f5fb36d961e1bd4a52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ad9a35c5f24a7f5fb36d961e1bd4a52">EntityManager</a> (sf::RenderWindow *window, sf::Vector2u background, <a class="el" href="class_score.html">Score</a> *score)</td></tr>
+<tr class="memdesc:a0ad9a35c5f24a7f5fb36d961e1bd4a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_entity_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">EntityManager</a>.  <br /></td></tr>
+<tr class="separator:a0ad9a35c5f24a7f5fb36d961e1bd4a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616655cd78712b0baf21e207763ee379" id="r_a616655cd78712b0baf21e207763ee379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a616655cd78712b0baf21e207763ee379">setPlayer</a> (<a class="el" href="class_player.html">Player</a> *player)</td></tr>
+<tr class="memdesc:a616655cd78712b0baf21e207763ee379"><td class="mdescLeft">&#160;</td><td class="mdescRight">setteur du joueur  <br /></td></tr>
+<tr class="separator:a616655cd78712b0baf21e207763ee379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b98578430fb772cf08791daf9c2cd7c" id="r_a3b98578430fb772cf08791daf9c2cd7c"><td class="memItemLeft" align="right" valign="top">sf::Vector2u&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b98578430fb772cf08791daf9c2cd7c">getArenaSize</a> () const</td></tr>
+<tr class="separator:a3b98578430fb772cf08791daf9c2cd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf0feb1ac15d57f8f6a26ec8e494fcf" id="r_adaf0feb1ac15d57f8f6a26ec8e494fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf0feb1ac15d57f8f6a26ec8e494fcf">addEnemy</a> (std::unique_ptr&lt; <a class="el" href="class_enemy.html">Enemy</a> &gt; enemy)</td></tr>
+<tr class="memdesc:adaf0feb1ac15d57f8f6a26ec8e494fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute un ennemi à la liste des ennemis  <br /></td></tr>
+<tr class="separator:adaf0feb1ac15d57f8f6a26ec8e494fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f763ec88964e7aabea8f6d65551080" id="r_a50f763ec88964e7aabea8f6d65551080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50f763ec88964e7aabea8f6d65551080">addPlayerAttack</a> (std::unique_ptr&lt; <a class="el" href="class_attack.html">Attack</a> &gt; playerAttack)</td></tr>
+<tr class="memdesc:a50f763ec88964e7aabea8f6d65551080"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute une attaque du joueur à la liste des attaques du joueur  <br /></td></tr>
+<tr class="separator:a50f763ec88964e7aabea8f6d65551080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950837969014f2106683ff564028d7d3" id="r_a950837969014f2106683ff564028d7d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a950837969014f2106683ff564028d7d3">addEnemyAttack</a> (std::unique_ptr&lt; <a class="el" href="class_attack.html">Attack</a> &gt; enemyAttack)</td></tr>
+<tr class="memdesc:a950837969014f2106683ff564028d7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute une attaque d'un ennemi à la liste des attaques des ennemis  <br /></td></tr>
+<tr class="separator:a950837969014f2106683ff564028d7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27eec29bcfc0ca4b6e75464f52c78d7" id="r_af27eec29bcfc0ca4b6e75464f52c78d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af27eec29bcfc0ca4b6e75464f52c78d7">addAnimation</a> (std::unique_ptr&lt; <a class="el" href="class_animation.html">Animation</a> &gt; animation)</td></tr>
+<tr class="memdesc:af27eec29bcfc0ca4b6e75464f52c78d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute une animation à la liste des animations  <br /></td></tr>
+<tr class="separator:af27eec29bcfc0ca4b6e75464f52c78d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33fd45c96c721674ae76896de34527e3" id="r_a33fd45c96c721674ae76896de34527e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33fd45c96c721674ae76896de34527e3">addOnomatope</a> (std::unique_ptr&lt; <a class="el" href="class_onomatope.html">Onomatope</a> &gt; onomatope)</td></tr>
+<tr class="memdesc:a33fd45c96c721674ae76896de34527e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute une onomatopée à la liste des onomatopées  <br /></td></tr>
+<tr class="separator:a33fd45c96c721674ae76896de34527e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab997300dd387f5f237111ecb5ca1d510" id="r_ab997300dd387f5f237111ecb5ca1d510"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab997300dd387f5f237111ecb5ca1d510">spawnKamikaze</a> (sf::Vector2f position)</td></tr>
+<tr class="memdesc:ab997300dd387f5f237111ecb5ca1d510"><td class="mdescLeft">&#160;</td><td class="mdescRight">fait apparaitre un kamikaze  <br /></td></tr>
+<tr class="separator:ab997300dd387f5f237111ecb5ca1d510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dd8cf177eb129c33e17d9f93c59c4f" id="r_a80dd8cf177eb129c33e17d9f93c59c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80dd8cf177eb129c33e17d9f93c59c4f">spawnRocketShip</a> ()</td></tr>
+<tr class="separator:a80dd8cf177eb129c33e17d9f93c59c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190cf3ee0b51706017c8dbdf96babd01" id="r_a190cf3ee0b51706017c8dbdf96babd01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a190cf3ee0b51706017c8dbdf96babd01">spawnShieldShip</a> ()</td></tr>
+<tr class="separator:a190cf3ee0b51706017c8dbdf96babd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab342ccc28e504f2115a25196277c636c" id="r_ab342ccc28e504f2115a25196277c636c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab342ccc28e504f2115a25196277c636c">draw</a> () const</td></tr>
+<tr class="memdesc:ab342ccc28e504f2115a25196277c636c"><td class="mdescLeft">&#160;</td><td class="mdescRight">dessine toutes les entités &amp; autres  <br /></td></tr>
+<tr class="separator:ab342ccc28e504f2115a25196277c636c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54b4992602323278fef716e20064554" id="r_ad54b4992602323278fef716e20064554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54b4992602323278fef716e20064554">collide</a> ()</td></tr>
+<tr class="memdesc:ad54b4992602323278fef716e20064554"><td class="mdescLeft">&#160;</td><td class="mdescRight">applique les collisions entre les entités  <br /></td></tr>
+<tr class="separator:ad54b4992602323278fef716e20064554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889d45b2c61d96f40b642a008d116a8a" id="r_a889d45b2c61d96f40b642a008d116a8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a889d45b2c61d96f40b642a008d116a8a">update</a> (float dt, sf::Vector2i mousePosition)</td></tr>
+<tr class="memdesc:a889d45b2c61d96f40b642a008d116a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour toutes les entités &amp; autres  <br /></td></tr>
+<tr class="separator:a889d45b2c61d96f40b642a008d116a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a36c9fb8d579a1a1ec108e0fccf175" id="r_a71a36c9fb8d579a1a1ec108e0fccf175"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71a36c9fb8d579a1a1ec108e0fccf175">~EntityManager</a> ()</td></tr>
+<tr class="memdesc:a71a36c9fb8d579a1a1ec108e0fccf175"><td class="mdescLeft">&#160;</td><td class="mdescRight">~EntityManager est le destructeur de <a class="el" href="class_entity_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">EntityManager</a>  <br /></td></tr>
+<tr class="separator:a71a36c9fb8d579a1a1ec108e0fccf175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>gestionnaire des entités du jeu &amp; autres. <br  />
+ La classe <a class="el" href="class_entity_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">EntityManager</a> est responsable de la gestion des différentes entités telles que les ennemis, les attaques, les animations et les onomatopées. Elle maintient un pointeur vers un objet <a class="el" href="class_player.html" title="représente le joueur.   La classe Player est responsable de la gestion du joueur dans le jeu....">Player</a> pour interagir avec le joueur et un pointeur vers la fenêtre de jeu pour dessiner les entités. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a0ad9a35c5f24a7f5fb36d961e1bd4a52" name="a0ad9a35c5f24a7f5fb36d961e1bd4a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad9a35c5f24a7f5fb36d961e1bd4a52">&#9670;&#160;</a></span>EntityManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EntityManager::EntityManager </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2u</td>          <td class="paramname"><span class="paramname"><em>background</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_score.html">Score</a> *</td>          <td class="paramname"><span class="paramname"><em>score</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de <a class="el" href="class_entity_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">EntityManager</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>pointeur vers la fenêtre de jeu </td></tr>
+    <tr><td class="paramname">background</td><td>taille de l'arène </td></tr>
+    <tr><td class="paramname">score</td><td>pointeur vers le score du joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71a36c9fb8d579a1a1ec108e0fccf175" name="a71a36c9fb8d579a1a1ec108e0fccf175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a36c9fb8d579a1a1ec108e0fccf175">&#9670;&#160;</a></span>~EntityManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EntityManager::~EntityManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>~EntityManager est le destructeur de <a class="el" href="class_entity_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">EntityManager</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="af27eec29bcfc0ca4b6e75464f52c78d7" name="af27eec29bcfc0ca4b6e75464f52c78d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27eec29bcfc0ca4b6e75464f52c78d7">&#9670;&#160;</a></span>addAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::addAnimation </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_animation.html">Animation</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>animation</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ajoute une animation à la liste des animations </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animation</td><td>pointeur unique vers l'animation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adaf0feb1ac15d57f8f6a26ec8e494fcf" name="adaf0feb1ac15d57f8f6a26ec8e494fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf0feb1ac15d57f8f6a26ec8e494fcf">&#9670;&#160;</a></span>addEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::addEnemy </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_enemy.html">Enemy</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>enemy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ajoute un ennemi à la liste des ennemis </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemy</td><td>pointeur unique vers l'ennemi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a950837969014f2106683ff564028d7d3" name="a950837969014f2106683ff564028d7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a950837969014f2106683ff564028d7d3">&#9670;&#160;</a></span>addEnemyAttack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::addEnemyAttack </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_attack.html">Attack</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>enemyAttack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ajoute une attaque d'un ennemi à la liste des attaques des ennemis </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemyAttack</td><td>pointeur unique vers l'attaque de l'ennemi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33fd45c96c721674ae76896de34527e3" name="a33fd45c96c721674ae76896de34527e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33fd45c96c721674ae76896de34527e3">&#9670;&#160;</a></span>addOnomatope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::addOnomatope </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_onomatope.html">Onomatope</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>onomatope</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ajoute une onomatopée à la liste des onomatopées </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">onomatope</td><td>pointeur unique vers l'onomatopée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50f763ec88964e7aabea8f6d65551080" name="a50f763ec88964e7aabea8f6d65551080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f763ec88964e7aabea8f6d65551080">&#9670;&#160;</a></span>addPlayerAttack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::addPlayerAttack </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_attack.html">Attack</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>playerAttack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ajoute une attaque du joueur à la liste des attaques du joueur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerAttack</td><td>pointeur unique vers l'attaque du joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad54b4992602323278fef716e20064554" name="ad54b4992602323278fef716e20064554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54b4992602323278fef716e20064554">&#9670;&#160;</a></span>collide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::collide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>applique les collisions entre les entités </p>
+
+</div>
+</div>
+<a id="ab342ccc28e504f2115a25196277c636c" name="ab342ccc28e504f2115a25196277c636c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab342ccc28e504f2115a25196277c636c">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::draw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dessine toutes les entités &amp; autres </p>
+
+</div>
+</div>
+<a id="a3b98578430fb772cf08791daf9c2cd7c" name="a3b98578430fb772cf08791daf9c2cd7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b98578430fb772cf08791daf9c2cd7c">&#9670;&#160;</a></span>getArenaSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2u EntityManager::getArenaSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a616655cd78712b0baf21e207763ee379" name="a616655cd78712b0baf21e207763ee379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616655cd78712b0baf21e207763ee379">&#9670;&#160;</a></span>setPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::setPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setteur du joueur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>pointeur vers le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab997300dd387f5f237111ecb5ca1d510" name="ab997300dd387f5f237111ecb5ca1d510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab997300dd387f5f237111ecb5ca1d510">&#9670;&#160;</a></span>spawnKamikaze()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::spawnKamikaze </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fait apparaitre un kamikaze </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>position d'apparition </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80dd8cf177eb129c33e17d9f93c59c4f" name="a80dd8cf177eb129c33e17d9f93c59c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80dd8cf177eb129c33e17d9f93c59c4f">&#9670;&#160;</a></span>spawnRocketShip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::spawnRocketShip </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a190cf3ee0b51706017c8dbdf96babd01" name="a190cf3ee0b51706017c8dbdf96babd01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190cf3ee0b51706017c8dbdf96babd01">&#9670;&#160;</a></span>spawnShieldShip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::spawnShieldShip </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a889d45b2c61d96f40b642a008d116a8a" name="a889d45b2c61d96f40b642a008d116a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889d45b2c61d96f40b642a008d116a8a">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EntityManager::update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2i</td>          <td class="paramname"><span class="paramname"><em>mousePosition</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>met à jour toutes les entités &amp; autres </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>delta time </td></tr>
+    <tr><td class="paramname">mousePosition</td><td>position de la souris </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/utils/manager/<a class="el" href="entity_manager_8h_source.html">entityManager.h</a></li>
+<li>src/utils/manager/<a class="el" href="entity_manager_8cpp.html">entityManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>arena702:  Fichier source de src/entitys/enemies/bosses/rocketShip.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="player.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">arena702<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">space arena shoot them all</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_35867d5ecaedc91bf2e091dae3b69c3c.html">entitys</a></li><li class="navelem"><a class="el" href="dir_82cff5f2add681aedceb11c9773a2399.html">enemies</a></li><li class="navelem"><a class="el" href="dir_046363b111b072e170f45268143bc64e.html">bosses</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">rocketShip.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rocket_ship_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="boss_8h.html">boss.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_rocket_ship.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rocket_ship.html">RocketShip</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_boss.html">Boss</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">float</span> cooldown;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">float</span> currCooldown;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">float</span> angle;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">float</span> radius;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    sf::Vector2f center;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> moveTarget(<span class="keywordtype">float</span> dt) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> attemptAttack(sf::Vector2f playerPosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="class_rocket_ship.html#a39ad1f754fb6ea63c1347a32883837ee">RocketShip</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_entity.html#a8622e5999dc478d629f0f8f6aacee9e2">size</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_entity.html#ab5bf0c97620636e04b271601e2133884">health</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">speed</a>, <span class="keywordtype">float</span> cooldown, <a class="code hl_class" href="class_weapon.html">Weapon</a>* <a class="code hl_variable" href="class_entity.html#adde301c773b951aa9630ebc8646d381b">weapon</a>, std::string texturePath, <a class="code hl_class" href="class_game_object_manager.html">GameObjectManager</a>* <a class="code hl_variable" href="class_entity.html#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, sf::Vector2f position, <a class="code hl_class" href="class_score.html">Score</a>* <a class="code hl_variable" href="class_enemy.html#a97bc53fb032756156ee69f8c10db1cd0">score</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_rocket_ship.html#a52e650dd07f3deb66bd6fec773b99521">attack</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rocket_ship.html#aefe7432b8a3092eb4ae1eec9a849b7ed">update</a>(<span class="keywordtype">float</span> dt, sf::Vector2f playerPosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_rocket_ship.html#ac958feac89c7413bc501755fcea94fc4">   18</a></span>    <a class="code hl_function" href="class_rocket_ship.html#ac958feac89c7413bc501755fcea94fc4">~RocketShip</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+</div>
+<div class="ttc" id="aboss_8h_html"><div class="ttname"><a href="boss_8h.html">boss.h</a></div></div>
+<div class="ttc" id="aclass_boss_html"><div class="ttname"><a href="class_boss.html">Boss</a></div><div class="ttdef"><b>Definition</b> boss.h:5</div></div>
+<div class="ttc" id="aclass_enemy_html_a97bc53fb032756156ee69f8c10db1cd0"><div class="ttname"><a href="class_enemy.html#a97bc53fb032756156ee69f8c10db1cd0">Enemy::score</a></div><div class="ttdeci">Score * score</div><div class="ttdoc">pointeur vers le score</div><div class="ttdef"><b>Definition</b> enemy.h:30</div></div>
+<div class="ttc" id="aclass_enemy_html_a98766d083fc49e746a37d0dc69be09e0"><div class="ttname"><a href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">Enemy::speed</a></div><div class="ttdeci">float speed</div><div class="ttdoc">vitesse de déplacement de l'ennemi</div><div class="ttdef"><b>Definition</b> enemy.h:27</div></div>
+<div class="ttc" id="aclass_entity_html_a269c75743f704324c60484a4252d1236"><div class="ttname"><a href="class_entity.html#a269c75743f704324c60484a4252d1236">Entity::gameObjectManager</a></div><div class="ttdeci">GameObjectManager * gameObjectManager</div><div class="ttdef"><b>Definition</b> entity.h:88</div></div>
+<div class="ttc" id="aclass_entity_html_a8622e5999dc478d629f0f8f6aacee9e2"><div class="ttname"><a href="class_entity.html#a8622e5999dc478d629f0f8f6aacee9e2">Entity::size</a></div><div class="ttdeci">float size</div><div class="ttdoc">taille de l'entité (rayon du cercle)</div><div class="ttdef"><b>Definition</b> entity.h:74</div></div>
+<div class="ttc" id="aclass_entity_html_ab5bf0c97620636e04b271601e2133884"><div class="ttname"><a href="class_entity.html#ab5bf0c97620636e04b271601e2133884">Entity::health</a></div><div class="ttdeci">int health</div><div class="ttdoc">points de vie de l'entité</div><div class="ttdef"><b>Definition</b> entity.h:56</div></div>
+<div class="ttc" id="aclass_entity_html_adde301c773b951aa9630ebc8646d381b"><div class="ttname"><a href="class_entity.html#adde301c773b951aa9630ebc8646d381b">Entity::weapon</a></div><div class="ttdeci">Weapon * weapon</div><div class="ttdoc">arme de l'entité</div><div class="ttdef"><b>Definition</b> entity.h:59</div></div>
+<div class="ttc" id="aclass_game_object_manager_html"><div class="ttname"><a href="class_game_object_manager.html">GameObjectManager</a></div><div class="ttdoc">gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...</div><div class="ttdef"><b>Definition</b> gameObjectManager.h:31</div></div>
+<div class="ttc" id="aclass_rocket_ship_html"><div class="ttname"><a href="class_rocket_ship.html">RocketShip</a></div><div class="ttdef"><b>Definition</b> rocketShip.h:5</div></div>
+<div class="ttc" id="aclass_rocket_ship_html_a39ad1f754fb6ea63c1347a32883837ee"><div class="ttname"><a href="class_rocket_ship.html#a39ad1f754fb6ea63c1347a32883837ee">RocketShip::RocketShip</a></div><div class="ttdeci">RocketShip(float size, int health, float speed, float cooldown, Weapon *weapon, std::string texturePath, GameObjectManager *gameObjectManager, sf::Vector2f position, Score *score)</div><div class="ttdef"><b>Definition</b> rocketShip.cpp:4</div></div>
+<div class="ttc" id="aclass_rocket_ship_html_a52e650dd07f3deb66bd6fec773b99521"><div class="ttname"><a href="class_rocket_ship.html#a52e650dd07f3deb66bd6fec773b99521">RocketShip::attack</a></div><div class="ttdeci">void attack() override</div><div class="ttdoc">déclenche l'attaque de l'ennemi</div><div class="ttdef"><b>Definition</b> rocketShip.cpp:28</div></div>
+<div class="ttc" id="aclass_rocket_ship_html_ac958feac89c7413bc501755fcea94fc4"><div class="ttname"><a href="class_rocket_ship.html#ac958feac89c7413bc501755fcea94fc4">RocketShip::~RocketShip</a></div><div class="ttdeci">~RocketShip()=default</div></div>
+<div class="ttc" id="aclass_rocket_ship_html_aefe7432b8a3092eb4ae1eec9a849b7ed"><div class="ttname"><a href="class_rocket_ship.html#aefe7432b8a3092eb4ae1eec9a849b7ed">RocketShip::update</a></div><div class="ttdeci">bool update(float dt, sf::Vector2f playerPosition) override</div><div class="ttdoc">met à jour l'ennemi</div><div class="ttdef"><b>Definition</b> rocketShip.cpp:42</div></div>
+<div class="ttc" id="aclass_score_html"><div class="ttname"><a href="class_score.html">Score</a></div><div class="ttdoc">gère le score du joueur.   La classe Score est responsable de la gestion du score du joueur....</div><div class="ttdef"><b>Definition</b> score.h:16</div></div>
+<div class="ttc" id="aclass_weapon_html"><div class="ttname"><a href="class_weapon.html">Weapon</a></div><div class="ttdoc">classe abstraite qui permet de gérer une arme.   La classe Weapon est une classe abstraite qui permet...</div><div class="ttdef"><b>Definition</b> weapon.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

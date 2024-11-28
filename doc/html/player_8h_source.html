@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>arena702:  Fichier source de src/entitys/player.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="player.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">arena702<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">space arena shoot them all</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_35867d5ecaedc91bf2e091dae3b69c3c.html">entitys</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">player.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="player_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="entity_8h.html">entity.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="gun_8h.html">../weapons/gun.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="onomatope_8h.html">../animations/onomatope.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="class_game_object_manager.html">GameObjectManager</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_player.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_player.html">Player</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_entity.html">Entity</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">bool</span> attacking;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_function" href="class_player.html#a1e2706dd9715c41ab7781336c0325fca">Player</a>(<a class="code hl_class" href="class_game_object_manager.html">GameObjectManager</a>* <a class="code hl_variable" href="class_entity.html#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, sf::Vector2u <a class="code hl_variable" href="class_entity.html#a705268da62c4de4c4a46b6a1dc9a5584">windowSize</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a2b3fc3bfa5ce1bede036be94e9058da5">setAttacking</a>(<span class="keywordtype">bool</span> attacking);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#ad8d0435411b9661c5af3c93a1d2ac21b">setMoving</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_entity.html#ad3a6c43d8df035005a08dcee97a4f527">moving</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_player.html#a727ee6cf55889f17e9e6f7cc6eae5ba6">update</a>(<span class="keywordtype">float</span> dt, sf::Vector2f mousePosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a6a1af9b03d014b4205face77cdc47c6a">onCollision</a>(<a class="code hl_class" href="class_entity.html">Entity</a>* entity) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#ab558e8317df9cdfd5c3c1f8009ecd65e">attack</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a3a2cb14249525c9958a676e9aadc7762">dash</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a83d2e2518dd3b46d36b95a382b5038b4">takeDamage</a>(<span class="keywordtype">int</span> damage) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a4ba266e17084c67c1eb4ee0983c6666c">heal</a>(<span class="keywordtype">int</span> <a class="code hl_function" href="class_player.html#a4ba266e17084c67c1eb4ee0983c6666c">heal</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a9f74889cf8c6ae77b58e36b8223b975d">onDeath</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_player.html#a40d3c47b65e9652c363a8fde41f7bbf5">   65</a></span>        <a class="code hl_function" href="class_player.html#a40d3c47b65e9652c363a8fde41f7bbf5">~Player</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a12eafd41950172d65e6842fc56828546">debug</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="ttc" id="aclass_entity_html"><div class="ttname"><a href="class_entity.html">Entity</a></div><div class="ttdoc">classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...</div><div class="ttdef"><b>Definition</b> entity.h:24</div></div>
+<div class="ttc" id="aclass_entity_html_a269c75743f704324c60484a4252d1236"><div class="ttname"><a href="class_entity.html#a269c75743f704324c60484a4252d1236">Entity::gameObjectManager</a></div><div class="ttdeci">GameObjectManager * gameObjectManager</div><div class="ttdef"><b>Definition</b> entity.h:88</div></div>
+<div class="ttc" id="aclass_entity_html_a705268da62c4de4c4a46b6a1dc9a5584"><div class="ttname"><a href="class_entity.html#a705268da62c4de4c4a46b6a1dc9a5584">Entity::windowSize</a></div><div class="ttdeci">sf::Vector2u windowSize</div><div class="ttdoc">taille de la fenêtre</div><div class="ttdef"><b>Definition</b> entity.h:32</div></div>
+<div class="ttc" id="aclass_entity_html_ad3a6c43d8df035005a08dcee97a4f527"><div class="ttname"><a href="class_entity.html#ad3a6c43d8df035005a08dcee97a4f527">Entity::moving</a></div><div class="ttdeci">float moving</div><div class="ttdoc">inquateur de déplacement de l'entité</div><div class="ttdef"><b>Definition</b> entity.h:41</div></div>
+<div class="ttc" id="aclass_game_object_manager_html"><div class="ttname"><a href="class_game_object_manager.html">GameObjectManager</a></div><div class="ttdoc">gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...</div><div class="ttdef"><b>Definition</b> gameObjectManager.h:31</div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">représente le joueur.   La classe Player est responsable de la gestion du joueur dans le jeu....</div><div class="ttdef"><b>Definition</b> player.h:20</div></div>
+<div class="ttc" id="aclass_player_html_a12eafd41950172d65e6842fc56828546"><div class="ttname"><a href="class_player.html#a12eafd41950172d65e6842fc56828546">Player::debug</a></div><div class="ttdeci">void debug()</div><div class="ttdef"><b>Definition</b> player.cpp:92</div></div>
+<div class="ttc" id="aclass_player_html_a1e2706dd9715c41ab7781336c0325fca"><div class="ttname"><a href="class_player.html#a1e2706dd9715c41ab7781336c0325fca">Player::Player</a></div><div class="ttdeci">Player(GameObjectManager *gameObjectManager, sf::Vector2u windowSize)</div><div class="ttdoc">Constructeur de Player.</div><div class="ttdef"><b>Definition</b> player.cpp:4</div></div>
+<div class="ttc" id="aclass_player_html_a2b3fc3bfa5ce1bede036be94e9058da5"><div class="ttname"><a href="class_player.html#a2b3fc3bfa5ce1bede036be94e9058da5">Player::setAttacking</a></div><div class="ttdeci">void setAttacking(bool attacking)</div><div class="ttdoc">setteur de l'attaque du joueur</div><div class="ttdef"><b>Definition</b> player.cpp:14</div></div>
+<div class="ttc" id="aclass_player_html_a3a2cb14249525c9958a676e9aadc7762"><div class="ttname"><a href="class_player.html#a3a2cb14249525c9958a676e9aadc7762">Player::dash</a></div><div class="ttdeci">void dash()</div><div class="ttdoc">déclenche le dash du joueur</div><div class="ttdef"><b>Definition</b> player.cpp:49</div></div>
+<div class="ttc" id="aclass_player_html_a40d3c47b65e9652c363a8fde41f7bbf5"><div class="ttname"><a href="class_player.html#a40d3c47b65e9652c363a8fde41f7bbf5">Player::~Player</a></div><div class="ttdeci">~Player()=default</div><div class="ttdoc">~Player est le destructeur par default de Player</div></div>
+<div class="ttc" id="aclass_player_html_a4ba266e17084c67c1eb4ee0983c6666c"><div class="ttname"><a href="class_player.html#a4ba266e17084c67c1eb4ee0983c6666c">Player::heal</a></div><div class="ttdeci">virtual void heal(int heal) override</div><div class="ttdef"><b>Definition</b> player.cpp:69</div></div>
+<div class="ttc" id="aclass_player_html_a6a1af9b03d014b4205face77cdc47c6a"><div class="ttname"><a href="class_player.html#a6a1af9b03d014b4205face77cdc47c6a">Player::onCollision</a></div><div class="ttdeci">void onCollision(Entity *entity) override</div><div class="ttdoc">appelé lorsqu'une entité entre en collision avec le joueur</div><div class="ttdef"><b>Definition</b> player.cpp:79</div></div>
+<div class="ttc" id="aclass_player_html_a727ee6cf55889f17e9e6f7cc6eae5ba6"><div class="ttname"><a href="class_player.html#a727ee6cf55889f17e9e6f7cc6eae5ba6">Player::update</a></div><div class="ttdeci">bool update(float dt, sf::Vector2f mousePosition) override</div><div class="ttdoc">met à jour le joueur</div><div class="ttdef"><b>Definition</b> player.cpp:30</div></div>
+<div class="ttc" id="aclass_player_html_a83d2e2518dd3b46d36b95a382b5038b4"><div class="ttname"><a href="class_player.html#a83d2e2518dd3b46d36b95a382b5038b4">Player::takeDamage</a></div><div class="ttdeci">void takeDamage(int damage) override</div><div class="ttdoc">inflige des dégâts au joueur</div><div class="ttdef"><b>Definition</b> player.cpp:54</div></div>
+<div class="ttc" id="aclass_player_html_a9f74889cf8c6ae77b58e36b8223b975d"><div class="ttname"><a href="class_player.html#a9f74889cf8c6ae77b58e36b8223b975d">Player::onDeath</a></div><div class="ttdeci">void onDeath() override</div><div class="ttdoc">appelé lors de la mort du joueur</div><div class="ttdef"><b>Definition</b> player.cpp:87</div></div>
+<div class="ttc" id="aclass_player_html_ab558e8317df9cdfd5c3c1f8009ecd65e"><div class="ttname"><a href="class_player.html#ab558e8317df9cdfd5c3c1f8009ecd65e">Player::attack</a></div><div class="ttdeci">void attack() override</div><div class="ttdoc">déclenche l'attaque du joueur</div><div class="ttdef"><b>Definition</b> player.cpp:44</div></div>
+<div class="ttc" id="aclass_player_html_ad8d0435411b9661c5af3c93a1d2ac21b"><div class="ttname"><a href="class_player.html#ad8d0435411b9661c5af3c93a1d2ac21b">Player::setMoving</a></div><div class="ttdeci">void setMoving(float moving) override</div><div class="ttdoc">setteur de l'indicateur de déplacement du joueur   a la particularité de lentement agmenter la valeur...</div><div class="ttdef"><b>Definition</b> player.cpp:19</div></div>
+<div class="ttc" id="aentity_8h_html"><div class="ttname"><a href="entity_8h.html">entity.h</a></div><div class="ttdoc">Déclaration de la classe Entity pour la gestion des entités dans le jeu.</div></div>
+<div class="ttc" id="agun_8h_html"><div class="ttname"><a href="gun_8h.html">gun.h</a></div><div class="ttdoc">Déclaration de la classe Gun pour la gestion des armes à distance dans le jeu.</div></div>
+<div class="ttc" id="aonomatope_8h_html"><div class="ttname"><a href="onomatope_8h.html">onomatope.h</a></div><div class="ttdoc">Déclaration de la classe Onomatope pour la gestion des textes temporaires à l'écran.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

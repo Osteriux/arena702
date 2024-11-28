@@ -1,0 +1,1265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>arena702: Référence de la classe Entity</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="player.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">arena702<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">space arena shoot them all</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="class_entity-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe Entity<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>classe abstraite qui permet de gérer une entité. <br  />
+ La classe <a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a> est une classe abstraite qui représente une entité dans le jeu. Elle hérite de sf::Sprite et contient des attributs et des méthodes pour gérer les propriétés et les comportements des entités, tels que la position, la vitesse, la direction, la santé, les armes, les collisions, etc.  
+ <a href="#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="entity_8h_source.html">entity.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de Entity:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_entity.png" usemap="#Entity_map" alt=""/>
+  <map id="Entity_map" name="Entity_map">
+<area href="class_enemy.html" title="représente un ennemi lambda.   La classe Enemy représente un ennemi lambda dans le jeu...." alt="Enemy" shape="rect" coords="127,112,202,136"/>
+<area href="class_player.html" title="représente le joueur.   La classe Player est responsable de la gestion du joueur dans le jeu...." alt="Player" shape="rect" coords="212,112,287,136"/>
+<area href="class_boss.html" alt="Boss" shape="rect" coords="42,168,117,192"/>
+<area href="class_elite.html" title="représente un ennemi élite.   La classe Elite hérite de la classe Enemy et représente un type d&#39;ennem..." alt="Elite" shape="rect" coords="127,168,202,192"/>
+<area href="class_kamikaze.html" title="représente un enemi speciale qui explose au contact du joueur.   La classe Kamikaze hérite de la clas..." alt="Kamikaze" shape="rect" coords="212,168,287,192"/>
+<area href="class_rocket_ship.html" alt="RocketShip" shape="rect" coords="0,224,75,248"/>
+<area href="class_shield_ship.html" alt="ShieldShip" shape="rect" coords="85,224,160,248"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a2740ae96c0620abb16ffda40c973f3a2" id="r_a2740ae96c0620abb16ffda40c973f3a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2740ae96c0620abb16ffda40c973f3a2">Entity</a> (float <a class="el" href="#a8622e5999dc478d629f0f8f6aacee9e2">size</a>, <a class="el" href="class_game_object_manager.html">GameObjectManager</a> *<a class="el" href="#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, sf::Vector2u <a class="el" href="#a705268da62c4de4c4a46b6a1dc9a5584">windowSize</a>, float x, float y, float <a class="el" href="#a1de3d8d9ab8088f61e6726069b26fa60">speed</a>, float <a class="el" href="#a73fafc743f63a3412c20144011eee683">maxSpeed</a>, int <a class="el" href="#a26d0fcb61a59b64c8d6005b2adbf9fd7">rotationSpeed</a>, int <a class="el" href="#ab5bf0c97620636e04b271601e2133884">health</a>, <a class="el" href="class_weapon.html">Weapon</a> *<a class="el" href="#adde301c773b951aa9630ebc8646d381b">weapon</a>, float <a class="el" href="#a8c2fd27eb3d19c0e1f6139165766f39e">iframes</a>, sf::Color iFramesColor, float <a class="el" href="#a0b60850aa5a10f8bb05778f134b5c00f">bounceFactor</a>)</td></tr>
+<tr class="memdesc:a2740ae96c0620abb16ffda40c973f3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur d'<a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a>.  <br /></td></tr>
+<tr class="separator:a2740ae96c0620abb16ffda40c973f3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00eb3befe0b2589196c41b034951ce04" id="r_a00eb3befe0b2589196c41b034951ce04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00eb3befe0b2589196c41b034951ce04">setMoving</a> (float <a class="el" href="#ad3a6c43d8df035005a08dcee97a4f527">moving</a>)</td></tr>
+<tr class="memdesc:a00eb3befe0b2589196c41b034951ce04"><td class="mdescLeft">&#160;</td><td class="mdescRight">setteur du l'indicateur de déplacement de l'entité  <br /></td></tr>
+<tr class="separator:a00eb3befe0b2589196c41b034951ce04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56685d307e693f83149ec1fd47ce6cff" id="r_a56685d307e693f83149ec1fd47ce6cff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56685d307e693f83149ec1fd47ce6cff">getHealth</a> () const</td></tr>
+<tr class="memdesc:a56685d307e693f83149ec1fd47ce6cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur des points de vie de l'entité  <br /></td></tr>
+<tr class="separator:a56685d307e693f83149ec1fd47ce6cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3e7abfb9e59cf2e4987f0183093a1f" id="r_a5c3e7abfb9e59cf2e4987f0183093a1f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c3e7abfb9e59cf2e4987f0183093a1f">getSize</a> () const</td></tr>
+<tr class="memdesc:a5c3e7abfb9e59cf2e4987f0183093a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de la taille de l'entité  <br /></td></tr>
+<tr class="separator:a5c3e7abfb9e59cf2e4987f0183093a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294c4c3ba64ece9c2a03fa8309e111c8" id="r_a294c4c3ba64ece9c2a03fa8309e111c8"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a294c4c3ba64ece9c2a03fa8309e111c8">getDirection</a> () const</td></tr>
+<tr class="memdesc:a294c4c3ba64ece9c2a03fa8309e111c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de la direction de l'entité  <br /></td></tr>
+<tr class="separator:a294c4c3ba64ece9c2a03fa8309e111c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7498e7cd92503ce445b74ea42862f4" id="r_a1f7498e7cd92503ce445b74ea42862f4"><td class="memItemLeft" align="right" valign="top">sf::FloatRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f7498e7cd92503ce445b74ea42862f4">getHitbox</a> () const</td></tr>
+<tr class="memdesc:a1f7498e7cd92503ce445b74ea42862f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de la hitbox de l'entité  <br /></td></tr>
+<tr class="separator:a1f7498e7cd92503ce445b74ea42862f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4835698e2d1bd83802dc8350636ba19c" id="r_a4835698e2d1bd83802dc8350636ba19c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4835698e2d1bd83802dc8350636ba19c">collidesWith</a> (<a class="el" href="class_entity.html">Entity</a> *entity)</td></tr>
+<tr class="memdesc:a4835698e2d1bd83802dc8350636ba19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">détection de collision avec une entité  <br /></td></tr>
+<tr class="separator:a4835698e2d1bd83802dc8350636ba19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0e0eb11eb0a71ce9e118e2d80cdec8" id="r_a8e0e0eb11eb0a71ce9e118e2d80cdec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e0e0eb11eb0a71ce9e118e2d80cdec8">applyAcceleration</a> ()</td></tr>
+<tr class="memdesc:a8e0e0eb11eb0a71ce9e118e2d80cdec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">applique l'accélération à la vélocité  <br /></td></tr>
+<tr class="separator:a8e0e0eb11eb0a71ce9e118e2d80cdec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81bffba748030799bc8f93c4fddd0ff" id="r_aa81bffba748030799bc8f93c4fddd0ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa81bffba748030799bc8f93c4fddd0ff">move</a> (float dt)</td></tr>
+<tr class="memdesc:aa81bffba748030799bc8f93c4fddd0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">déplace l'entité  <br /></td></tr>
+<tr class="separator:aa81bffba748030799bc8f93c4fddd0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0079dd3912f0e8695b89233d24a67d" id="r_a2f0079dd3912f0e8695b89233d24a67d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0079dd3912f0e8695b89233d24a67d">update</a> (float dt, sf::Vector2f target)=0</td></tr>
+<tr class="memdesc:a2f0079dd3912f0e8695b89233d24a67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'entité  <br /></td></tr>
+<tr class="separator:a2f0079dd3912f0e8695b89233d24a67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6704418c82e43e1ebf5e7936d29629" id="r_a8c6704418c82e43e1ebf5e7936d29629"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c6704418c82e43e1ebf5e7936d29629">onCollision</a> (<a class="el" href="class_entity.html">Entity</a> *entity)=0</td></tr>
+<tr class="memdesc:a8c6704418c82e43e1ebf5e7936d29629"><td class="mdescLeft">&#160;</td><td class="mdescRight">appelé lorsqu'une entité entre en collision avec une autre entité  <br /></td></tr>
+<tr class="separator:a8c6704418c82e43e1ebf5e7936d29629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae4c60959892c58c023ff2b5e3d5779" id="r_a9ae4c60959892c58c023ff2b5e3d5779"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ae4c60959892c58c023ff2b5e3d5779">attack</a> ()=0</td></tr>
+<tr class="memdesc:a9ae4c60959892c58c023ff2b5e3d5779"><td class="mdescLeft">&#160;</td><td class="mdescRight">déclenche l'attaque de l'entité  <br /></td></tr>
+<tr class="separator:a9ae4c60959892c58c023ff2b5e3d5779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc5a2246a5580ceed0f081c18211e53" id="r_a9cc5a2246a5580ceed0f081c18211e53"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cc5a2246a5580ceed0f081c18211e53">takeDamage</a> (int damage)=0</td></tr>
+<tr class="memdesc:a9cc5a2246a5580ceed0f081c18211e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">inflige des dégâts à l'entité  <br /></td></tr>
+<tr class="separator:a9cc5a2246a5580ceed0f081c18211e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b86741a62977c72b82d2e87808705c" id="r_a59b86741a62977c72b82d2e87808705c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b86741a62977c72b82d2e87808705c">heal</a> (int heal)=0</td></tr>
+<tr class="separator:a59b86741a62977c72b82d2e87808705c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4deeb0537c928fade1f5908e50b4218" id="r_ab4deeb0537c928fade1f5908e50b4218"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4deeb0537c928fade1f5908e50b4218">onDeath</a> ()=0</td></tr>
+<tr class="memdesc:ab4deeb0537c928fade1f5908e50b4218"><td class="mdescLeft">&#160;</td><td class="mdescRight">appelé lors de la mort de l'entité  <br /></td></tr>
+<tr class="separator:ab4deeb0537c928fade1f5908e50b4218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588098978eea6a3486b7361605ff3f0f" id="r_a588098978eea6a3486b7361605ff3f0f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a588098978eea6a3486b7361605ff3f0f">~Entity</a> ()</td></tr>
+<tr class="memdesc:a588098978eea6a3486b7361605ff3f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Entity est le destructeur par default de <a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a>  <br /></td></tr>
+<tr class="separator:a588098978eea6a3486b7361605ff3f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a269c75743f704324c60484a4252d1236" id="r_a269c75743f704324c60484a4252d1236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_manager.html">GameObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269c75743f704324c60484a4252d1236">gameObjectManager</a></td></tr>
+<tr class="separator:a269c75743f704324c60484a4252d1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:ab90ea86c324ae5691bc1c4741fd24295" id="r_ab90ea86c324ae5691bc1c4741fd24295"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90ea86c324ae5691bc1c4741fd24295">orientate</a> (sf::Vector2f target, float dt)</td></tr>
+<tr class="memdesc:ab90ea86c324ae5691bc1c4741fd24295"><td class="mdescLeft">&#160;</td><td class="mdescRight">oriente l'entité vers une cible  <br /></td></tr>
+<tr class="separator:ab90ea86c324ae5691bc1c4741fd24295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe13b7244f7f55eeca70c78d1f5f89e" id="r_aafe13b7244f7f55eeca70c78d1f5f89e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafe13b7244f7f55eeca70c78d1f5f89e">iFrames</a> (float dt)</td></tr>
+<tr class="memdesc:aafe13b7244f7f55eeca70c78d1f5f89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">met les frames d'invincibilité à jour  <br /></td></tr>
+<tr class="separator:aafe13b7244f7f55eeca70c78d1f5f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f09f8a283069095b28bf5155797bce" id="r_a61f09f8a283069095b28bf5155797bce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61f09f8a283069095b28bf5155797bce">bounceBack</a> (<a class="el" href="class_entity.html">Entity</a> *entity)</td></tr>
+<tr class="memdesc:a61f09f8a283069095b28bf5155797bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">fait rebondir l'entité  <br /></td></tr>
+<tr class="separator:a61f09f8a283069095b28bf5155797bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:ad64dd6d282432a68475f30f7c7bbdc88" id="r_ad64dd6d282432a68475f30f7c7bbdc88"><td class="memItemLeft" align="right" valign="top">sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad64dd6d282432a68475f30f7c7bbdc88">texture</a></td></tr>
+<tr class="memdesc:ad64dd6d282432a68475f30f7c7bbdc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a>  <br /></td></tr>
+<tr class="separator:ad64dd6d282432a68475f30f7c7bbdc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705268da62c4de4c4a46b6a1dc9a5584" id="r_a705268da62c4de4c4a46b6a1dc9a5584"><td class="memItemLeft" align="right" valign="top">sf::Vector2u&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a705268da62c4de4c4a46b6a1dc9a5584">windowSize</a></td></tr>
+<tr class="memdesc:a705268da62c4de4c4a46b6a1dc9a5584"><td class="mdescLeft">&#160;</td><td class="mdescRight">taille de la fenêtre  <br /></td></tr>
+<tr class="separator:a705268da62c4de4c4a46b6a1dc9a5584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de3d8d9ab8088f61e6726069b26fa60" id="r_a1de3d8d9ab8088f61e6726069b26fa60"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1de3d8d9ab8088f61e6726069b26fa60">speed</a></td></tr>
+<tr class="memdesc:a1de3d8d9ab8088f61e6726069b26fa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">vitesse de l'entité  <br /></td></tr>
+<tr class="separator:a1de3d8d9ab8088f61e6726069b26fa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fafc743f63a3412c20144011eee683" id="r_a73fafc743f63a3412c20144011eee683"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73fafc743f63a3412c20144011eee683">maxSpeed</a></td></tr>
+<tr class="memdesc:a73fafc743f63a3412c20144011eee683"><td class="mdescLeft">&#160;</td><td class="mdescRight">vitesse maximale de l'entité  <br /></td></tr>
+<tr class="separator:a73fafc743f63a3412c20144011eee683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a6c43d8df035005a08dcee97a4f527" id="r_ad3a6c43d8df035005a08dcee97a4f527"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3a6c43d8df035005a08dcee97a4f527">moving</a></td></tr>
+<tr class="memdesc:ad3a6c43d8df035005a08dcee97a4f527"><td class="mdescLeft">&#160;</td><td class="mdescRight">inquateur de déplacement de l'entité  <br /></td></tr>
+<tr class="separator:ad3a6c43d8df035005a08dcee97a4f527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d0fcb61a59b64c8d6005b2adbf9fd7" id="r_a26d0fcb61a59b64c8d6005b2adbf9fd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26d0fcb61a59b64c8d6005b2adbf9fd7">rotationSpeed</a></td></tr>
+<tr class="memdesc:a26d0fcb61a59b64c8d6005b2adbf9fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">vitesse de rotation de l'entité en degré par seconde  <br /></td></tr>
+<tr class="separator:a26d0fcb61a59b64c8d6005b2adbf9fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5a432f448230f9f04cea3597ecd39e" id="r_a0d5a432f448230f9f04cea3597ecd39e"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d5a432f448230f9f04cea3597ecd39e">direction</a></td></tr>
+<tr class="memdesc:a0d5a432f448230f9f04cea3597ecd39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">direction de l'entité  <br /></td></tr>
+<tr class="separator:a0d5a432f448230f9f04cea3597ecd39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2fafaf6e73fbfb6a88ada38319dd924" id="r_ad2fafaf6e73fbfb6a88ada38319dd924"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2fafaf6e73fbfb6a88ada38319dd924">velocity</a></td></tr>
+<tr class="memdesc:ad2fafaf6e73fbfb6a88ada38319dd924"><td class="mdescLeft">&#160;</td><td class="mdescRight">velocité de l'entité  <br /></td></tr>
+<tr class="separator:ad2fafaf6e73fbfb6a88ada38319dd924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008605ccebb6a2d7590992b2a7f70270" id="r_a008605ccebb6a2d7590992b2a7f70270"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a008605ccebb6a2d7590992b2a7f70270">acceleration</a></td></tr>
+<tr class="memdesc:a008605ccebb6a2d7590992b2a7f70270"><td class="mdescLeft">&#160;</td><td class="mdescRight">accélération de l'entité  <br /></td></tr>
+<tr class="separator:a008605ccebb6a2d7590992b2a7f70270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bf0c97620636e04b271601e2133884" id="r_ab5bf0c97620636e04b271601e2133884"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5bf0c97620636e04b271601e2133884">health</a></td></tr>
+<tr class="memdesc:ab5bf0c97620636e04b271601e2133884"><td class="mdescLeft">&#160;</td><td class="mdescRight">points de vie de l'entité  <br /></td></tr>
+<tr class="separator:ab5bf0c97620636e04b271601e2133884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde301c773b951aa9630ebc8646d381b" id="r_adde301c773b951aa9630ebc8646d381b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_weapon.html">Weapon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adde301c773b951aa9630ebc8646d381b">weapon</a></td></tr>
+<tr class="memdesc:adde301c773b951aa9630ebc8646d381b"><td class="mdescLeft">&#160;</td><td class="mdescRight">arme de l'entité  <br /></td></tr>
+<tr class="separator:adde301c773b951aa9630ebc8646d381b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2fd27eb3d19c0e1f6139165766f39e" id="r_a8c2fd27eb3d19c0e1f6139165766f39e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c2fd27eb3d19c0e1f6139165766f39e">iframes</a></td></tr>
+<tr class="memdesc:a8c2fd27eb3d19c0e1f6139165766f39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps d'invincibilité de l'entité  <br /></td></tr>
+<tr class="separator:a8c2fd27eb3d19c0e1f6139165766f39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5eaa3ccffb003703a5d1cbc2c5e768d" id="r_ae5eaa3ccffb003703a5d1cbc2c5e768d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5eaa3ccffb003703a5d1cbc2c5e768d">currIframes</a></td></tr>
+<tr class="memdesc:ae5eaa3ccffb003703a5d1cbc2c5e768d"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps écoulé depuis le dernier coup reçu  <br /></td></tr>
+<tr class="separator:ae5eaa3ccffb003703a5d1cbc2c5e768d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6a4f7783f8c6ff0e68fb89f8315b64" id="r_a3a6a4f7783f8c6ff0e68fb89f8315b64"><td class="memItemLeft" align="right" valign="top">sf::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a6a4f7783f8c6ff0e68fb89f8315b64">iFrameColor</a></td></tr>
+<tr class="memdesc:a3a6a4f7783f8c6ff0e68fb89f8315b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">couleur des frames d'invincibilité  <br /></td></tr>
+<tr class="separator:a3a6a4f7783f8c6ff0e68fb89f8315b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b60850aa5a10f8bb05778f134b5c00f" id="r_a0b60850aa5a10f8bb05778f134b5c00f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b60850aa5a10f8bb05778f134b5c00f">bounceFactor</a></td></tr>
+<tr class="memdesc:a0b60850aa5a10f8bb05778f134b5c00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">facteur de rebond de l'entité  <br /></td></tr>
+<tr class="separator:a0b60850aa5a10f8bb05778f134b5c00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8622e5999dc478d629f0f8f6aacee9e2" id="r_a8622e5999dc478d629f0f8f6aacee9e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8622e5999dc478d629f0f8f6aacee9e2">size</a></td></tr>
+<tr class="memdesc:a8622e5999dc478d629f0f8f6aacee9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">taille de l'entité (rayon du cercle)  <br /></td></tr>
+<tr class="separator:a8622e5999dc478d629f0f8f6aacee9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>classe abstraite qui permet de gérer une entité. <br  />
+ La classe <a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a> est une classe abstraite qui représente une entité dans le jeu. Elle hérite de sf::Sprite et contient des attributs et des méthodes pour gérer les propriétés et les comportements des entités, tels que la position, la vitesse, la direction, la santé, les armes, les collisions, etc. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a2740ae96c0620abb16ffda40c973f3a2" name="a2740ae96c0620abb16ffda40c973f3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2740ae96c0620abb16ffda40c973f3a2">&#9670;&#160;</a></span>Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_object_manager.html">GameObjectManager</a> *</td>          <td class="paramname"><span class="paramname"><em>gameObjectManager</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2u</td>          <td class="paramname"><span class="paramname"><em>windowSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>maxSpeed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>rotationSpeed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>health</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_weapon.html">Weapon</a> *</td>          <td class="paramname"><span class="paramname"><em>weapon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>iframes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>iFramesColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>bounceFactor</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur d'<a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>taille de l'entité (rayon du cercle) </td></tr>
+    <tr><td class="paramname">gameObjectManager</td><td>pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a> </td></tr>
+    <tr><td class="paramname">windowSize</td><td>taille de la fenêtre </td></tr>
+    <tr><td class="paramname">x</td><td>position x de l'entité </td></tr>
+    <tr><td class="paramname">y</td><td>position y de l'entité </td></tr>
+    <tr><td class="paramname">speed</td><td>vitesse de l'entité </td></tr>
+    <tr><td class="paramname">maxSpeed</td><td>vitesse maximale de l'entité </td></tr>
+    <tr><td class="paramname">rotationSpeed</td><td>vitesse de rotation de l'entité en degré par seconde </td></tr>
+    <tr><td class="paramname">health</td><td>points de vie de l'entité </td></tr>
+    <tr><td class="paramname">weapon</td><td>arme de l'entité </td></tr>
+    <tr><td class="paramname">iframes</td><td>temps d'invincibilité de l'entité </td></tr>
+    <tr><td class="paramname">iFramesColor</td><td>couleur des frames d'invincibilité </td></tr>
+    <tr><td class="paramname">bounceFactor</td><td>facteur de rebond de l'entité </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a588098978eea6a3486b7361605ff3f0f" name="a588098978eea6a3486b7361605ff3f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588098978eea6a3486b7361605ff3f0f">&#9670;&#160;</a></span>~Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Entity::~Entity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>~Entity est le destructeur par default de <a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a8e0e0eb11eb0a71ce9e118e2d80cdec8" name="a8e0e0eb11eb0a71ce9e118e2d80cdec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0e0eb11eb0a71ce9e118e2d80cdec8">&#9670;&#160;</a></span>applyAcceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::applyAcceleration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>applique l'accélération à la vélocité </p>
+
+</div>
+</div>
+<a id="a9ae4c60959892c58c023ff2b5e3d5779" name="a9ae4c60959892c58c023ff2b5e3d5779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae4c60959892c58c023ff2b5e3d5779">&#9670;&#160;</a></span>attack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Entity::attack </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>déclenche l'attaque de l'entité </p>
+
+<p>Implémenté dans <a class="el" href="class_boss.html#a25517e7856281f48e09f83d3401824e2">Boss</a>, <a class="el" href="class_enemy.html#a85e01699c41962aa810702086210c2b5">Enemy</a>, <a class="el" href="class_kamikaze.html#aac36c817e8bf9a18298f0960322c50db">Kamikaze</a>, <a class="el" href="class_player.html#ab558e8317df9cdfd5c3c1f8009ecd65e">Player</a>, <a class="el" href="class_rocket_ship.html#a52e650dd07f3deb66bd6fec773b99521">RocketShip</a>, et <a class="el" href="class_shield_ship.html#a49cd650344ffe812205b69b9abe0e750">ShieldShip</a>.</p>
+
+</div>
+</div>
+<a id="a61f09f8a283069095b28bf5155797bce" name="a61f09f8a283069095b28bf5155797bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f09f8a283069095b28bf5155797bce">&#9670;&#160;</a></span>bounceBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::bounceBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_entity.html">Entity</a> *</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fait rebondir l'entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>entité avec laquelle l'entité est entrée en collision </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4835698e2d1bd83802dc8350636ba19c" name="a4835698e2d1bd83802dc8350636ba19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4835698e2d1bd83802dc8350636ba19c">&#9670;&#160;</a></span>collidesWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Entity::collidesWith </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_entity.html">Entity</a> *</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>détection de collision avec une entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>entité avec laquelle l'entité est potentiellement entrée en collision </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>si l'entité est entrée en collision </dd></dl>
+
+</div>
+</div>
+<a id="a294c4c3ba64ece9c2a03fa8309e111c8" name="a294c4c3ba64ece9c2a03fa8309e111c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294c4c3ba64ece9c2a03fa8309e111c8">&#9670;&#160;</a></span>getDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Entity::getDirection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getteur de la direction de l'entité </p>
+<dl class="section return"><dt>Renvoie</dt><dd>la direction de l'entité </dd></dl>
+
+</div>
+</div>
+<a id="a56685d307e693f83149ec1fd47ce6cff" name="a56685d307e693f83149ec1fd47ce6cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56685d307e693f83149ec1fd47ce6cff">&#9670;&#160;</a></span>getHealth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getHealth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getteur des points de vie de l'entité </p>
+<dl class="section return"><dt>Renvoie</dt><dd>les points de vie de l'entité </dd></dl>
+
+</div>
+</div>
+<a id="a1f7498e7cd92503ce445b74ea42862f4" name="a1f7498e7cd92503ce445b74ea42862f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f7498e7cd92503ce445b74ea42862f4">&#9670;&#160;</a></span>getHitbox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::FloatRect Entity::getHitbox </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getteur de la hitbox de l'entité </p>
+<dl class="section return"><dt>Renvoie</dt><dd>la hitbox de l'entité </dd></dl>
+
+</div>
+</div>
+<a id="a5c3e7abfb9e59cf2e4987f0183093a1f" name="a5c3e7abfb9e59cf2e4987f0183093a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3e7abfb9e59cf2e4987f0183093a1f">&#9670;&#160;</a></span>getSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::getSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getteur de la taille de l'entité </p>
+<dl class="section return"><dt>Renvoie</dt><dd>la taille de l'entité </dd></dl>
+
+</div>
+</div>
+<a id="a59b86741a62977c72b82d2e87808705c" name="a59b86741a62977c72b82d2e87808705c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b86741a62977c72b82d2e87808705c">&#9670;&#160;</a></span>heal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Entity::heal </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>heal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_enemy.html#ae615c0d298ac077789620d6c75a15b61">Enemy</a>, et <a class="el" href="class_player.html#a4ba266e17084c67c1eb4ee0983c6666c">Player</a>.</p>
+
+</div>
+</div>
+<a id="aafe13b7244f7f55eeca70c78d1f5f89e" name="aafe13b7244f7f55eeca70c78d1f5f89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe13b7244f7f55eeca70c78d1f5f89e">&#9670;&#160;</a></span>iFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::iFrames </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>met les frames d'invincibilité à jour </p>
+
+</div>
+</div>
+<a id="aa81bffba748030799bc8f93c4fddd0ff" name="aa81bffba748030799bc8f93c4fddd0ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81bffba748030799bc8f93c4fddd0ff">&#9670;&#160;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::move </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>déplace l'entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>delta time </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="class_enemy.html#a8b1bb35ebcd66e26b9dd47a565e2d3bc">Enemy</a>, et <a class="el" href="class_shield_ship.html#a92dac2666621a35190ff598716d39bea">ShieldShip</a>.</p>
+
+</div>
+</div>
+<a id="a8c6704418c82e43e1ebf5e7936d29629" name="a8c6704418c82e43e1ebf5e7936d29629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6704418c82e43e1ebf5e7936d29629">&#9670;&#160;</a></span>onCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Entity::onCollision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_entity.html">Entity</a> *</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>appelé lorsqu'une entité entre en collision avec une autre entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>entité avec laquelle l'entité est entrée en collision </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_enemy.html#abf5585b2ea3f40fdf2366b3f4af4b7d2">Enemy</a>, <a class="el" href="class_kamikaze.html#a03d1a57cabeec8ec8f157bc4024dcc4b">Kamikaze</a>, et <a class="el" href="class_player.html#a6a1af9b03d014b4205face77cdc47c6a">Player</a>.</p>
+
+</div>
+</div>
+<a id="ab4deeb0537c928fade1f5908e50b4218" name="ab4deeb0537c928fade1f5908e50b4218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4deeb0537c928fade1f5908e50b4218">&#9670;&#160;</a></span>onDeath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Entity::onDeath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>appelé lors de la mort de l'entité </p>
+
+<p>Implémenté dans <a class="el" href="class_elite.html#a68c5b3d99a9b6a548a3f6e578e69d2ea">Elite</a>, <a class="el" href="class_enemy.html#a3a6b5b2b53d938fc03a4ae8ffca0cdad">Enemy</a>, <a class="el" href="class_kamikaze.html#a396c6215a50ad4e9745fc677eb08fbcf">Kamikaze</a>, et <a class="el" href="class_player.html#a9f74889cf8c6ae77b58e36b8223b975d">Player</a>.</p>
+
+</div>
+</div>
+<a id="ab90ea86c324ae5691bc1c4741fd24295" name="ab90ea86c324ae5691bc1c4741fd24295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90ea86c324ae5691bc1c4741fd24295">&#9670;&#160;</a></span>orientate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::orientate </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>oriente l'entité vers une cible </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>coordonnées de la cible </td></tr>
+    <tr><td class="paramname">dt</td><td>delta time </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00eb3befe0b2589196c41b034951ce04" name="a00eb3befe0b2589196c41b034951ce04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00eb3befe0b2589196c41b034951ce04">&#9670;&#160;</a></span>setMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setMoving </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>moving</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setteur du l'indicateur de déplacement de l'entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moving</td><td>indicateur de déplacement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="class_player.html#ad8d0435411b9661c5af3c93a1d2ac21b">Player</a>.</p>
+
+</div>
+</div>
+<a id="a9cc5a2246a5580ceed0f081c18211e53" name="a9cc5a2246a5580ceed0f081c18211e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc5a2246a5580ceed0f081c18211e53">&#9670;&#160;</a></span>takeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Entity::takeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>damage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>inflige des dégâts à l'entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">damage</td><td>dégâts infligés </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_elite.html#ad06103edd512f9adcd6ccbafe858c9ed">Elite</a>, <a class="el" href="class_enemy.html#a2ff229717a23f793347085ebb1cbd903">Enemy</a>, et <a class="el" href="class_player.html#a83d2e2518dd3b46d36b95a382b5038b4">Player</a>.</p>
+
+</div>
+</div>
+<a id="a2f0079dd3912f0e8695b89233d24a67d" name="a2f0079dd3912f0e8695b89233d24a67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0079dd3912f0e8695b89233d24a67d">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Entity::update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>target</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>met à jour l'entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>delta time </td></tr>
+    <tr><td class="paramname">target</td><td>coordonnées de la cible </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_boss.html#a0d18ac93dc57c57d9a4e8560db784fff">Boss</a>, <a class="el" href="class_enemy.html#a7dbf465435384c4eab196c7a5770f063">Enemy</a>, <a class="el" href="class_kamikaze.html#aa916c0c428bb1bbaa9c070f6b2ddc22f">Kamikaze</a>, <a class="el" href="class_player.html#a727ee6cf55889f17e9e6f7cc6eae5ba6">Player</a>, <a class="el" href="class_rocket_ship.html#aefe7432b8a3092eb4ae1eec9a849b7ed">RocketShip</a>, et <a class="el" href="class_shield_ship.html#a05257dc694423a135c413463e544123b">ShieldShip</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a008605ccebb6a2d7590992b2a7f70270" name="a008605ccebb6a2d7590992b2a7f70270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008605ccebb6a2d7590992b2a7f70270">&#9670;&#160;</a></span>acceleration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Entity::acceleration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>accélération de l'entité </p>
+
+</div>
+</div>
+<a id="a0b60850aa5a10f8bb05778f134b5c00f" name="a0b60850aa5a10f8bb05778f134b5c00f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b60850aa5a10f8bb05778f134b5c00f">&#9670;&#160;</a></span>bounceFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::bounceFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>facteur de rebond de l'entité </p>
+
+</div>
+</div>
+<a id="ae5eaa3ccffb003703a5d1cbc2c5e768d" name="ae5eaa3ccffb003703a5d1cbc2c5e768d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5eaa3ccffb003703a5d1cbc2c5e768d">&#9670;&#160;</a></span>currIframes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::currIframes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>temps écoulé depuis le dernier coup reçu </p>
+
+</div>
+</div>
+<a id="a0d5a432f448230f9f04cea3597ecd39e" name="a0d5a432f448230f9f04cea3597ecd39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5a432f448230f9f04cea3597ecd39e">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Entity::direction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>direction de l'entité </p>
+
+</div>
+</div>
+<a id="a269c75743f704324c60484a4252d1236" name="a269c75743f704324c60484a4252d1236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269c75743f704324c60484a4252d1236">&#9670;&#160;</a></span>gameObjectManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_object_manager.html">GameObjectManager</a>* Entity::gameObjectManager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5bf0c97620636e04b271601e2133884" name="ab5bf0c97620636e04b271601e2133884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5bf0c97620636e04b271601e2133884">&#9670;&#160;</a></span>health</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::health</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>points de vie de l'entité </p>
+
+</div>
+</div>
+<a id="a3a6a4f7783f8c6ff0e68fb89f8315b64" name="a3a6a4f7783f8c6ff0e68fb89f8315b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6a4f7783f8c6ff0e68fb89f8315b64">&#9670;&#160;</a></span>iFrameColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Color Entity::iFrameColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>couleur des frames d'invincibilité </p>
+
+</div>
+</div>
+<a id="a8c2fd27eb3d19c0e1f6139165766f39e" name="a8c2fd27eb3d19c0e1f6139165766f39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2fd27eb3d19c0e1f6139165766f39e">&#9670;&#160;</a></span>iframes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::iframes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>temps d'invincibilité de l'entité </p>
+
+</div>
+</div>
+<a id="a73fafc743f63a3412c20144011eee683" name="a73fafc743f63a3412c20144011eee683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fafc743f63a3412c20144011eee683">&#9670;&#160;</a></span>maxSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::maxSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>vitesse maximale de l'entité </p>
+
+</div>
+</div>
+<a id="ad3a6c43d8df035005a08dcee97a4f527" name="ad3a6c43d8df035005a08dcee97a4f527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a6c43d8df035005a08dcee97a4f527">&#9670;&#160;</a></span>moving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::moving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>inquateur de déplacement de l'entité </p>
+
+</div>
+</div>
+<a id="a26d0fcb61a59b64c8d6005b2adbf9fd7" name="a26d0fcb61a59b64c8d6005b2adbf9fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d0fcb61a59b64c8d6005b2adbf9fd7">&#9670;&#160;</a></span>rotationSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::rotationSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>vitesse de rotation de l'entité en degré par seconde </p>
+
+</div>
+</div>
+<a id="a8622e5999dc478d629f0f8f6aacee9e2" name="a8622e5999dc478d629f0f8f6aacee9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8622e5999dc478d629f0f8f6aacee9e2">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>taille de l'entité (rayon du cercle) </p>
+
+</div>
+</div>
+<a id="a1de3d8d9ab8088f61e6726069b26fa60" name="a1de3d8d9ab8088f61e6726069b26fa60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de3d8d9ab8088f61e6726069b26fa60">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Entity::speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>vitesse de l'entité </p>
+
+</div>
+</div>
+<a id="ad64dd6d282432a68475f30f7c7bbdc88" name="ad64dd6d282432a68475f30f7c7bbdc88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64dd6d282432a68475f30f7c7bbdc88">&#9670;&#160;</a></span>texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Texture Entity::texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a> </p>
+<p>texture de l'entité </p>
+
+</div>
+</div>
+<a id="ad2fafaf6e73fbfb6a88ada38319dd924" name="ad2fafaf6e73fbfb6a88ada38319dd924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2fafaf6e73fbfb6a88ada38319dd924">&#9670;&#160;</a></span>velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Entity::velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>velocité de l'entité </p>
+
+</div>
+</div>
+<a id="adde301c773b951aa9630ebc8646d381b" name="adde301c773b951aa9630ebc8646d381b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde301c773b951aa9630ebc8646d381b">&#9670;&#160;</a></span>weapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_weapon.html">Weapon</a>* Entity::weapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>arme de l'entité </p>
+
+</div>
+</div>
+<a id="a705268da62c4de4c4a46b6a1dc9a5584" name="a705268da62c4de4c4a46b6a1dc9a5584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705268da62c4de4c4a46b6a1dc9a5584">&#9670;&#160;</a></span>windowSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2u Entity::windowSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>taille de la fenêtre </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/entitys/<a class="el" href="entity_8h_source.html">entity.h</a></li>
+<li>src/entitys/<a class="el" href="entity_8cpp.html">entity.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
