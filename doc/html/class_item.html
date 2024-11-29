@@ -94,6 +94,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>class abstraite qui représente un item que le joueur peut ramasser. <br  />
+ La classe <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a> est une classe abstraite qui représente un item que'une entité peut ramasser. Elle hérite de sf::Sprite et gère les propriétés de l'item telles que la texture, l'état de ramassage et le temps de vie. Elle fournit également des méthodes pour gérer le ramassage de l'item et mettre à jour son état en fonction du temps écoulé.  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="item_8h_source.html">item.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de Item:</div>
@@ -101,31 +105,41 @@ Graphe d'héritage de Item:</div>
  <div class="center">
   <img src="class_item.png" usemap="#Item_map" alt=""/>
   <map id="Item_map" name="Item_map">
-<area href="class_heal_ball.html" alt="HealBall" shape="rect" coords="0,112,61,136"/>
+<area href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v..." alt="HealBall" shape="rect" coords="0,112,61,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ad5fd1ec0a1fd7fe6e3b4cf342599d2b5" id="r_ad5fd1ec0a1fd7fe6e3b4cf342599d2b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5fd1ec0a1fd7fe6e3b4cf342599d2b5">Item</a> (std::string texturePath, sf::Vector2f position, float <a class="el" href="#ae44a317fe72a764842624a7f5589ccc8">timeToLive</a>)</td></tr>
+<tr class="memdesc:ad5fd1ec0a1fd7fe6e3b4cf342599d2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur d'<a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a>.  <br /></td></tr>
 <tr class="separator:ad5fd1ec0a1fd7fe6e3b4cf342599d2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98013d43ed0ef499f5c32899589a9a53" id="r_a98013d43ed0ef499f5c32899589a9a53"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98013d43ed0ef499f5c32899589a9a53">onPickup</a> (<a class="el" href="class_entity.html">Entity</a> *e)=0</td></tr>
+<tr class="memdesc:a98013d43ed0ef499f5c32899589a9a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">appelé lorsque l'item est ramassé l'item  <br /></td></tr>
 <tr class="separator:a98013d43ed0ef499f5c32899589a9a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78fef2d98d750570e8aff11d06b8f3f" id="r_ac78fef2d98d750570e8aff11d06b8f3f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac78fef2d98d750570e8aff11d06b8f3f">update</a> (float dt)</td></tr>
+<tr class="memdesc:ac78fef2d98d750570e8aff11d06b8f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'item en fonction du temps écoulé  <br /></td></tr>
 <tr class="separator:ac78fef2d98d750570e8aff11d06b8f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0eb9ce3ed400cce92c653fcbbfe3d2c" id="r_ad0eb9ce3ed400cce92c653fcbbfe3d2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0eb9ce3ed400cce92c653fcbbfe3d2c">~Item</a> ()=default</td></tr>
+<tr class="memdesc:ad0eb9ce3ed400cce92c653fcbbfe3d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Item est le destructeur par default de <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a>  <br /></td></tr>
 <tr class="separator:ad0eb9ce3ed400cce92c653fcbbfe3d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Attributs protégés</h2></td></tr>
 <tr class="memitem:a9bf31299dc71765f52bc81a3d2901f3f" id="r_a9bf31299dc71765f52bc81a3d2901f3f"><td class="memItemLeft" align="right" valign="top">sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bf31299dc71765f52bc81a3d2901f3f">texture</a></td></tr>
+<tr class="memdesc:a9bf31299dc71765f52bc81a3d2901f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">texture de l'item  <br /></td></tr>
 <tr class="separator:a9bf31299dc71765f52bc81a3d2901f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a620f979d659214e86dd74cae850a8b29" id="r_a620f979d659214e86dd74cae850a8b29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a620f979d659214e86dd74cae850a8b29">isPickedUp</a></td></tr>
+<tr class="memdesc:a620f979d659214e86dd74cae850a8b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">indique si l'item a été ramassé  <br /></td></tr>
 <tr class="separator:a620f979d659214e86dd74cae850a8b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44a317fe72a764842624a7f5589ccc8" id="r_ae44a317fe72a764842624a7f5589ccc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae44a317fe72a764842624a7f5589ccc8">timeToLive</a></td></tr>
+<tr class="memdesc:ae44a317fe72a764842624a7f5589ccc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps que l'item restera affiché  <br /></td></tr>
 <tr class="separator:ae44a317fe72a764842624a7f5589ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>class abstraite qui représente un item que le joueur peut ramasser. <br  />
+ La classe <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a> est une classe abstraite qui représente un item que'une entité peut ramasser. Elle hérite de sf::Sprite et gère les propriétés de l'item telles que la texture, l'état de ramassage et le temps de vie. Elle fournit également des méthodes pour gérer le ramassage de l'item et mettre à jour son état en fonction du temps écoulé. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="ad5fd1ec0a1fd7fe6e3b4cf342599d2b5" name="ad5fd1ec0a1fd7fe6e3b4cf342599d2b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5fd1ec0a1fd7fe6e3b4cf342599d2b5">&#9670;&#160;</a></span>Item()</h2>
 
@@ -149,6 +163,16 @@ Attributs protégés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur d'<a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texturePath</td><td>chemin vers la texture de l'item </td></tr>
+    <tr><td class="paramname">position</td><td>position de l'item </td></tr>
+    <tr><td class="paramname">timeToLive</td><td>temps que l'item restera affiché </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -175,6 +199,8 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>~Item est le destructeur par default de <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a> </p>
+
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
@@ -200,6 +226,14 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>appelé lorsque l'item est ramassé l'item </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>entité qui a ramassé l'item </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implémenté dans <a class="el" href="class_heal_ball.html#ad6a999fac7c1715d8ff9e11142a3fe2b">HealBall</a>.</p>
 
@@ -228,6 +262,15 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>met à jour l'item en fonction du temps écoulé </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>delta time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>si l'item est toujours affiché </dd></dl>
+
 <p>Réimplémentée dans <a class="el" href="class_heal_ball.html#a1aba6e2703e5a711ecac8e0ecec4f982">HealBall</a>.</p>
 
 </div>
@@ -253,6 +296,8 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>indique si l'item a été ramassé </p>
+
 </div>
 </div>
 <a id="a9bf31299dc71765f52bc81a3d2901f3f" name="a9bf31299dc71765f52bc81a3d2901f3f"></a>
@@ -275,6 +320,8 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>texture de l'item </p>
+
 </div>
 </div>
 <a id="ae44a317fe72a764842624a7f5589ccc8" name="ae44a317fe72a764842624a7f5589ccc8"></a>
@@ -296,6 +343,8 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>temps que l'item restera affiché </p>
 
 </div>
 </div>

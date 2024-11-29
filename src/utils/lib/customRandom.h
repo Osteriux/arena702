@@ -60,10 +60,16 @@ public:
     /// @return une position aléatoire
     sf::Vector2f getRandomPosition();
 
+    /// @brief génère une position aléatoire pour un boss
+    /// @return une position aléatoire pour un boss
     sf::Vector2f getRandomBossPosition();
 
+    /// @brief génère une position aléatoire pour un item
+    /// @return une position aléatoire pour un item
     sf::Vector2f getRandomItemPosition();
 
+    /// @brief génère un booléen aléatoire pour savoir si un item doit apparaitre
+    /// @return si un item doit apparaitre
     bool doSpawnItem();
 
     /// @brief génère un booléen aléatoire pour savoir si un ennemi doit apparaitre

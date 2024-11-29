@@ -93,6 +93,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>boss qui attaque le foueur en faisant apparaitre des <a class="el" href="class_kamikaze.html" title="représente un enemi speciale qui explose au contact du joueur.   La classe Kamikaze hérite de la clas...">Kamikaze</a>. <br  />
+ La classe <a class="el" href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl...">RocketShip</a> hérite de la classe <a class="el" href="class_boss.html" title="classe abstraite qui représente un boss.   La classe Boss est une classe abstraite dérivée de Enemy q...">Boss</a> et ajoute des fonctionnalités spécifiques telles que la gestion du cooldown entre les attaques, la mise à jour de la position de la cible, et la tentative d'attaque en fonction de la position du joueur.  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="rocket_ship_8h_source.html">rocketShip.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de RocketShip:</div>
@@ -100,7 +104,7 @@ Graphe d'héritage de RocketShip:</div>
  <div class="center">
   <img src="class_rocket_ship.png" usemap="#RocketShip_map" alt=""/>
   <map id="RocketShip_map" name="RocketShip_map">
-<area href="class_boss.html" alt="Boss" shape="rect" coords="0,168,75,192"/>
+<area href="class_boss.html" title="classe abstraite qui représente un boss.   La classe Boss est une classe abstraite dérivée de Enemy q..." alt="Boss" shape="rect" coords="0,168,75,192"/>
 <area href="class_enemy.html" title="représente un ennemi lambda.   La classe Enemy représente un ennemi lambda dans le jeu...." alt="Enemy" shape="rect" coords="0,112,75,136"/>
 <area href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr..." alt="Entity" shape="rect" coords="0,56,75,80"/>
   </map>
@@ -109,19 +113,23 @@ Graphe d'héritage de RocketShip:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a39ad1f754fb6ea63c1347a32883837ee" id="r_a39ad1f754fb6ea63c1347a32883837ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39ad1f754fb6ea63c1347a32883837ee">RocketShip</a> (float <a class="el" href="class_entity.html#a8622e5999dc478d629f0f8f6aacee9e2">size</a>, int <a class="el" href="class_entity.html#ab5bf0c97620636e04b271601e2133884">health</a>, float <a class="el" href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">speed</a>, float cooldown, <a class="el" href="class_weapon.html">Weapon</a> *<a class="el" href="class_entity.html#adde301c773b951aa9630ebc8646d381b">weapon</a>, std::string texturePath, <a class="el" href="class_game_object_manager.html">GameObjectManager</a> *<a class="el" href="class_entity.html#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, sf::Vector2f position, <a class="el" href="class_score.html">Score</a> *<a class="el" href="class_enemy.html#a97bc53fb032756156ee69f8c10db1cd0">score</a>)</td></tr>
+<tr class="memdesc:a39ad1f754fb6ea63c1347a32883837ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl...">RocketShip</a>.  <br /></td></tr>
 <tr class="separator:a39ad1f754fb6ea63c1347a32883837ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e650dd07f3deb66bd6fec773b99521" id="r_a52e650dd07f3deb66bd6fec773b99521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e650dd07f3deb66bd6fec773b99521">attack</a> () override</td></tr>
-<tr class="memdesc:a52e650dd07f3deb66bd6fec773b99521"><td class="mdescLeft">&#160;</td><td class="mdescRight">déclenche l'attaque de l'ennemi  <br /></td></tr>
+<tr class="memdesc:a52e650dd07f3deb66bd6fec773b99521"><td class="mdescLeft">&#160;</td><td class="mdescRight">déclenche l'attaque du boss  <br /></td></tr>
 <tr class="separator:a52e650dd07f3deb66bd6fec773b99521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefe7432b8a3092eb4ae1eec9a849b7ed" id="r_aefe7432b8a3092eb4ae1eec9a849b7ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe7432b8a3092eb4ae1eec9a849b7ed">update</a> (float dt, sf::Vector2f playerPosition) override</td></tr>
-<tr class="memdesc:aefe7432b8a3092eb4ae1eec9a849b7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'ennemi  <br /></td></tr>
+<tr class="memdesc:aefe7432b8a3092eb4ae1eec9a849b7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour le boss  <br /></td></tr>
 <tr class="separator:aefe7432b8a3092eb4ae1eec9a849b7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac958feac89c7413bc501755fcea94fc4" id="r_ac958feac89c7413bc501755fcea94fc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac958feac89c7413bc501755fcea94fc4">~RocketShip</a> ()=default</td></tr>
+<tr class="memdesc:ac958feac89c7413bc501755fcea94fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">~RocketShip est le destructeur par default de <a class="el" href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl...">RocketShip</a>  <br /></td></tr>
 <tr class="separator:ac958feac89c7413bc501755fcea94fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_boss"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_boss')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_boss.html">Boss</a></td></tr>
 <tr class="memitem:a452e9de013666c7f40b9c926c2798aef inherit pub_methods_class_boss" id="r_a452e9de013666c7f40b9c926c2798aef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_boss.html#a452e9de013666c7f40b9c926c2798aef">Boss</a> (float <a class="el" href="class_entity.html#a8622e5999dc478d629f0f8f6aacee9e2">size</a>, int <a class="el" href="class_entity.html#ab5bf0c97620636e04b271601e2133884">health</a>, <a class="el" href="class_weapon.html">Weapon</a> *<a class="el" href="class_entity.html#adde301c773b951aa9630ebc8646d381b">weapon</a>, float <a class="el" href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">speed</a>, const std::string &amp;texturePath, <a class="el" href="class_game_object_manager.html">GameObjectManager</a> *<a class="el" href="class_entity.html#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, const sf::Vector2f &amp;position, <a class="el" href="class_score.html">Score</a> *<a class="el" href="class_enemy.html#a97bc53fb032756156ee69f8c10db1cd0">score</a>)</td></tr>
+<tr class="memdesc:a452e9de013666c7f40b9c926c2798aef inherit pub_methods_class_boss"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_boss.html" title="classe abstraite qui représente un boss.   La classe Boss est une classe abstraite dérivée de Enemy q...">Boss</a>.  <br /></td></tr>
 <tr class="separator:a452e9de013666c7f40b9c926c2798aef inherit pub_methods_class_boss"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5cec3ae99144df674fb4a837454ff31 inherit pub_methods_class_boss" id="r_ad5cec3ae99144df674fb4a837454ff31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_boss.html#ad5cec3ae99144df674fb4a837454ff31">~Boss</a> ()=default</td></tr>
+<tr class="memdesc:ad5cec3ae99144df674fb4a837454ff31 inherit pub_methods_class_boss"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Boss est le destructeur par default de <a class="el" href="class_boss.html" title="classe abstraite qui représente un boss.   La classe Boss est une classe abstraite dérivée de Enemy q...">Boss</a>  <br /></td></tr>
 <tr class="separator:ad5cec3ae99144df674fb4a837454ff31 inherit pub_methods_class_boss"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_enemy')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_enemy.html">Enemy</a></td></tr>
 <tr class="memitem:aec8405624173d54d28dc6596f7839ce7 inherit pub_methods_class_enemy" id="r_aec8405624173d54d28dc6596f7839ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#aec8405624173d54d28dc6596f7839ce7">Enemy</a> (float <a class="el" href="class_entity.html#a8622e5999dc478d629f0f8f6aacee9e2">size</a>, int <a class="el" href="class_entity.html#ab5bf0c97620636e04b271601e2133884">health</a>, <a class="el" href="class_weapon.html">Weapon</a> *<a class="el" href="class_entity.html#adde301c773b951aa9630ebc8646d381b">weapon</a>, float <a class="el" href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">speed</a>, std::string texturePath, <a class="el" href="class_game_object_manager.html">GameObjectManager</a> *<a class="el" href="class_entity.html#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, sf::Vector2f position, <a class="el" href="class_score.html">Score</a> *<a class="el" href="class_enemy.html#a97bc53fb032756156ee69f8c10db1cd0">score</a>)</td></tr>
@@ -137,6 +145,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a2ff229717a23f793347085ebb1cbd903 inherit pub_methods_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">inflige des dégâts à l'ennemi  <br /></td></tr>
 <tr class="separator:a2ff229717a23f793347085ebb1cbd903 inherit pub_methods_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae615c0d298ac077789620d6c75a15b61 inherit pub_methods_class_enemy" id="r_ae615c0d298ac077789620d6c75a15b61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ae615c0d298ac077789620d6c75a15b61">heal</a> (int heal) override</td></tr>
+<tr class="memdesc:ae615c0d298ac077789620d6c75a15b61 inherit pub_methods_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">non implémenté pour les ennemis car ils ne peuvent pas être soignés  <br /></td></tr>
 <tr class="separator:ae615c0d298ac077789620d6c75a15b61 inherit pub_methods_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6b5b2b53d938fc03a4ae8ffca0cdad inherit pub_methods_class_enemy" id="r_a3a6b5b2b53d938fc03a4ae8ffca0cdad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a3a6b5b2b53d938fc03a4ae8ffca0cdad">onDeath</a> () override</td></tr>
 <tr class="memdesc:a3a6b5b2b53d938fc03a4ae8ffca0cdad inherit pub_methods_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">appelé lors de la mort de l'ennemi  <br /></td></tr>
@@ -189,6 +198,7 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a61f09f8a283069095b28bf5155797bce inherit pro_methods_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_boss"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_boss')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_boss.html">Boss</a></td></tr>
 <tr class="memitem:a2d4b47e1185afaf8db4583a3816ff154 inherit pro_attribs_class_boss" id="r_a2d4b47e1185afaf8db4583a3816ff154"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_boss.html#a2d4b47e1185afaf8db4583a3816ff154">target</a></td></tr>
+<tr class="memdesc:a2d4b47e1185afaf8db4583a3816ff154 inherit pro_attribs_class_boss"><td class="mdescLeft">&#160;</td><td class="mdescRight">cible du boss  <br /></td></tr>
 <tr class="separator:a2d4b47e1185afaf8db4583a3816ff154 inherit pro_attribs_class_boss"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_enemy')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_enemy.html">Enemy</a></td></tr>
 <tr class="memitem:a98766d083fc49e746a37d0dc69be09e0 inherit pro_attribs_class_enemy" id="r_a98766d083fc49e746a37d0dc69be09e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">speed</a></td></tr>
@@ -250,7 +260,10 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memdesc:a8622e5999dc478d629f0f8f6aacee9e2 inherit pro_attribs_class_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">taille de l'entité (rayon du cercle)  <br /></td></tr>
 <tr class="separator:a8622e5999dc478d629f0f8f6aacee9e2 inherit pro_attribs_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>boss qui attaque le foueur en faisant apparaitre des <a class="el" href="class_kamikaze.html" title="représente un enemi speciale qui explose au contact du joueur.   La classe Kamikaze hérite de la clas...">Kamikaze</a>. <br  />
+ La classe <a class="el" href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl...">RocketShip</a> hérite de la classe <a class="el" href="class_boss.html" title="classe abstraite qui représente un boss.   La classe Boss est une classe abstraite dérivée de Enemy q...">Boss</a> et ajoute des fonctionnalités spécifiques telles que la gestion du cooldown entre les attaques, la mise à jour de la position de la cible, et la tentative d'attaque en fonction de la position du joueur. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a39ad1f754fb6ea63c1347a32883837ee" name="a39ad1f754fb6ea63c1347a32883837ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39ad1f754fb6ea63c1347a32883837ee">&#9670;&#160;</a></span>RocketShip()</h2>
 
@@ -305,6 +318,22 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de <a class="el" href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl...">RocketShip</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>taille du boss (rayon du cercle) </td></tr>
+    <tr><td class="paramname">health</td><td>points de vie du boss </td></tr>
+    <tr><td class="paramname">speed</td><td>vitesse du boss </td></tr>
+    <tr><td class="paramname">cooldown</td><td>temps entre chaque attaque </td></tr>
+    <tr><td class="paramname">weapon</td><td>arme du boss </td></tr>
+    <tr><td class="paramname">texturePath</td><td>chemin vers la texture du boss </td></tr>
+    <tr><td class="paramname">gameObjectManager</td><td>pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a> </td></tr>
+    <tr><td class="paramname">position</td><td>position du boss </td></tr>
+    <tr><td class="paramname">score</td><td>pointeur vers le score </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac958feac89c7413bc501755fcea94fc4" name="ac958feac89c7413bc501755fcea94fc4"></a>
@@ -329,6 +358,8 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>~RocketShip est le destructeur par default de <a class="el" href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl...">RocketShip</a> </p>
 
 </div>
 </div>
@@ -356,7 +387,8 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>déclenche l'attaque de l'ennemi </p>
+<p>déclenche l'attaque du boss </p>
+<p>fait apparaitre des <a class="el" href="class_kamikaze.html" title="représente un enemi speciale qui explose au contact du joueur.   La classe Kamikaze hérite de la clas...">Kamikaze</a> </p>
 
 <p>Implémente <a class="el" href="class_boss.html#a25517e7856281f48e09f83d3401824e2">Boss</a>.</p>
 
@@ -389,7 +421,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>met à jour l'ennemi </p>
+<p>met à jour le boss </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">dt</td><td>delta time </td></tr>
@@ -397,7 +429,8 @@ Membres hérités additionnels</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Renvoie</dt><dd>si l'ennemi est toujours en vie </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>si le boss est toujours en vie</dd></dl>
+<p>met à jour la position de la cible (rotation autour du centre de l'arène) </p>
 
 <p>Implémente <a class="el" href="class_boss.html#a0d18ac93dc57c57d9a4e8560db784fff">Boss</a>.</p>
 

@@ -56,16 +56,24 @@ public:
     /// @return la portée de l'arme
     int getRange () const;
 
+    /// @brief setteur de l'offset de l'arme
+    /// @param offset offset de l'arme
+    /// @details uniquement utilisé par certaines armes
     virtual void setOffset(float offset){};
 
+    /// @brief reset le temps de recharge de l'arme
+    /// @details uniquement utilisé par certaines armes
     virtual void resetCooldown(){};
 
+    /// @brief indique si l'arme est prête à attaquer
+    /// @return si l'arme est prête à attaquer
     bool isReady() const;
 
     /// @brief met à jour l'arme en fonction du temps écoulé
     /// @param dt delta time    
     virtual void update(float dt);
 
+    /// @brief remet l'arme à son état initial
     void reset();
 
     /// @brief ~Weapon est le destructeur par default de Weapon

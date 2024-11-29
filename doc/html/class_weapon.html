@@ -107,7 +107,7 @@ Graphe d'héritage de Weapon:</div>
   <map id="Weapon_map" name="Weapon_map">
 <area href="class_close_combat.html" title="représente une arme de corps à corps.   La classe CloseCombat hérite de la classe Weapon et représent..." alt="CloseCombat" shape="rect" coords="0,56,86,80"/>
 <area href="class_gun.html" title="représente une arme à distance.   La classe Gun hérite de la classe abstraite Weapon et représente un..." alt="Gun" shape="rect" coords="96,56,182,80"/>
-<area href="class_laser_gun.html" alt="LaserGun" shape="rect" coords="192,56,278,80"/>
+<area href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent..." alt="LaserGun" shape="rect" coords="192,56,278,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -123,14 +123,20 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a7eb4c9a74d0c9311339ffaa976bc7f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de la portée de l'arme  <br /></td></tr>
 <tr class="separator:a7eb4c9a74d0c9311339ffaa976bc7f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea6e91ba73910ea69ff2e41146434018" id="r_aea6e91ba73910ea69ff2e41146434018"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea6e91ba73910ea69ff2e41146434018">setOffset</a> (float offset)</td></tr>
+<tr class="memdesc:aea6e91ba73910ea69ff2e41146434018"><td class="mdescLeft">&#160;</td><td class="mdescRight">setteur de l'offset de l'arme  <br /></td></tr>
 <tr class="separator:aea6e91ba73910ea69ff2e41146434018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46232c6b25b8eb040f46b9ecdd20dd4" id="r_aa46232c6b25b8eb040f46b9ecdd20dd4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa46232c6b25b8eb040f46b9ecdd20dd4">resetCooldown</a> ()</td></tr>
+<tr class="memdesc:aa46232c6b25b8eb040f46b9ecdd20dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset le temps de recharge de l'arme  <br /></td></tr>
 <tr class="separator:aa46232c6b25b8eb040f46b9ecdd20dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a96d42037f59c1cb301ef38173b6d30" id="r_a8a96d42037f59c1cb301ef38173b6d30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a96d42037f59c1cb301ef38173b6d30">isReady</a> () const</td></tr>
+<tr class="memdesc:a8a96d42037f59c1cb301ef38173b6d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">indique si l'arme est prête à attaquer  <br /></td></tr>
 <tr class="separator:a8a96d42037f59c1cb301ef38173b6d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5b68baf21d1a8e6c8c822480f3592fd" id="r_ab5b68baf21d1a8e6c8c822480f3592fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5b68baf21d1a8e6c8c822480f3592fd">update</a> (float dt)</td></tr>
 <tr class="memdesc:ab5b68baf21d1a8e6c8c822480f3592fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'arme en fonction du temps écoulé  <br /></td></tr>
 <tr class="separator:ab5b68baf21d1a8e6c8c822480f3592fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126b2f1436460fafa591687b04c6b06a" id="r_a126b2f1436460fafa591687b04c6b06a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a126b2f1436460fafa591687b04c6b06a">reset</a> ()</td></tr>
+<tr class="memdesc:a126b2f1436460fafa591687b04c6b06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">remet l'arme à son état initial  <br /></td></tr>
+<tr class="separator:a126b2f1436460fafa591687b04c6b06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336aad13bf2efa6fb03f4ae60c78ade4" id="r_a336aad13bf2efa6fb03f4ae60c78ade4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a336aad13bf2efa6fb03f4ae60c78ade4">~Weapon</a> ()=default</td></tr>
 <tr class="memdesc:a336aad13bf2efa6fb03f4ae60c78ade4"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Weapon est le destructeur par default de <a class="el" href="class_weapon.html" title="classe abstraite qui permet de gérer une arme.   La classe Weapon est une classe abstraite qui permet...">Weapon</a>  <br /></td></tr>
 <tr class="separator:a336aad13bf2efa6fb03f4ae60c78ade4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,6 +313,28 @@ Attributs protégés</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>indique si l'arme est prête à attaquer </p>
+<dl class="section return"><dt>Renvoie</dt><dd>si l'arme est prête à attaquer </dd></dl>
+
+</div>
+</div>
+<a id="a126b2f1436460fafa591687b04c6b06a" name="a126b2f1436460fafa591687b04c6b06a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126b2f1436460fafa591687b04c6b06a">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Weapon::reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remet l'arme à son état initial </p>
+
 </div>
 </div>
 <a id="aa46232c6b25b8eb040f46b9ecdd20dd4" name="aa46232c6b25b8eb040f46b9ecdd20dd4"></a>
@@ -331,6 +359,9 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>reset le temps de recharge de l'arme </p>
+<p>uniquement utilisé par certaines armes </p>
 
 <p>Réimplémentée dans <a class="el" href="class_laser_gun.html#a359bec30e6783625a8a93e936760e5a3">LaserGun</a>.</p>
 
@@ -358,6 +389,15 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>setteur de l'offset de l'arme </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>offset de l'arme</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>uniquement utilisé par certaines armes </p>
 
 <p>Réimplémentée dans <a class="el" href="class_laser_gun.html#a5dec5c66060073ed1719f0135558ef66">LaserGun</a>.</p>
 

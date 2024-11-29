@@ -93,6 +93,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>représente une attaque de type laser. <br  />
+  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="laser_8h_source.html">laser.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de Laser:</div>
@@ -107,8 +111,10 @@ Graphe d'héritage de Laser:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a4a4ad1dd8ed1d107b36ad4eeb8b9a423" id="r_a4a4ad1dd8ed1d107b36ad4eeb8b9a423"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a4ad1dd8ed1d107b36ad4eeb8b9a423">Laser</a> (<a class="el" href="class_entity.html">Entity</a> *<a class="el" href="class_attack.html#a07cbe6fdbfff2454db0a7efecbc6b699">owner</a>, float <a class="el" href="class_attack.html#aebc541003702819369c4645d425b8ba0">damage</a>, float <a class="el" href="class_attack.html#a176039a1130f292101a937f640366f2f">duration</a>, sf::Color color, float offset)</td></tr>
+<tr class="memdesc:a4a4ad1dd8ed1d107b36ad4eeb8b9a423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_laser.html" title="représente une attaque de type laser.">Laser</a>.  <br /></td></tr>
 <tr class="separator:a4a4ad1dd8ed1d107b36ad4eeb8b9a423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ed12b64e42441cb02f2d9503557e63" id="r_a28ed12b64e42441cb02f2d9503557e63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ed12b64e42441cb02f2d9503557e63">collidesWith</a> (const sf::FloatRect &amp;rectangle) override</td></tr>
+<tr class="memdesc:a28ed12b64e42441cb02f2d9503557e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">detecte si l'attaue entre en collision avec une entité  <br /></td></tr>
 <tr class="separator:a28ed12b64e42441cb02f2d9503557e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d62449049eb5e909d3dffcd6389bcaa" id="r_a0d62449049eb5e909d3dffcd6389bcaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d62449049eb5e909d3dffcd6389bcaa">onCollision</a> (<a class="el" href="class_entity.html">Entity</a> *entity) override</td></tr>
 <tr class="memdesc:a0d62449049eb5e909d3dffcd6389bcaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">appelé lorsqu'une attaque entre en collision avec une entité  <br /></td></tr>
@@ -117,6 +123,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:ad2750a22c36f22c5674a97e7f920f326"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'attaque en fonction du temps écoulé  <br /></td></tr>
 <tr class="separator:ad2750a22c36f22c5674a97e7f920f326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a754800b6b4bed242b03b35b129af32b9" id="r_a754800b6b4bed242b03b35b129af32b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a754800b6b4bed242b03b35b129af32b9">~Laser</a> ()=default</td></tr>
+<tr class="memdesc:a754800b6b4bed242b03b35b129af32b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Laser est le destructeur par default de <a class="el" href="class_laser.html" title="représente une attaque de type laser.">Laser</a>  <br /></td></tr>
 <tr class="separator:a754800b6b4bed242b03b35b129af32b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_attack"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_attack')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_attack.html">Attack</a></td></tr>
 <tr class="memitem:a032202383b721f4739dac18a3fcbd6ef inherit pub_methods_class_attack" id="r_a032202383b721f4739dac18a3fcbd6ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_attack.html#a032202383b721f4739dac18a3fcbd6ef">Attack</a> (<a class="el" href="class_entity.html">Entity</a> *<a class="el" href="class_attack.html#a07cbe6fdbfff2454db0a7efecbc6b699">owner</a>, float <a class="el" href="class_attack.html#aebc541003702819369c4645d425b8ba0">damage</a>, float <a class="el" href="class_attack.html#af4489d89ad1eb71a27e9beb452c5a3fb">speed</a>, float <a class="el" href="class_attack.html#a176039a1130f292101a937f640366f2f">duration</a>, sf::Color color)</td></tr>
@@ -145,7 +152,10 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memdesc:a176039a1130f292101a937f640366f2f inherit pro_attribs_class_attack"><td class="mdescLeft">&#160;</td><td class="mdescRight">durée de vie de l'attaque  <br /></td></tr>
 <tr class="separator:a176039a1130f292101a937f640366f2f inherit pro_attribs_class_attack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>représente une attaque de type laser. <br  />
+ </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a4a4ad1dd8ed1d107b36ad4eeb8b9a423" name="a4a4ad1dd8ed1d107b36ad4eeb8b9a423"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a4ad1dd8ed1d107b36ad4eeb8b9a423">&#9670;&#160;</a></span>Laser()</h2>
 
@@ -180,6 +190,18 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de <a class="el" href="class_laser.html" title="représente une attaque de type laser.">Laser</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>entité qui lance l'attaque </td></tr>
+    <tr><td class="paramname">damage</td><td>dégâts causés par l'attaque </td></tr>
+    <tr><td class="paramname">duration</td><td>durée de vie </td></tr>
+    <tr><td class="paramname">color</td><td>couleur de l'attaque </td></tr>
+    <tr><td class="paramname">offset</td><td>offset de l'attaque </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a754800b6b4bed242b03b35b129af32b9" name="a754800b6b4bed242b03b35b129af32b9"></a>
@@ -204,6 +226,8 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>~Laser est le destructeur par default de <a class="el" href="class_laser.html" title="représente une attaque de type laser.">Laser</a> </p>
 
 </div>
 </div>
@@ -230,6 +254,16 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>detecte si l'attaue entre en collision avec une entité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectangle</td><td>hitbox de l'entité </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>si l'attaque entre en collision avec l'entité</dd></dl>
+<p>utilise du raycasting pour détecter les collisions </p>
 
 <p>Réimplémentée à partir de <a class="el" href="class_attack.html#a6ea137dbf30436ecc73a4c7e10e867b2">Attack</a>.</p>
 

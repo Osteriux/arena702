@@ -93,6 +93,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>classe qui représente un pistolet laser. <br  />
+ La classe <a class="el" href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent...">LaserGun</a> hérite de la classe <a class="el" href="class_weapon.html" title="classe abstraite qui permet de gérer une arme.   La classe Weapon est une classe abstraite qui permet...">Weapon</a> et représente une arme de type pistolet laser. Elle gère les propriétés spécifiques du pistolet laser telles que les dégâts, la durée de vie, le cooldown, la couleur de l'attaque et l'offset de l'attaque. Elle fournit également des méthodes pour gérer l'attaque, le réglage de l'offset et la réinitialisation du cooldown.  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="laser_gun_8h_source.html">laserGun.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de LaserGun:</div>
@@ -107,15 +111,19 @@ Graphe d'héritage de LaserGun:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a3eebbaadc25ba6a598d86e1cb1f765ad" id="r_a3eebbaadc25ba6a598d86e1cb1f765ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eebbaadc25ba6a598d86e1cb1f765ad">LaserGun</a> (int <a class="el" href="class_weapon.html#abb463127151d807804c556ddbd767e18">damage</a>, float <a class="el" href="class_weapon.html#a95ec9fb3bc007914205a85da90c41e9f">duration</a>, float <a class="el" href="class_weapon.html#ad24251b8fc3266130ba37186bb152025">cooldown</a>, sf::Color <a class="el" href="class_weapon.html#ab339abf74c6079caa4ab394e37ccf3bd">color</a>)</td></tr>
+<tr class="memdesc:a3eebbaadc25ba6a598d86e1cb1f765ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent...">LaserGun</a>.  <br /></td></tr>
 <tr class="separator:a3eebbaadc25ba6a598d86e1cb1f765ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dec5c66060073ed1719f0135558ef66" id="r_a5dec5c66060073ed1719f0135558ef66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dec5c66060073ed1719f0135558ef66">setOffset</a> (float offset) override</td></tr>
+<tr class="memdesc:a5dec5c66060073ed1719f0135558ef66"><td class="mdescLeft">&#160;</td><td class="mdescRight">setteur de l'offset de l'arme  <br /></td></tr>
 <tr class="separator:a5dec5c66060073ed1719f0135558ef66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a359bec30e6783625a8a93e936760e5a3" id="r_a359bec30e6783625a8a93e936760e5a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a359bec30e6783625a8a93e936760e5a3">resetCooldown</a> () override</td></tr>
+<tr class="memdesc:a359bec30e6783625a8a93e936760e5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset le cooldown de l'arme  <br /></td></tr>
 <tr class="separator:a359bec30e6783625a8a93e936760e5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38fd27088891ab0c9764b044114a7762" id="r_a38fd27088891ab0c9764b044114a7762"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_attack.html">Attack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38fd27088891ab0c9764b044114a7762">attack</a> (<a class="el" href="class_entity.html">Entity</a> *owner) override</td></tr>
 <tr class="memdesc:a38fd27088891ab0c9764b044114a7762"><td class="mdescLeft">&#160;</td><td class="mdescRight">lance une attaque  <br /></td></tr>
 <tr class="separator:a38fd27088891ab0c9764b044114a7762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1eb12e39bf0079134abc24c9f01145" id="r_a9e1eb12e39bf0079134abc24c9f01145"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e1eb12e39bf0079134abc24c9f01145">~LaserGun</a> ()=default</td></tr>
+<tr class="memdesc:a9e1eb12e39bf0079134abc24c9f01145"><td class="mdescLeft">&#160;</td><td class="mdescRight">~LaserGun est le destructeur par default de <a class="el" href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent...">LaserGun</a>  <br /></td></tr>
 <tr class="separator:a9e1eb12e39bf0079134abc24c9f01145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_weapon"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_weapon')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_weapon.html">Weapon</a></td></tr>
 <tr class="memitem:a04a8b6666658eacbb01cbae9bcfdd6db inherit pub_methods_class_weapon" id="r_a04a8b6666658eacbb01cbae9bcfdd6db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapon.html#a04a8b6666658eacbb01cbae9bcfdd6db">Weapon</a> (int <a class="el" href="class_weapon.html#abb463127151d807804c556ddbd767e18">damage</a>, float <a class="el" href="class_weapon.html#a95ec9fb3bc007914205a85da90c41e9f">duration</a>, float <a class="el" href="class_weapon.html#ad24251b8fc3266130ba37186bb152025">cooldown</a>, int <a class="el" href="class_weapon.html#a13cc71a89d0cf076f58a040767682478">range</a>, sf::Color <a class="el" href="class_weapon.html#ab339abf74c6079caa4ab394e37ccf3bd">color</a>)</td></tr>
@@ -125,10 +133,14 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a7eb4c9a74d0c9311339ffaa976bc7f9d inherit pub_methods_class_weapon"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de la portée de l'arme  <br /></td></tr>
 <tr class="separator:a7eb4c9a74d0c9311339ffaa976bc7f9d inherit pub_methods_class_weapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a96d42037f59c1cb301ef38173b6d30 inherit pub_methods_class_weapon" id="r_a8a96d42037f59c1cb301ef38173b6d30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapon.html#a8a96d42037f59c1cb301ef38173b6d30">isReady</a> () const</td></tr>
+<tr class="memdesc:a8a96d42037f59c1cb301ef38173b6d30 inherit pub_methods_class_weapon"><td class="mdescLeft">&#160;</td><td class="mdescRight">indique si l'arme est prête à attaquer  <br /></td></tr>
 <tr class="separator:a8a96d42037f59c1cb301ef38173b6d30 inherit pub_methods_class_weapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5b68baf21d1a8e6c8c822480f3592fd inherit pub_methods_class_weapon" id="r_ab5b68baf21d1a8e6c8c822480f3592fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapon.html#ab5b68baf21d1a8e6c8c822480f3592fd">update</a> (float dt)</td></tr>
 <tr class="memdesc:ab5b68baf21d1a8e6c8c822480f3592fd inherit pub_methods_class_weapon"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'arme en fonction du temps écoulé  <br /></td></tr>
 <tr class="separator:ab5b68baf21d1a8e6c8c822480f3592fd inherit pub_methods_class_weapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126b2f1436460fafa591687b04c6b06a inherit pub_methods_class_weapon" id="r_a126b2f1436460fafa591687b04c6b06a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapon.html#a126b2f1436460fafa591687b04c6b06a">reset</a> ()</td></tr>
+<tr class="memdesc:a126b2f1436460fafa591687b04c6b06a inherit pub_methods_class_weapon"><td class="mdescLeft">&#160;</td><td class="mdescRight">remet l'arme à son état initial  <br /></td></tr>
+<tr class="separator:a126b2f1436460fafa591687b04c6b06a inherit pub_methods_class_weapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336aad13bf2efa6fb03f4ae60c78ade4 inherit pub_methods_class_weapon" id="r_a336aad13bf2efa6fb03f4ae60c78ade4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapon.html#a336aad13bf2efa6fb03f4ae60c78ade4">~Weapon</a> ()=default</td></tr>
 <tr class="memdesc:a336aad13bf2efa6fb03f4ae60c78ade4 inherit pub_methods_class_weapon"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Weapon est le destructeur par default de <a class="el" href="class_weapon.html" title="classe abstraite qui permet de gérer une arme.   La classe Weapon est une classe abstraite qui permet...">Weapon</a>  <br /></td></tr>
 <tr class="separator:a336aad13bf2efa6fb03f4ae60c78ade4 inherit pub_methods_class_weapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,7 +167,10 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memdesc:a13cc71a89d0cf076f58a040767682478 inherit pro_attribs_class_weapon"><td class="mdescLeft">&#160;</td><td class="mdescRight">portée de l'arme  <br /></td></tr>
 <tr class="separator:a13cc71a89d0cf076f58a040767682478 inherit pro_attribs_class_weapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>classe qui représente un pistolet laser. <br  />
+ La classe <a class="el" href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent...">LaserGun</a> hérite de la classe <a class="el" href="class_weapon.html" title="classe abstraite qui permet de gérer une arme.   La classe Weapon est une classe abstraite qui permet...">Weapon</a> et représente une arme de type pistolet laser. Elle gère les propriétés spécifiques du pistolet laser telles que les dégâts, la durée de vie, le cooldown, la couleur de l'attaque et l'offset de l'attaque. Elle fournit également des méthodes pour gérer l'attaque, le réglage de l'offset et la réinitialisation du cooldown. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a3eebbaadc25ba6a598d86e1cb1f765ad" name="a3eebbaadc25ba6a598d86e1cb1f765ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3eebbaadc25ba6a598d86e1cb1f765ad">&#9670;&#160;</a></span>LaserGun()</h2>
 
@@ -185,6 +200,17 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de <a class="el" href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent...">LaserGun</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">damage</td><td>dégâts causés par l'arme </td></tr>
+    <tr><td class="paramname">duration</td><td>durée de vie </td></tr>
+    <tr><td class="paramname">cooldown</td><td>temps entre chaque attaque </td></tr>
+    <tr><td class="paramname">color</td><td>couleur de l'att </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9e1eb12e39bf0079134abc24c9f01145" name="a9e1eb12e39bf0079134abc24c9f01145"></a>
@@ -209,6 +235,8 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>~LaserGun est le destructeur par default de <a class="el" href="class_laser_gun.html" title="classe qui représente un pistolet laser.   La classe LaserGun hérite de la classe Weapon et représent...">LaserGun</a> </p>
 
 </div>
 </div>
@@ -272,6 +300,8 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>reset le cooldown de l'arme </p>
+
 <p>Réimplémentée à partir de <a class="el" href="class_weapon.html#aa46232c6b25b8eb040f46b9ecdd20dd4">Weapon</a>.</p>
 
 </div>
@@ -298,6 +328,14 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>setteur de l'offset de l'arme </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>offset de l'arme </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Réimplémentée à partir de <a class="el" href="class_weapon.html#aea6e91ba73910ea69ff2e41146434018">Weapon</a>.</p>
 

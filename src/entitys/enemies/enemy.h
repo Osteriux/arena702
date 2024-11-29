@@ -66,6 +66,7 @@ public:
     /// @param damage dégâts infligés
     virtual void takeDamage (int damage) override;
 
+    /// @brief non implémenté pour les ennemis car ils ne peuvent pas être soignés
     virtual void heal(int heal) override{};
 
     /// @brief appelé lors de la mort de l'ennemi

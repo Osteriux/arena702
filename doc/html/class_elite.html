@@ -112,6 +112,7 @@ Graphe d'héritage de Elite:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a23a11505844aa5c973b610df1c7ca641" id="r_a23a11505844aa5c973b610df1c7ca641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23a11505844aa5c973b610df1c7ca641">Elite</a> (float <a class="el" href="class_entity.html#a8622e5999dc478d629f0f8f6aacee9e2">size</a>, int <a class="el" href="class_entity.html#ab5bf0c97620636e04b271601e2133884">health</a>, <a class="el" href="class_weapon.html">Weapon</a> *<a class="el" href="class_entity.html#adde301c773b951aa9630ebc8646d381b">weapon</a>, float <a class="el" href="class_enemy.html#a98766d083fc49e746a37d0dc69be09e0">speed</a>, std::string texturePath, <a class="el" href="class_game_object_manager.html">GameObjectManager</a> *<a class="el" href="class_entity.html#a269c75743f704324c60484a4252d1236">gameObjectManager</a>, sf::Vector2f position, <a class="el" href="class_score.html">Score</a> *<a class="el" href="class_enemy.html#a97bc53fb032756156ee69f8c10db1cd0">score</a>)</td></tr>
+<tr class="memdesc:a23a11505844aa5c973b610df1c7ca641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur d'<a class="el" href="class_elite.html" title="représente un ennemi élite.   La classe Elite hérite de la classe Enemy et représente un type d&#39;ennem...">Elite</a>.  <br /></td></tr>
 <tr class="separator:a23a11505844aa5c973b610df1c7ca641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06103edd512f9adcd6ccbafe858c9ed" id="r_ad06103edd512f9adcd6ccbafe858c9ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad06103edd512f9adcd6ccbafe858c9ed">takeDamage</a> (int damage) override</td></tr>
 <tr class="memdesc:ad06103edd512f9adcd6ccbafe858c9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">inflige des dégâts à l'ennemi  <br /></td></tr>
@@ -139,6 +140,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a85e01699c41962aa810702086210c2b5 inherit pub_methods_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">déclenche l'attaque de l'ennemi  <br /></td></tr>
 <tr class="separator:a85e01699c41962aa810702086210c2b5 inherit pub_methods_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae615c0d298ac077789620d6c75a15b61 inherit pub_methods_class_enemy" id="r_ae615c0d298ac077789620d6c75a15b61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ae615c0d298ac077789620d6c75a15b61">heal</a> (int heal) override</td></tr>
+<tr class="memdesc:ae615c0d298ac077789620d6c75a15b61 inherit pub_methods_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">non implémenté pour les ennemis car ils ne peuvent pas être soignés  <br /></td></tr>
 <tr class="separator:ae615c0d298ac077789620d6c75a15b61 inherit pub_methods_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca00fa2f20cea544f52beeb5aa1648f1 inherit pub_methods_class_enemy" id="r_aca00fa2f20cea544f52beeb5aa1648f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#aca00fa2f20cea544f52beeb5aa1648f1">~Enemy</a> ()=default</td></tr>
 <tr class="memdesc:aca00fa2f20cea544f52beeb5aa1648f1 inherit pub_methods_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Enemy est le destructeur par default d'<a class="el" href="class_enemy.html" title="représente un ennemi lambda.   La classe Enemy représente un ennemi lambda dans le jeu....">Enemy</a>  <br /></td></tr>
@@ -300,6 +302,21 @@ Membres hérités additionnels</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur d'<a class="el" href="class_elite.html" title="représente un ennemi élite.   La classe Elite hérite de la classe Enemy et représente un type d&#39;ennem...">Elite</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>taille de l'ennemi (rayon du cercle) </td></tr>
+    <tr><td class="paramname">health</td><td>points de vie de l'ennemi </td></tr>
+    <tr><td class="paramname">weapon</td><td>arme de l'ennemi </td></tr>
+    <tr><td class="paramname">speed</td><td>vitesse de l'ennemi </td></tr>
+    <tr><td class="paramname">texturePath</td><td>chemin vers la texture de l'ennemi </td></tr>
+    <tr><td class="paramname">gameObjectManager</td><td>pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a> </td></tr>
+    <tr><td class="paramname">position</td><td>position de l'ennemi </td></tr>
+    <tr><td class="paramname">score</td><td>pointeur vers le score </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -94,6 +94,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>classe abstraite qui permet de gérer un menu. <br  />
+ La classe <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> est une classe abstraite qui permet de gérer un menu. Elle gère les propriétés du menu telles que le background, la fenêtre où dessiner le menu, et le font. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier.  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="menu_8h_source.html">menu.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de Menu:</div>
@@ -101,32 +105,43 @@ Graphe d'héritage de Menu:</div>
  <div class="center">
   <img src="class_menu.png" usemap="#Menu_map" alt=""/>
   <map id="Menu_map" name="Menu_map">
-<area href="class_pause_menu.html" alt="PauseMenu" shape="rect" coords="0,112,79,136"/>
-<area href="class_start_menu.html" alt="StartMenu" shape="rect" coords="89,112,168,136"/>
+<area href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ..." alt="GameOver" shape="rect" coords="0,112,79,136"/>
+<area href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le..." alt="PauseMenu" shape="rect" coords="89,112,168,136"/>
+<area href="class_start_menu.html" title="gère le menu de démarrage.   La classe StartMenu hérite de la classe abstraite Menu et permet de gére..." alt="StartMenu" shape="rect" coords="178,112,257,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a5b06d6d94978638423525d9bbe19c8c2" id="r_a5b06d6d94978638423525d9bbe19c8c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b06d6d94978638423525d9bbe19c8c2">Menu</a> (sf::RenderWindow *<a class="el" href="#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize)</td></tr>
+<tr class="memdesc:a5b06d6d94978638423525d9bbe19c8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a>.  <br /></td></tr>
 <tr class="separator:a5b06d6d94978638423525d9bbe19c8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d70a88ff199d75fbc93eeebae93c7d" id="r_a37d70a88ff199d75fbc93eeebae93c7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37d70a88ff199d75fbc93eeebae93c7d">draw</a> () const</td></tr>
+<tr class="memdesc:a37d70a88ff199d75fbc93eeebae93c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">dessine le menu à l'écran  <br /></td></tr>
 <tr class="separator:a37d70a88ff199d75fbc93eeebae93c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37e684d967edd0f883ead792787e80f" id="r_ac37e684d967edd0f883ead792787e80f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac37e684d967edd0f883ead792787e80f">handleInput</a> (sf::Keyboard::Key key, bool isPressed)=0</td></tr>
+<tr class="memdesc:ac37e684d967edd0f883ead792787e80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">gère les entrées clavier du menu  <br /></td></tr>
 <tr class="separator:ac37e684d967edd0f883ead792787e80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec66e8695cecd5e88732d20ffd027921" id="r_aec66e8695cecd5e88732d20ffd027921"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec66e8695cecd5e88732d20ffd027921">~Menu</a> ()=default</td></tr>
+<tr class="memdesc:aec66e8695cecd5e88732d20ffd027921"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Menu est le destructeur par default de <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a>  <br /></td></tr>
 <tr class="separator:aec66e8695cecd5e88732d20ffd027921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Attributs protégés</h2></td></tr>
 <tr class="memitem:ab55d45f10b43cf226fed6e2bf02eb907" id="r_ab55d45f10b43cf226fed6e2bf02eb907"><td class="memItemLeft" align="right" valign="top">sf::RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab55d45f10b43cf226fed6e2bf02eb907">background</a></td></tr>
+<tr class="memdesc:ab55d45f10b43cf226fed6e2bf02eb907"><td class="mdescLeft">&#160;</td><td class="mdescRight">background du menu  <br /></td></tr>
 <tr class="separator:ab55d45f10b43cf226fed6e2bf02eb907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0889442f08056ce69d0f9ef3489faa73" id="r_a0889442f08056ce69d0f9ef3489faa73"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0889442f08056ce69d0f9ef3489faa73">window</a></td></tr>
+<tr class="memdesc:a0889442f08056ce69d0f9ef3489faa73"><td class="mdescLeft">&#160;</td><td class="mdescRight">fenêtre où dessiner le menu  <br /></td></tr>
 <tr class="separator:a0889442f08056ce69d0f9ef3489faa73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9446727ebf60c6063218b5d4bcae170a" id="r_a9446727ebf60c6063218b5d4bcae170a"><td class="memItemLeft" align="right" valign="top">sf::Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9446727ebf60c6063218b5d4bcae170a">font</a></td></tr>
+<tr class="memdesc:a9446727ebf60c6063218b5d4bcae170a"><td class="mdescLeft">&#160;</td><td class="mdescRight">font du menu  <br /></td></tr>
 <tr class="separator:a9446727ebf60c6063218b5d4bcae170a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>classe abstraite qui permet de gérer un menu. <br  />
+ La classe <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> est une classe abstraite qui permet de gérer un menu. Elle gère les propriétés du menu telles que le background, la fenêtre où dessiner le menu, et le font. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a5b06d6d94978638423525d9bbe19c8c2" name="a5b06d6d94978638423525d9bbe19c8c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b06d6d94978638423525d9bbe19c8c2">&#9670;&#160;</a></span>Menu()</h2>
 
@@ -145,6 +160,15 @@ Attributs protégés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur de <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre où dessiner le menu </td></tr>
+    <tr><td class="paramname">windowSize</td><td>taille de la fenêtre </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -170,6 +194,8 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>~Menu est le destructeur par default de <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> </p>
 
 </div>
 </div>
@@ -197,7 +223,9 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="class_pause_menu.html#a2026cc26311d9e16c4f5822837e7c76a">PauseMenu</a>, et <a class="el" href="class_start_menu.html#ac1c7baaeda3c38381509573fe281e609">StartMenu</a>.</p>
+<p>dessine le menu à l'écran </p>
+
+<p>Réimplémentée dans <a class="el" href="class_game_over.html#a18b8062d5168f1770096a7eee77b96e9">GameOver</a>, <a class="el" href="class_pause_menu.html#a2026cc26311d9e16c4f5822837e7c76a">PauseMenu</a>, et <a class="el" href="class_start_menu.html#ac1c7baaeda3c38381509573fe281e609">StartMenu</a>.</p>
 
 </div>
 </div>
@@ -228,7 +256,16 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implémenté dans <a class="el" href="class_pause_menu.html#a11222217bd4a0c928df06c1abcfc7f83">PauseMenu</a>, et <a class="el" href="class_start_menu.html#a98eb2fe747b8f3a4244a50b7c8e82f8c">StartMenu</a>.</p>
+<p>gère les entrées clavier du menu </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>touche appuyée </td></tr>
+    <tr><td class="paramname">isPressed</td><td>si la touche est appuyée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_game_over.html#acc9eb9725eafd9b7dfaaa801c68c021e">GameOver</a>, <a class="el" href="class_pause_menu.html#a11222217bd4a0c928df06c1abcfc7f83">PauseMenu</a>, et <a class="el" href="class_start_menu.html#a98eb2fe747b8f3a4244a50b7c8e82f8c">StartMenu</a>.</p>
 
 </div>
 </div>
@@ -253,6 +290,8 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>background du menu </p>
+
 </div>
 </div>
 <a id="a9446727ebf60c6063218b5d4bcae170a" name="a9446727ebf60c6063218b5d4bcae170a"></a>
@@ -275,6 +314,8 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>font du menu </p>
+
 </div>
 </div>
 <a id="a0889442f08056ce69d0f9ef3489faa73" name="a0889442f08056ce69d0f9ef3489faa73"></a>
@@ -296,6 +337,8 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>fenêtre où dessiner le menu </p>
 
 </div>
 </div>

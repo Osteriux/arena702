@@ -84,6 +84,8 @@ public:
     /// @param player pointeur vers le joueur
     void setPlayer(Player* player);
 
+    /// @brief getteur de la taille de l'arène
+    /// @return la taille de l'arène
     sf::Vector2u getArenaSize() const;
 
     /// @brief ajoute un ennemi à la liste des ennemis
@@ -112,8 +114,10 @@ public:
     /// @param position position d'apparition
     void spawnKamikaze(sf::Vector2f position);
 
+    /// @brief fait apparaitre le boss rocketShip
     void spawnRocketShip();
 
+    /// @brief fait apparaitre le boss shieldShip
     void spawnShieldShip();
 
     /// @brief dessine toutes les entités & autres
@@ -127,6 +131,7 @@ public:
     /// @param mousePosition position de la souris
     void update(float dt, sf::Vector2i mousePosition);
 
+    /// @brief reset les entités & autres
     void reset();
 
     /// @brief ~EntityManager est le destructeur de EntityManager

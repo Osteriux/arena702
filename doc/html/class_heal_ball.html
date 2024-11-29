@@ -93,6 +93,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>représente un item qui redonne de la vie. <br  />
+ La classe <a class="el" href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v...">HealBall</a> représente un item qui redonne de la vie à une entité lorsqu'il est ramassé. Elle hérite de la classe abstraite <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a> et gère les propriétés spécifiques à l'item de soin telles que l'animation de montée et de descente, la texture, et l'état de ramassage.  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="heal_ball_8h_source.html">healBall.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de HealBall:</div>
@@ -100,35 +104,49 @@ Graphe d'héritage de HealBall:</div>
  <div class="center">
   <img src="class_heal_ball.png" usemap="#HealBall_map" alt=""/>
   <map id="HealBall_map" name="HealBall_map">
-<area href="class_item.html" alt="Item" shape="rect" coords="0,56,61,80"/>
+<area href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a..." alt="Item" shape="rect" coords="0,56,61,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a879b30ec351e2b8c65c70819a06d7cc4" id="r_a879b30ec351e2b8c65c70819a06d7cc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a879b30ec351e2b8c65c70819a06d7cc4">HealBall</a> (std::string texturePath, sf::Vector2f position, float <a class="el" href="class_item.html#ae44a317fe72a764842624a7f5589ccc8">timeToLive</a>)</td></tr>
+<tr class="memdesc:a879b30ec351e2b8c65c70819a06d7cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v...">HealBall</a>.  <br /></td></tr>
 <tr class="separator:a879b30ec351e2b8c65c70819a06d7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a999fac7c1715d8ff9e11142a3fe2b" id="r_ad6a999fac7c1715d8ff9e11142a3fe2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6a999fac7c1715d8ff9e11142a3fe2b">onPickup</a> (<a class="el" href="class_entity.html">Entity</a> *e) override</td></tr>
+<tr class="memdesc:ad6a999fac7c1715d8ff9e11142a3fe2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">soigne l'entité qui a ramassé l'item  <br /></td></tr>
 <tr class="separator:ad6a999fac7c1715d8ff9e11142a3fe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aba6e2703e5a711ecac8e0ecec4f982" id="r_a1aba6e2703e5a711ecac8e0ecec4f982"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aba6e2703e5a711ecac8e0ecec4f982">update</a> (float dt) override</td></tr>
+<tr class="memdesc:a1aba6e2703e5a711ecac8e0ecec4f982"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour l'item en fonction du temps écoulé  <br /></td></tr>
 <tr class="separator:a1aba6e2703e5a711ecac8e0ecec4f982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e5eb0047b2ac479a1fdb52e23f22a1" id="r_a11e5eb0047b2ac479a1fdb52e23f22a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11e5eb0047b2ac479a1fdb52e23f22a1">~HealBall</a> ()=default</td></tr>
+<tr class="memdesc:a11e5eb0047b2ac479a1fdb52e23f22a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">~HealBall est le destructeur par default de <a class="el" href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v...">HealBall</a>  <br /></td></tr>
+<tr class="separator:a11e5eb0047b2ac479a1fdb52e23f22a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_item"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_item.html">Item</a></td></tr>
 <tr class="memitem:ad5fd1ec0a1fd7fe6e3b4cf342599d2b5 inherit pub_methods_class_item" id="r_ad5fd1ec0a1fd7fe6e3b4cf342599d2b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#ad5fd1ec0a1fd7fe6e3b4cf342599d2b5">Item</a> (std::string texturePath, sf::Vector2f position, float <a class="el" href="class_item.html#ae44a317fe72a764842624a7f5589ccc8">timeToLive</a>)</td></tr>
+<tr class="memdesc:ad5fd1ec0a1fd7fe6e3b4cf342599d2b5 inherit pub_methods_class_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur d'<a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a>.  <br /></td></tr>
 <tr class="separator:ad5fd1ec0a1fd7fe6e3b4cf342599d2b5 inherit pub_methods_class_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0eb9ce3ed400cce92c653fcbbfe3d2c inherit pub_methods_class_item" id="r_ad0eb9ce3ed400cce92c653fcbbfe3d2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#ad0eb9ce3ed400cce92c653fcbbfe3d2c">~Item</a> ()=default</td></tr>
+<tr class="memdesc:ad0eb9ce3ed400cce92c653fcbbfe3d2c inherit pub_methods_class_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Item est le destructeur par default de <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a>  <br /></td></tr>
 <tr class="separator:ad0eb9ce3ed400cce92c653fcbbfe3d2c inherit pub_methods_class_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_item"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_item')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_item.html">Item</a></td></tr>
 <tr class="memitem:a9bf31299dc71765f52bc81a3d2901f3f inherit pro_attribs_class_item" id="r_a9bf31299dc71765f52bc81a3d2901f3f"><td class="memItemLeft" align="right" valign="top">sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#a9bf31299dc71765f52bc81a3d2901f3f">texture</a></td></tr>
+<tr class="memdesc:a9bf31299dc71765f52bc81a3d2901f3f inherit pro_attribs_class_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">texture de l'item  <br /></td></tr>
 <tr class="separator:a9bf31299dc71765f52bc81a3d2901f3f inherit pro_attribs_class_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a620f979d659214e86dd74cae850a8b29 inherit pro_attribs_class_item" id="r_a620f979d659214e86dd74cae850a8b29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#a620f979d659214e86dd74cae850a8b29">isPickedUp</a></td></tr>
+<tr class="memdesc:a620f979d659214e86dd74cae850a8b29 inherit pro_attribs_class_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">indique si l'item a été ramassé  <br /></td></tr>
 <tr class="separator:a620f979d659214e86dd74cae850a8b29 inherit pro_attribs_class_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44a317fe72a764842624a7f5589ccc8 inherit pro_attribs_class_item" id="r_ae44a317fe72a764842624a7f5589ccc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#ae44a317fe72a764842624a7f5589ccc8">timeToLive</a></td></tr>
+<tr class="memdesc:ae44a317fe72a764842624a7f5589ccc8 inherit pro_attribs_class_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps que l'item restera affiché  <br /></td></tr>
 <tr class="separator:ae44a317fe72a764842624a7f5589ccc8 inherit pro_attribs_class_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>représente un item qui redonne de la vie. <br  />
+ La classe <a class="el" href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v...">HealBall</a> représente un item qui redonne de la vie à une entité lorsqu'il est ramassé. Elle hérite de la classe abstraite <a class="el" href="class_item.html" title="class abstraite qui représente un item que le joueur peut ramasser.   La classe Item est une classe a...">Item</a> et gère les propriétés spécifiques à l'item de soin telles que l'animation de montée et de descente, la texture, et l'état de ramassage. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a879b30ec351e2b8c65c70819a06d7cc4" name="a879b30ec351e2b8c65c70819a06d7cc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a879b30ec351e2b8c65c70819a06d7cc4">&#9670;&#160;</a></span>HealBall()</h2>
 
@@ -152,6 +170,43 @@ Membres hérités additionnels</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur de <a class="el" href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v...">HealBall</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texturePath</td><td>chemin vers la texture de l'item </td></tr>
+    <tr><td class="paramname">position</td><td>position de l'item </td></tr>
+    <tr><td class="paramname">timeToLive</td><td>temps que l'item restera affiché </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a11e5eb0047b2ac479a1fdb52e23f22a1" name="a11e5eb0047b2ac479a1fdb52e23f22a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e5eb0047b2ac479a1fdb52e23f22a1">&#9670;&#160;</a></span>~HealBall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HealBall::~HealBall </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>~HealBall est le destructeur par default de <a class="el" href="class_heal_ball.html" title="représente un item qui redonne de la vie.   La classe HealBall représente un item qui redonne de la v...">HealBall</a> </p>
 
 </div>
 </div>
@@ -179,6 +234,14 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>soigne l'entité qui a ramassé l'item </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>entité qui a ramassé l'item </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="class_item.html#a98013d43ed0ef499f5c32899589a9a53">Item</a>.</p>
 
 </div>
@@ -205,6 +268,16 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>met à jour l'item en fonction du temps écoulé </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>delta time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>si l'item est toujours affiché</dd></dl>
+<p>fait monter et descendre l'item </p>
 
 <p>Réimplémentée à partir de <a class="el" href="class_item.html#ac78fef2d98d750570e8aff11d06b8f3f">Item</a>.</p>
 

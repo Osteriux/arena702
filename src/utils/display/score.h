@@ -69,12 +69,15 @@ public:
     /// @return le score du joueur
     unsigned int getScore() const;
 
+    /// @brief calcule le nombre d'ennemis maximum autorisé en fonction du stage actuel
+    /// @return le nombre d'ennemis maximum
     int getEnemyCap() const;
 
     /// @brief ajoute un score au score actuel
     /// @param score score à ajouter
     void addScore(unsigned int score);
 
+    /// @brief reset le score
     void reset();
 
     /// @brief Destructeur par défaut de Score

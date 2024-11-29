@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>arena702:  Fichier source de src/menus/startMenu.h</title>
+<title>arena702:  Fichier source de src/menus/gameOver.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,45 +90,45 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
-  <div class="headertitle"><div class="title">startMenu.h</div></div>
+  <div class="headertitle"><div class="title">gameOver.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="start_menu_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="game_over_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="menu_8h.html">menu.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_start_menu.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_start_menu.html">StartMenu</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_menu.html">Menu</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_over.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_game_over.html">GameOver</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_menu.html">Menu</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    sf::Text title;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    sf::Text start;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    sf::Text restart;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    sf::Text exit;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span>* isGameStarted;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span>* isGameRestart;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">bool</span>* isGameExit;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_start_menu.html#ab8cf7487f3ba2be5c2a649a3c4d3e111">StartMenu</a>(sf::RenderWindow* <a class="code hl_variable" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize, <span class="keywordtype">bool</span>* isGameStarted, <span class="keywordtype">bool</span>* isGameExit);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_start_menu.html#ac1c7baaeda3c38381509573fe281e609">draw</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="class_game_over.html#a8df373129c1221786fba82c9174c4bef">GameOver</a>(sf::RenderWindow* <a class="code hl_variable" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize, <span class="keywordtype">bool</span>* isGameRestart, <span class="keywordtype">bool</span>* isGameExit);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_over.html#a18b8062d5168f1770096a7eee77b96e9">draw</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_start_menu.html#a98eb2fe747b8f3a4244a50b7c8e82f8c">handleInput</a>(sf::Keyboard::Key key, <span class="keywordtype">bool</span> isPressed) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_start_menu.html#a051025096447bb6e3b764bf6e50971a5">   48</a></span>    <a class="code hl_function" href="class_start_menu.html#a051025096447bb6e3b764bf6e50971a5">~StartMenu</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_over.html#acc9eb9725eafd9b7dfaaa801c68c021e">handleInput</a>(sf::Keyboard::Key key, <span class="keywordtype">bool</span> isPressed) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_over.html#a21207065cf4f870d85f75821dbbb6282">   47</a></span>    <a class="code hl_function" href="class_game_over.html#a21207065cf4f870d85f75821dbbb6282">~GameOver</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
+<div class="ttc" id="aclass_game_over_html"><div class="ttname"><a href="class_game_over.html">GameOver</a></div><div class="ttdoc">gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...</div><div class="ttdef"><b>Definition</b> gameOver.h:18</div></div>
+<div class="ttc" id="aclass_game_over_html_a18b8062d5168f1770096a7eee77b96e9"><div class="ttname"><a href="class_game_over.html#a18b8062d5168f1770096a7eee77b96e9">GameOver::draw</a></div><div class="ttdeci">void draw() const override</div><div class="ttdoc">dessine le menu à l'écran</div><div class="ttdef"><b>Definition</b> gameOver.cpp:26</div></div>
+<div class="ttc" id="aclass_game_over_html_a21207065cf4f870d85f75821dbbb6282"><div class="ttname"><a href="class_game_over.html#a21207065cf4f870d85f75821dbbb6282">GameOver::~GameOver</a></div><div class="ttdeci">~GameOver()=default</div></div>
+<div class="ttc" id="aclass_game_over_html_a8df373129c1221786fba82c9174c4bef"><div class="ttname"><a href="class_game_over.html#a8df373129c1221786fba82c9174c4bef">GameOver::GameOver</a></div><div class="ttdeci">GameOver(sf::RenderWindow *window, sf::Vector2u windowSize, bool *isGameRestart, bool *isGameExit)</div><div class="ttdoc">Constructeur de GameOver.</div><div class="ttdef"><b>Definition</b> gameOver.cpp:3</div></div>
+<div class="ttc" id="aclass_game_over_html_acc9eb9725eafd9b7dfaaa801c68c021e"><div class="ttname"><a href="class_game_over.html#acc9eb9725eafd9b7dfaaa801c68c021e">GameOver::handleInput</a></div><div class="ttdeci">void handleInput(sf::Keyboard::Key key, bool isPressed) override</div><div class="ttdoc">gère les entrées clavier du menu</div><div class="ttdef"><b>Definition</b> gameOver.cpp:34</div></div>
 <div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdoc">classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...</div><div class="ttdef"><b>Definition</b> menu.h:17</div></div>
 <div class="ttc" id="aclass_menu_html_a0889442f08056ce69d0f9ef3489faa73"><div class="ttname"><a href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">Menu::window</a></div><div class="ttdeci">sf::RenderWindow * window</div><div class="ttdoc">fenêtre où dessiner le menu</div><div class="ttdef"><b>Definition</b> menu.h:23</div></div>
-<div class="ttc" id="aclass_start_menu_html"><div class="ttname"><a href="class_start_menu.html">StartMenu</a></div><div class="ttdoc">gère le menu de démarrage.   La classe StartMenu hérite de la classe abstraite Menu et permet de gére...</div><div class="ttdef"><b>Definition</b> startMenu.h:18</div></div>
-<div class="ttc" id="aclass_start_menu_html_a051025096447bb6e3b764bf6e50971a5"><div class="ttname"><a href="class_start_menu.html#a051025096447bb6e3b764bf6e50971a5">StartMenu::~StartMenu</a></div><div class="ttdeci">~StartMenu()=default</div><div class="ttdoc">~StartMenu est le destructeur par default de StartMenu</div></div>
-<div class="ttc" id="aclass_start_menu_html_a98eb2fe747b8f3a4244a50b7c8e82f8c"><div class="ttname"><a href="class_start_menu.html#a98eb2fe747b8f3a4244a50b7c8e82f8c">StartMenu::handleInput</a></div><div class="ttdeci">void handleInput(sf::Keyboard::Key key, bool isPressed) override</div><div class="ttdoc">gère les entrées clavier du menu</div><div class="ttdef"><b>Definition</b> startMenu.cpp:33</div></div>
-<div class="ttc" id="aclass_start_menu_html_ab8cf7487f3ba2be5c2a649a3c4d3e111"><div class="ttname"><a href="class_start_menu.html#ab8cf7487f3ba2be5c2a649a3c4d3e111">StartMenu::StartMenu</a></div><div class="ttdeci">StartMenu(sf::RenderWindow *window, sf::Vector2u windowSize, bool *isGameStarted, bool *isGameExit)</div><div class="ttdoc">Constructeur de StartMenu.</div><div class="ttdef"><b>Definition</b> startMenu.cpp:3</div></div>
-<div class="ttc" id="aclass_start_menu_html_ac1c7baaeda3c38381509573fe281e609"><div class="ttname"><a href="class_start_menu.html#ac1c7baaeda3c38381509573fe281e609">StartMenu::draw</a></div><div class="ttdeci">void draw() const override</div><div class="ttdoc">dessine le menu à l'écran</div><div class="ttdef"><b>Definition</b> startMenu.cpp:25</div></div>
 <div class="ttc" id="amenu_8h_html"><div class="ttname"><a href="menu_8h.html">menu.h</a></div><div class="ttdoc">Déclaration de la classe Menu pour la gestion des menus dans l'application.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

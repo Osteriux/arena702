@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>arena702: Référence de la classe PauseMenu</title>
+<title>arena702: Référence de la classe GameOver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,40 +88,39 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="class_pause_menu-members.html">Liste de tous les membres</a>  </div>
-  <div class="headertitle"><div class="title">Référence de la classe PauseMenu</div></div>
+<a href="class_game_over-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe GameOver</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>gère le menu de pause. <br  />
- La classe <a class="el" href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le...">PauseMenu</a> hérite de la classe abstraite <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> et permet de gérer le menu de pause. Elle gère les propriétés spécifiques au menu de pause telles que le titre, les options pour reprendre ou quitter la partie, ainsi que les indicateurs de pause et de fin du jeu. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier.  
+<p>gère le menu de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>. <br  />
+ La classe <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a> hérite de la classe abstraite <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> et permet de gérer le menu de fin de jeu. Elle gère les propriétés du menu telles que le titre, les options de recommencer ou quitter le jeu, et les indicateurs de sélection. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier.  
  <a href="#details">Plus de détails...</a></p>
 
-<p><code>#include &lt;<a class="el" href="pause_menu_8h_source.html">pauseMenu.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="game_over_8h_source.html">gameOver.h</a>&gt;</code></p>
 <div class="dynheader">
-Graphe d'héritage de PauseMenu:</div>
+Graphe d'héritage de GameOver:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_pause_menu.png" usemap="#PauseMenu_map" alt=""/>
-  <map id="PauseMenu_map" name="PauseMenu_map">
-<area href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de..." alt="Menu" shape="rect" coords="0,56,79,80"/>
+  <img src="class_game_over.png" usemap="#GameOver_map" alt=""/>
+  <map id="GameOver_map" name="GameOver_map">
+<area href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de..." alt="Menu" shape="rect" coords="0,56,73,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a8b6536003ec3732c6fcec1c54f1afb10" id="r_a8b6536003ec3732c6fcec1c54f1afb10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b6536003ec3732c6fcec1c54f1afb10">PauseMenu</a> (sf::RenderWindow *<a class="el" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize, bool *isGamePaused, bool *isGameExit)</td></tr>
-<tr class="memdesc:a8b6536003ec3732c6fcec1c54f1afb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le...">PauseMenu</a>.  <br /></td></tr>
-<tr class="separator:a8b6536003ec3732c6fcec1c54f1afb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2026cc26311d9e16c4f5822837e7c76a" id="r_a2026cc26311d9e16c4f5822837e7c76a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2026cc26311d9e16c4f5822837e7c76a">draw</a> () const override</td></tr>
-<tr class="memdesc:a2026cc26311d9e16c4f5822837e7c76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dessine le menu à l'écran  <br /></td></tr>
-<tr class="separator:a2026cc26311d9e16c4f5822837e7c76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11222217bd4a0c928df06c1abcfc7f83" id="r_a11222217bd4a0c928df06c1abcfc7f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11222217bd4a0c928df06c1abcfc7f83">handleInput</a> (sf::Keyboard::Key key, bool isPressed) override</td></tr>
-<tr class="memdesc:a11222217bd4a0c928df06c1abcfc7f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">gère les entrées clavier du menu  <br /></td></tr>
-<tr class="separator:a11222217bd4a0c928df06c1abcfc7f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01be4da3955e3d716847fac73e99b3a3" id="r_a01be4da3955e3d716847fac73e99b3a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01be4da3955e3d716847fac73e99b3a3">~PauseMenu</a> ()=default</td></tr>
-<tr class="memdesc:a01be4da3955e3d716847fac73e99b3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">~PauseMenu est le destructeur par default de <a class="el" href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le...">PauseMenu</a>  <br /></td></tr>
-<tr class="separator:a01be4da3955e3d716847fac73e99b3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df373129c1221786fba82c9174c4bef" id="r_a8df373129c1221786fba82c9174c4bef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8df373129c1221786fba82c9174c4bef">GameOver</a> (sf::RenderWindow *<a class="el" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize, bool *isGameRestart, bool *isGameExit)</td></tr>
+<tr class="memdesc:a8df373129c1221786fba82c9174c4bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>.  <br /></td></tr>
+<tr class="separator:a8df373129c1221786fba82c9174c4bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b8062d5168f1770096a7eee77b96e9" id="r_a18b8062d5168f1770096a7eee77b96e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b8062d5168f1770096a7eee77b96e9">draw</a> () const override</td></tr>
+<tr class="memdesc:a18b8062d5168f1770096a7eee77b96e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">dessine le menu à l'écran  <br /></td></tr>
+<tr class="separator:a18b8062d5168f1770096a7eee77b96e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9eb9725eafd9b7dfaaa801c68c021e" id="r_acc9eb9725eafd9b7dfaaa801c68c021e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc9eb9725eafd9b7dfaaa801c68c021e">handleInput</a> (sf::Keyboard::Key key, bool isPressed) override</td></tr>
+<tr class="memdesc:acc9eb9725eafd9b7dfaaa801c68c021e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gère les entrées clavier du menu  <br /></td></tr>
+<tr class="separator:acc9eb9725eafd9b7dfaaa801c68c021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21207065cf4f870d85f75821dbbb6282" id="r_a21207065cf4f870d85f75821dbbb6282"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21207065cf4f870d85f75821dbbb6282">~GameOver</a> ()=default</td></tr>
+<tr class="separator:a21207065cf4f870d85f75821dbbb6282"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_menu"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_menu')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_menu.html">Menu</a></td></tr>
 <tr class="memitem:a5b06d6d94978638423525d9bbe19c8c2 inherit pub_methods_class_menu" id="r_a5b06d6d94978638423525d9bbe19c8c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a5b06d6d94978638423525d9bbe19c8c2">Menu</a> (sf::RenderWindow *<a class="el" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize)</td></tr>
 <tr class="memdesc:a5b06d6d94978638423525d9bbe19c8c2 inherit pub_methods_class_menu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a>.  <br /></td></tr>
@@ -144,17 +143,17 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a9446727ebf60c6063218b5d4bcae170a inherit pro_attribs_class_menu"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>gère le menu de pause. <br  />
- La classe <a class="el" href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le...">PauseMenu</a> hérite de la classe abstraite <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> et permet de gérer le menu de pause. Elle gère les propriétés spécifiques au menu de pause telles que le titre, les options pour reprendre ou quitter la partie, ainsi que les indicateurs de pause et de fin du jeu. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier. </p>
+<div class="textblock"><p>gère le menu de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>. <br  />
+ La classe <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a> hérite de la classe abstraite <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> et permet de gérer le menu de fin de jeu. Elle gère les propriétés du menu telles que le titre, les options de recommencer ou quitter le jeu, et les indicateurs de sélection. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier. </p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a id="a8b6536003ec3732c6fcec1c54f1afb10" name="a8b6536003ec3732c6fcec1c54f1afb10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b6536003ec3732c6fcec1c54f1afb10">&#9670;&#160;</a></span>PauseMenu()</h2>
+<a id="a8df373129c1221786fba82c9174c4bef" name="a8df373129c1221786fba82c9174c4bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df373129c1221786fba82c9174c4bef">&#9670;&#160;</a></span>GameOver()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PauseMenu::PauseMenu </td>
+          <td class="memname">GameOver::GameOver </td>
           <td>(</td>
           <td class="paramtype">sf::RenderWindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
         </tr>
@@ -166,7 +165,7 @@ Membres hérités additionnels</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>isGamePaused</em></span>, </td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>isGameRestart</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -176,21 +175,21 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructeur de <a class="el" href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le...">PauseMenu</a>. </p>
+<p>Constructeur de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td>fenêtre où dessiner le menu </td></tr>
     <tr><td class="paramname">windowSize</td><td>taille de la fenêtre </td></tr>
-    <tr><td class="paramname">isGamePaused</td><td>pointeur vers l'indicateur de pause du jeu </td></tr>
-    <tr><td class="paramname">isGameExit</td><td>pointeur vers l'indicateur de fin du jeu </td></tr>
+    <tr><td class="paramname">isGameRestart</td><td>pointeur vers l'indicateur de recommencer la partie </td></tr>
+    <tr><td class="paramname">isGameExit</td><td>pointeur vers l'indicateur de quitter la partie </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a01be4da3955e3d716847fac73e99b3a3" name="a01be4da3955e3d716847fac73e99b3a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01be4da3955e3d716847fac73e99b3a3">&#9670;&#160;</a></span>~PauseMenu()</h2>
+<a id="a21207065cf4f870d85f75821dbbb6282" name="a21207065cf4f870d85f75821dbbb6282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21207065cf4f870d85f75821dbbb6282">&#9670;&#160;</a></span>~GameOver()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +198,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PauseMenu::~PauseMenu </td>
+          <td class="memname">GameOver::~GameOver </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -212,13 +211,11 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>~PauseMenu est le destructeur par default de <a class="el" href="class_pause_menu.html" title="gère le menu de pause.   La classe PauseMenu hérite de la classe abstraite Menu et permet de gérer le...">PauseMenu</a> </p>
-
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="a2026cc26311d9e16c4f5822837e7c76a" name="a2026cc26311d9e16c4f5822837e7c76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2026cc26311d9e16c4f5822837e7c76a">&#9670;&#160;</a></span>draw()</h2>
+<a id="a18b8062d5168f1770096a7eee77b96e9" name="a18b8062d5168f1770096a7eee77b96e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b8062d5168f1770096a7eee77b96e9">&#9670;&#160;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +224,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PauseMenu::draw </td>
+          <td class="memname">void GameOver::draw </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -246,8 +243,8 @@ Membres hérités additionnels</h2></td></tr>
 
 </div>
 </div>
-<a id="a11222217bd4a0c928df06c1abcfc7f83" name="a11222217bd4a0c928df06c1abcfc7f83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11222217bd4a0c928df06c1abcfc7f83">&#9670;&#160;</a></span>handleInput()</h2>
+<a id="acc9eb9725eafd9b7dfaaa801c68c021e" name="acc9eb9725eafd9b7dfaaa801c68c021e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9eb9725eafd9b7dfaaa801c68c021e">&#9670;&#160;</a></span>handleInput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +253,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PauseMenu::handleInput </td>
+          <td class="memname">void GameOver::handleInput </td>
           <td>(</td>
           <td class="paramtype">sf::Keyboard::Key</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
         </tr>
@@ -287,8 +284,8 @@ Membres hérités additionnels</h2></td></tr>
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
-<li>src/menus/<a class="el" href="pause_menu_8h_source.html">pauseMenu.h</a></li>
-<li>src/menus/<a class="el" href="pause_menu_8cpp.html">pauseMenu.cpp</a></li>
+<li>src/menus/<a class="el" href="game_over_8h_source.html">gameOver.h</a></li>
+<li>src/menus/<a class="el" href="game_over_8cpp.html">gameOver.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

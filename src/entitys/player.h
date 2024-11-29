@@ -22,11 +22,13 @@ class Player : public Entity
         /// @brief indique si le joueur est en train d'attaquer
         bool attacking;
 
+        /// @brief indique si le joueur est mort et notifi la boucle principale
         bool* isGameOver;
     public:
         /// @brief Constructeur de Player
         /// @param gameObjectManager pointeur vers l'GameObjectManager
         /// @param windowSize taille de la fenêtre
+        /// @param isGameOver pointeur vers l'indicateur de fin de jeu
         Player(GameObjectManager* gameObjectManager, sf::Vector2u windowSize, bool* isGameOver);
 
         /// @brief setteur de l'attaque du joueur
@@ -52,21 +54,27 @@ class Player : public Entity
         void attack() override;
 
         /// @brief déclenche le dash du joueur
+        /// @warning non implémenté
         void dash();
 
         /// @brief inflige des dégâts au joueur
         /// @param damage dégâts infligés
         void takeDamage(int damage) override;
 
+        /// @brief soigne le joueur
+        /// @param heal points de vie rendus
         virtual void heal(int heal) override;
 
         /// @brief appelé lors de la mort du joueur
         void onDeath() override;
 
+        /// @brief reset le joueur
         void reset();
 
         /// @brief ~Player est le destructeur par default de Player
         ~Player() = default;
 
+        /// @brief affiche les informations du joueur
+        /// @warning utilisé pour le debug
         void debug();
 };

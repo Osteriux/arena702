@@ -107,11 +107,11 @@ Graphe d'héritage de Enemy:</div>
   <img src="class_enemy.png" usemap="#Enemy_map" alt=""/>
   <map id="Enemy_map" name="Enemy_map">
 <area href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr..." alt="Entity" shape="rect" coords="127,56,202,80"/>
-<area href="class_boss.html" alt="Boss" shape="rect" coords="42,168,117,192"/>
+<area href="class_boss.html" title="classe abstraite qui représente un boss.   La classe Boss est une classe abstraite dérivée de Enemy q..." alt="Boss" shape="rect" coords="42,168,117,192"/>
 <area href="class_elite.html" title="représente un ennemi élite.   La classe Elite hérite de la classe Enemy et représente un type d&#39;ennem..." alt="Elite" shape="rect" coords="127,168,202,192"/>
 <area href="class_kamikaze.html" title="représente un enemi speciale qui explose au contact du joueur.   La classe Kamikaze hérite de la clas..." alt="Kamikaze" shape="rect" coords="212,168,287,192"/>
-<area href="class_rocket_ship.html" alt="RocketShip" shape="rect" coords="0,224,75,248"/>
-<area href="class_shield_ship.html" alt="ShieldShip" shape="rect" coords="85,224,160,248"/>
+<area href="class_rocket_ship.html" title="boss qui attaque le foueur en faisant apparaitre des Kamikaze.   La classe RocketShip hérite de la cl..." alt="RocketShip" shape="rect" coords="0,224,75,248"/>
+<area href="class_shield_ship.html" title="boss qui attaque le joueur en se protégeant avec un des lasers.   La classe ShieldShip hérite de la c..." alt="ShieldShip" shape="rect" coords="85,224,160,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -136,6 +136,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a2ff229717a23f793347085ebb1cbd903"><td class="mdescLeft">&#160;</td><td class="mdescRight">inflige des dégâts à l'ennemi  <br /></td></tr>
 <tr class="separator:a2ff229717a23f793347085ebb1cbd903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae615c0d298ac077789620d6c75a15b61" id="r_ae615c0d298ac077789620d6c75a15b61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae615c0d298ac077789620d6c75a15b61">heal</a> (int heal) override</td></tr>
+<tr class="memdesc:ae615c0d298ac077789620d6c75a15b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">non implémenté pour les ennemis car ils ne peuvent pas être soignés  <br /></td></tr>
 <tr class="separator:ae615c0d298ac077789620d6c75a15b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6b5b2b53d938fc03a4ae8ffca0cdad" id="r_a3a6b5b2b53d938fc03a4ae8ffca0cdad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a6b5b2b53d938fc03a4ae8ffca0cdad">onDeath</a> () override</td></tr>
 <tr class="memdesc:a3a6b5b2b53d938fc03a4ae8ffca0cdad"><td class="mdescLeft">&#160;</td><td class="mdescRight">appelé lors de la mort de l'ennemi  <br /></td></tr>
@@ -435,6 +436,8 @@ Attributs protégés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>non implémenté pour les ennemis car ils ne peuvent pas être soignés </p>
 
 <p>Implémente <a class="el" href="class_entity.html#a59b86741a62977c72b82d2e87808705c">Entity</a>.</p>
 

@@ -94,20 +94,29 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>factory qui gère la création des items. <br  />
+ La classe <a class="el" href="class_item_factory.html" title="factory qui gère la création des items.   La classe ItemFactory est responsable de la création des di...">ItemFactory</a> est responsable de la création des différents types d'items ramassables dans l'application. Elle fournit une méthode statique pour créer un item en fonction de son type et de sa position, ainsi qu'une méthode privée pour obtenir le chemin de la texture de l'item en fonction de son type.  
+ <a href="#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="item_factory_8h_source.html">itemFactory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Types publics</h2></td></tr>
 <tr class="memitem:aaa7489e7197a2db3ac836d845ff3c5a7" id="r_aaa7489e7197a2db3ac836d845ff3c5a7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7489e7197a2db3ac836d845ff3c5a7">ItemType</a> { <a class="el" href="#aaa7489e7197a2db3ac836d845ff3c5a7a885f8061328ea75edfda181f3fd294b7">HealBall</a>
  }</td></tr>
+<tr class="memdesc:aaa7489e7197a2db3ac836d845ff3c5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum des différents type d'item.  <a href="#aaa7489e7197a2db3ac836d845ff3c5a7">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aaa7489e7197a2db3ac836d845ff3c5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Fonctions membres publiques statiques</h2></td></tr>
 <tr class="memitem:ab961b4b36327e0cb82129b09164931a2" id="r_ab961b4b36327e0cb82129b09164931a2"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab961b4b36327e0cb82129b09164931a2">createItem</a> (<a class="el" href="#aaa7489e7197a2db3ac836d845ff3c5a7">ItemType</a> type, sf::Vector2f position)</td></tr>
+<tr class="memdesc:ab961b4b36327e0cb82129b09164931a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un item du type spécifié.  <br /></td></tr>
 <tr class="separator:ab961b4b36327e0cb82129b09164931a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des énumérations membres</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>factory qui gère la création des items. <br  />
+ La classe <a class="el" href="class_item_factory.html" title="factory qui gère la création des items.   La classe ItemFactory est responsable de la création des di...">ItemFactory</a> est responsable de la création des différents types d'items ramassables dans l'application. Elle fournit une méthode statique pour créer un item en fonction de son type et de sa position, ainsi qu'une méthode privée pour obtenir le chemin de la texture de l'item en fonction de son type. </p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
 <a id="aaa7489e7197a2db3ac836d845ff3c5a7" name="aaa7489e7197a2db3ac836d845ff3c5a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa7489e7197a2db3ac836d845ff3c5a7">&#9670;&#160;</a></span>ItemType</h2>
 
@@ -127,6 +136,8 @@ Fonctions membres publiques statiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enum des différents type d'item. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="aaa7489e7197a2db3ac836d845ff3c5a7a885f8061328ea75edfda181f3fd294b7" name="aaa7489e7197a2db3ac836d845ff3c5a7a885f8061328ea75edfda181f3fd294b7"></a>HealBall&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -160,6 +171,15 @@ Fonctions membres publiques statiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Crée un item du type spécifié. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Le type d'item à créer. </td></tr>
+    <tr><td class="paramname">position</td><td>La position de l'item. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
