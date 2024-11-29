@@ -13,3 +13,5 @@ CMakeUserPresets.json
 
 .vscode
 out
+*.zip
+*.png
