@@ -118,7 +118,7 @@ int Score::getEnemyCap() const
 
 void Score::addScore(unsigned int score)
 {
-    this->score += score * 10;
+    this->score += score;
     checkStage();
 }
 
