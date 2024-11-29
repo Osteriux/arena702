@@ -56,6 +56,7 @@ void Player::attack()
 
 void Player::dash()
 {
+    // breaks collision
     // this->setPosition(this->getPosition() + direction * 150.0f);
 }
 
