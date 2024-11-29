@@ -88,7 +88,6 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="#pub-attribs">Attributs publics</a> &#124;
 <a href="#pro-methods">Fonctions membres protégées</a> &#124;
 <a href="#pro-attribs">Attributs protégés</a> &#124;
 <a href="class_entity-members.html">Liste de tous les membres</a>  </div>
@@ -167,11 +166,6 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a588098978eea6a3486b7361605ff3f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Entity est le destructeur par default de <a class="el" href="class_entity.html" title="classe abstraite qui permet de gérer une entité.   La classe Entity est une classe abstraite qui repr...">Entity</a>  <br /></td></tr>
 <tr class="separator:a588098978eea6a3486b7361605ff3f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Attributs publics</h2></td></tr>
-<tr class="memitem:a269c75743f704324c60484a4252d1236" id="r_a269c75743f704324c60484a4252d1236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_manager.html">GameObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269c75743f704324c60484a4252d1236">gameObjectManager</a></td></tr>
-<tr class="separator:a269c75743f704324c60484a4252d1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
 <tr class="memitem:ab90ea86c324ae5691bc1c4741fd24295" id="r_ab90ea86c324ae5691bc1c4741fd24295"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90ea86c324ae5691bc1c4741fd24295">orientate</a> (sf::Vector2f target, float dt)</td></tr>
@@ -186,8 +180,11 @@ Fonctions membres protégées</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Attributs protégés</h2></td></tr>
+<tr class="memitem:a269c75743f704324c60484a4252d1236" id="r_a269c75743f704324c60484a4252d1236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_manager.html">GameObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269c75743f704324c60484a4252d1236">gameObjectManager</a></td></tr>
+<tr class="memdesc:a269c75743f704324c60484a4252d1236"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointeur vers le <a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a>  <br /></td></tr>
+<tr class="separator:a269c75743f704324c60484a4252d1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64dd6d282432a68475f30f7c7bbdc88" id="r_ad64dd6d282432a68475f30f7c7bbdc88"><td class="memItemLeft" align="right" valign="top">sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad64dd6d282432a68475f30f7c7bbdc88">texture</a></td></tr>
-<tr class="memdesc:ad64dd6d282432a68475f30f7c7bbdc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a>  <br /></td></tr>
+<tr class="memdesc:ad64dd6d282432a68475f30f7c7bbdc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">texture de l'entité  <br /></td></tr>
 <tr class="separator:ad64dd6d282432a68475f30f7c7bbdc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a705268da62c4de4c4a46b6a1dc9a5584" id="r_a705268da62c4de4c4a46b6a1dc9a5584"><td class="memItemLeft" align="right" valign="top">sf::Vector2u&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a705268da62c4de4c4a46b6a1dc9a5584">windowSize</a></td></tr>
 <tr class="memdesc:a705268da62c4de4c4a46b6a1dc9a5584"><td class="mdescLeft">&#160;</td><td class="mdescRight">taille de la fenêtre  <br /></td></tr>
@@ -953,12 +950,22 @@ Attributs protégés</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_game_object_manager.html">GameObjectManager</a>* Entity::gameObjectManager</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>pointeur vers le <a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a> </p>
 
 </div>
 </div>
@@ -1174,7 +1181,6 @@ Attributs protégés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>pointeur vers l'<a class="el" href="class_game_object_manager.html" title="gestionnaire des entités du jeu &amp; autres.   La classe EntityManager est responsable de la gestion des...">GameObjectManager</a> </p>
 <p>texture de l'entité </p>
 
 </div>

@@ -1,10 +1,11 @@
 #include "player.h"
 #include "../utils/manager/gameObjectManager.h"
 
-Player::Player(GameObjectManager* gameObjectManager, sf::Vector2u windowSize)
-    : Entity(11.5f, gameObjectManager, windowSize, 200.0f,  200.0f, 1000.0f, 500.0f, 540, 100, 
-             new Gun(300, 1000.0f, 0.2f, sf::Color::White, 1), 3.0f, sf::Color(255, 255, 255, 127), 1.0f)
+Player::Player(GameObjectManager* gameObjectManager, sf::Vector2u windowSize, bool* isGameOver)
+    : Entity(11.5f, gameObjectManager, windowSize, windowSize.x/2,  windowSize.y/2, 1000.0f, 500.0f, 540, 100, 
+             new Gun(30, 1000.0f, 0.2f, sf::Color::White, 1), 3.0f, sf::Color(255, 255, 255, 127), 1.0f)
 {
+    this->isGameOver = isGameOver;
     this->attacking = false;
     this->texture.loadFromFile("assets/player.png");
     this->setTexture(this->texture, true);
@@ -84,9 +85,17 @@ void Player::onCollision(Entity* entity)
     }
 }
 
+void Player::reset()
+{
+    this->setPosition(200.0f, 200.0f);
+    this->health = 100;
+    this->weapon->reset();
+}
+
 void Player::onDeath()
 {
     std::cout << "Player died" << std::endl;
+    *this->isGameOver = true;
 }
 
 void Player::debug()

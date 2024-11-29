@@ -66,6 +66,8 @@ public:
     /// @param dt delta time    
     virtual void update(float dt);
 
+    void reset();
+
     /// @brief ~Weapon est le destructeur par default de Weapon
     ~Weapon () = default;
 };

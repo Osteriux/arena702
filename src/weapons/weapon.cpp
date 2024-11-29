@@ -27,3 +27,8 @@ void Weapon::update(float dt)
         currCooldown -= dt;
     }
 }
+
+void Weapon::reset()
+{
+    currCooldown = 0;
+}

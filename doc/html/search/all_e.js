@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['range_0',['range',['../class_weapon.html#a13cc71a89d0cf076f58a040767682478',1,'Weapon']]],
-  ['rect_1',['rect',['../class_animation.html#ad349c69cd5b0273fccd2dbe4d92e9982',1,'Animation']]],
-  ['resetcooldown_2',['resetCooldown',['../class_laser_gun.html#a359bec30e6783625a8a93e936760e5a3',1,'LaserGun::resetCooldown()'],['../class_weapon.html#aa46232c6b25b8eb040f46b9ecdd20dd4',1,'Weapon::resetCooldown()']]],
-  ['rocket_3',['Rocket',['../class_enemy_factory.html#a34bb322e7fb3fc1c4b3b7c14839b06eaa15e8bfff2c10ca22da244d85b2bf7d94',1,'EnemyFactory']]],
-  ['rocketship_4',['RocketShip',['../class_rocket_ship.html',1,'RocketShip'],['../class_rocket_ship.html#a39ad1f754fb6ea63c1347a32883837ee',1,'RocketShip::RocketShip()']]],
-  ['rocketship_2ecpp_5',['rocketShip.cpp',['../rocket_ship_8cpp.html',1,'']]],
-  ['rocketship_2eh_6',['rocketShip.h',['../rocket_ship_8h.html',1,'']]],
-  ['rotationspeed_7',['rotationSpeed',['../class_entity.html#a26d0fcb61a59b64c8d6005b2adbf9fd7',1,'Entity']]]
+  ['pausemenu_0',['PauseMenu',['../class_pause_menu.html',1,'PauseMenu'],['../class_pause_menu.html#a8b6536003ec3732c6fcec1c54f1afb10',1,'PauseMenu::PauseMenu()']]],
+  ['pausemenu_2ecpp_1',['pauseMenu.cpp',['../pause_menu_8cpp.html',1,'']]],
+  ['pausemenu_2eh_2',['pauseMenu.h',['../pause_menu_8h.html',1,'']]],
+  ['player_3',['Player',['../class_player.html',1,'Player'],['../class_player.html#a1e2706dd9715c41ab7781336c0325fca',1,'Player::Player()']]],
+  ['player_2ecpp_4',['player.cpp',['../player_8cpp.html',1,'']]],
+  ['player_2eh_5',['player.h',['../player_8h.html',1,'']]],
+  ['projectile_6',['Projectile',['../class_projectile.html',1,'Projectile'],['../class_projectile.html#ac091fd815f0ccd7bd76e46268dd128fe',1,'Projectile::Projectile()'],['../class_weapon_factory.html#a2a9c33be289b513ca68035aaded2940caae7968d26b598ce434958b0825b7a4ac',1,'WeaponFactory::Projectile']]],
+  ['projectile_2ecpp_7',['projectile.cpp',['../projectile_8cpp.html',1,'']]],
+  ['projectile_2eh_8',['projectile.h',['../projectile_8h.html',1,'']]]
 ];

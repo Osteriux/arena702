@@ -127,6 +127,8 @@ public:
     /// @param mousePosition position de la souris
     void update(float dt, sf::Vector2i mousePosition);
 
+    void reset();
+
     /// @brief ~EntityManager est le destructeur de EntityManager
     ~GameObjectManager();
 };

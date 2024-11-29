@@ -261,6 +261,22 @@ void GameObjectManager::update(float dt, sf::Vector2i mousePosition)
     items.erase(itemIt, items.end());
 }
 
+void GameObjectManager::reset()
+{
+    // reset enemies
+    enemies.clear();
+    // reset player attacks
+    playerAttacks.clear();
+    // reset enemies attacks
+    enemyAttacks.clear();
+    // reset animations
+    animations.clear();
+    // reset onomatopes
+    onomatopes.clear();
+    // reset items
+    items.clear();
+}
+
 GameObjectManager::~GameObjectManager()
 {
     // delete enemies

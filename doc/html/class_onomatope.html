@@ -88,6 +88,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
 <a href="class_onomatope-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle"><div class="title">Référence de la classe Onomatope</div></div>
 </div><!--header-->
@@ -98,21 +99,42 @@ $(function(){ initResizable(false); });
  <a href="#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="onomatope_8h_source.html">onomatope.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de Onomatope:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_onomatope.png" usemap="#Onomatope_map" alt=""/>
+  <map id="Onomatope_map" name="Onomatope_map">
+<area href="class_stage_change.html" alt="StageChange" shape="rect" coords="0,56,88,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a18b8570c1d8e1343af53ee9825cf12e6" id="r_a18b8570c1d8e1343af53ee9825cf12e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b8570c1d8e1343af53ee9825cf12e6">Onomatope</a> (std::string text, sf::Color color, sf::Vector2f position, float duration, int size=20)</td></tr>
+<tr class="memitem:a18b8570c1d8e1343af53ee9825cf12e6" id="r_a18b8570c1d8e1343af53ee9825cf12e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b8570c1d8e1343af53ee9825cf12e6">Onomatope</a> (std::string <a class="el" href="#a533f6c1c1cf78cddd82b77733710632f">text</a>, sf::Color color, sf::Vector2f position, float <a class="el" href="#a3a060e3eb2cf5e10530f48d5047dc5b6">duration</a>, int size=20)</td></tr>
 <tr class="memdesc:a18b8570c1d8e1343af53ee9825cf12e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur d'<a class="el" href="class_onomatope.html" title="gére un texte qui s&#39;affiche à l&#39;écran pendant un certain temps.   La classe Onomatope permet d&#39;affich...">Onomatope</a>.  <br /></td></tr>
 <tr class="separator:a18b8570c1d8e1343af53ee9825cf12e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad74c8d306935e187c22d77fde171e4d8" id="r_ad74c8d306935e187c22d77fde171e4d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad74c8d306935e187c22d77fde171e4d8">draw</a> (sf::RenderWindow *window) const</td></tr>
 <tr class="memdesc:ad74c8d306935e187c22d77fde171e4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">dessine le texte à l'écran  <br /></td></tr>
 <tr class="separator:ad74c8d306935e187c22d77fde171e4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474af405a813e2999d1ec8a1d74624f6" id="r_a474af405a813e2999d1ec8a1d74624f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474af405a813e2999d1ec8a1d74624f6">update</a> (float dt)</td></tr>
+<tr class="memitem:a474af405a813e2999d1ec8a1d74624f6" id="r_a474af405a813e2999d1ec8a1d74624f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474af405a813e2999d1ec8a1d74624f6">update</a> (float dt)</td></tr>
 <tr class="memdesc:a474af405a813e2999d1ec8a1d74624f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour le texte en fonction du temps écoulé  <br /></td></tr>
 <tr class="separator:a474af405a813e2999d1ec8a1d74624f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade0f75f3cfb5251765a6ae2e0e0011bd" id="r_ade0f75f3cfb5251765a6ae2e0e0011bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade0f75f3cfb5251765a6ae2e0e0011bd">~Onomatope</a> ()=default</td></tr>
 <tr class="memdesc:ade0f75f3cfb5251765a6ae2e0e0011bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Onomatope est le destructeur par default d'<a class="el" href="class_onomatope.html" title="gére un texte qui s&#39;affiche à l&#39;écran pendant un certain temps.   La classe Onomatope permet d&#39;affich...">Onomatope</a>  <br /></td></tr>
 <tr class="separator:ade0f75f3cfb5251765a6ae2e0e0011bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a533f6c1c1cf78cddd82b77733710632f" id="r_a533f6c1c1cf78cddd82b77733710632f"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a533f6c1c1cf78cddd82b77733710632f">text</a></td></tr>
+<tr class="memdesc:a533f6c1c1cf78cddd82b77733710632f"><td class="mdescLeft">&#160;</td><td class="mdescRight">texte qui sera affiché  <br /></td></tr>
+<tr class="separator:a533f6c1c1cf78cddd82b77733710632f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada62352c3d5cf545f02e63c7a6f6bae4" id="r_ada62352c3d5cf545f02e63c7a6f6bae4"><td class="memItemLeft" align="right" valign="top">sf::Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada62352c3d5cf545f02e63c7a6f6bae4">font</a></td></tr>
+<tr class="memdesc:ada62352c3d5cf545f02e63c7a6f6bae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">police d'écriture du texte  <br /></td></tr>
+<tr class="separator:ada62352c3d5cf545f02e63c7a6f6bae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a060e3eb2cf5e10530f48d5047dc5b6" id="r_a3a060e3eb2cf5e10530f48d5047dc5b6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a060e3eb2cf5e10530f48d5047dc5b6">duration</a></td></tr>
+<tr class="memdesc:a3a060e3eb2cf5e10530f48d5047dc5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps que le texte restera affiché  <br /></td></tr>
+<tr class="separator:a3a060e3eb2cf5e10530f48d5047dc5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>gére un texte qui s'affiche à l'écran pendant un certain temps. <br  />
@@ -224,6 +246,9 @@ Fonctions membres publiques</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Onomatope::update </td>
@@ -232,6 +257,11 @@ Fonctions membres publiques</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>met à jour le texte en fonction du temps écoulé </p>
@@ -241,6 +271,81 @@ Fonctions membres publiques</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Réimplémentée dans <a class="el" href="class_stage_change.html#a30a46ff06bcef78f19f4372feec338b9">StageChange</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a3a060e3eb2cf5e10530f48d5047dc5b6" name="a3a060e3eb2cf5e10530f48d5047dc5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a060e3eb2cf5e10530f48d5047dc5b6">&#9670;&#160;</a></span>duration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Onomatope::duration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>temps que le texte restera affiché </p>
+
+</div>
+</div>
+<a id="ada62352c3d5cf545f02e63c7a6f6bae4" name="ada62352c3d5cf545f02e63c7a6f6bae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada62352c3d5cf545f02e63c7a6f6bae4">&#9670;&#160;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Font Onomatope::font</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>police d'écriture du texte </p>
+
+</div>
+</div>
+<a id="a533f6c1c1cf78cddd82b77733710632f" name="a533f6c1c1cf78cddd82b77733710632f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533f6c1c1cf78cddd82b77733710632f">&#9670;&#160;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text Onomatope::text</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>texte qui sera affiché </p>
 
 </div>
 </div>

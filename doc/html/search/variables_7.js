@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['maxspeed_0',['maxSpeed',['../class_entity.html#a73fafc743f63a3412c20144011eee683',1,'Entity']]],
-  ['moving_1',['moving',['../class_entity.html#ad3a6c43d8df035005a08dcee97a4f527',1,'Entity']]]
+  ['iframecolor_0',['iFrameColor',['../class_entity.html#a3a6a4f7783f8c6ff0e68fb89f8315b64',1,'Entity']]],
+  ['iframes_1',['iframes',['../class_entity.html#a8c2fd27eb3d19c0e1f6139165766f39e',1,'Entity']]],
+  ['ispickedup_2',['isPickedUp',['../class_item.html#a620f979d659214e86dd74cae850a8b29',1,'Item']]]
 ];

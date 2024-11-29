@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['maxspeed_0',['maxSpeed',['../class_entity.html#a73fafc743f63a3412c20144011eee683',1,'Entity']]],
-  ['move_1',['move',['../class_shield_ship.html#a92dac2666621a35190ff598716d39bea',1,'ShieldShip::move()'],['../class_enemy.html#a8b1bb35ebcd66e26b9dd47a565e2d3bc',1,'Enemy::move()'],['../class_entity.html#aa81bffba748030799bc8f93c4fddd0ff',1,'Entity::move()']]],
-  ['movetarget_2',['moveTarget',['../class_boss.html#a72f664b03195fb56b4b0c7c7b10c6631',1,'Boss']]],
-  ['moving_3',['moving',['../class_entity.html#ad3a6c43d8df035005a08dcee97a4f527',1,'Entity']]]
+  ['laser_0',['Laser',['../class_laser.html',1,'Laser'],['../class_laser.html#a4a4ad1dd8ed1d107b36ad4eeb8b9a423',1,'Laser::Laser()'],['../class_weapon_factory.html#a2a9c33be289b513ca68035aaded2940cad47bda86cb76322c22950e84e9cd109d',1,'WeaponFactory::Laser']]],
+  ['laser_2ecpp_1',['laser.cpp',['../laser_8cpp.html',1,'']]],
+  ['laser_2eh_2',['laser.h',['../laser_8h.html',1,'']]],
+  ['lasergun_3',['LaserGun',['../class_laser_gun.html',1,'LaserGun'],['../class_laser_gun.html#a3eebbaadc25ba6a598d86e1cb1f765ad',1,'LaserGun::LaserGun()']]],
+  ['lasergun_2ecpp_4',['laserGun.cpp',['../laser_gun_8cpp.html',1,'']]],
+  ['lasergun_2eh_5',['laserGun.h',['../laser_gun_8h.html',1,'']]]
 ];

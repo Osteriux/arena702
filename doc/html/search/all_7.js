@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['handleevent_0',['handleEvent',['../class_event_manager.html#ad7ec413a957f60629a4402a7501d1512',1,'EventManager']]],
-  ['heal_1',['heal',['../class_enemy.html#ae615c0d298ac077789620d6c75a15b61',1,'Enemy::heal()'],['../class_entity.html#a59b86741a62977c72b82d2e87808705c',1,'Entity::heal()'],['../class_player.html#a4ba266e17084c67c1eb4ee0983c6666c',1,'Player::heal()']]],
-  ['healball_2',['HealBall',['../class_heal_ball.html',1,'HealBall'],['../class_heal_ball.html#a879b30ec351e2b8c65c70819a06d7cc4',1,'HealBall::HealBall()'],['../class_item_factory.html#aaa7489e7197a2db3ac836d845ff3c5a7a885f8061328ea75edfda181f3fd294b7',1,'ItemFactory::HealBall']]],
-  ['healball_2ecpp_3',['healBall.cpp',['../heal_ball_8cpp.html',1,'']]],
-  ['healball_2eh_4',['healBall.h',['../heal_ball_8h.html',1,'']]],
-  ['health_5',['health',['../class_entity.html#ab5bf0c97620636e04b271601e2133884',1,'Entity']]],
-  ['hud_6',['HUD',['../class_h_u_d.html',1,'HUD'],['../class_h_u_d.html#a194c2fa0f226344dcbb8b03540d5bcba',1,'HUD::HUD()']]],
-  ['hud_2ecpp_7',['hud.cpp',['../hud_8cpp.html',1,'']]],
-  ['hud_2eh_8',['hud.h',['../hud_8h.html',1,'']]]
+  ['gameobjectmanager_0',['GameObjectManager',['../class_game_object_manager.html',1,'GameObjectManager'],['../class_game_object_manager.html#a3ab63286a78ea21394e04ecf62deb240',1,'GameObjectManager::GameObjectManager()']]],
+  ['gameobjectmanager_1',['gameObjectManager',['../class_entity.html#a269c75743f704324c60484a4252d1236',1,'Entity']]],
+  ['gameobjectmanager_2ecpp_2',['gameObjectManager.cpp',['../game_object_manager_8cpp.html',1,'']]],
+  ['gameobjectmanager_2eh_3',['gameObjectManager.h',['../game_object_manager_8h.html',1,'']]],
+  ['getarenasize_4',['getArenaSize',['../class_game_object_manager.html#a8c5fc24b3527b796052eb08bf5687e36',1,'GameObjectManager']]],
+  ['getdirection_5',['getDirection',['../class_entity.html#a294c4c3ba64ece9c2a03fa8309e111c8',1,'Entity']]],
+  ['getenemycap_6',['getEnemyCap',['../class_score.html#a2a298c4948ce764807ebd384aefe9343',1,'Score']]],
+  ['getenemystat_7',['getEnemyStat',['../class_enemy_stat_supplier.html#a6d2df7522f298d83d1c1918f70b7621f',1,'EnemyStatSupplier']]],
+  ['gethealth_8',['getHealth',['../class_entity.html#a56685d307e693f83149ec1fd47ce6cff',1,'Entity']]],
+  ['gethitbox_9',['getHitbox',['../class_entity.html#a1f7498e7cd92503ce445b74ea42862f4',1,'Entity']]],
+  ['getrandombossposition_10',['getRandomBossPosition',['../class_custom_random.html#af06988a38f7d97f35b50db30a8c57804',1,'CustomRandom']]],
+  ['getrandomitemposition_11',['getRandomItemPosition',['../class_custom_random.html#a3ae89354890c27ad8e8d9e6c9657fc2a',1,'CustomRandom']]],
+  ['getrandomposition_12',['getRandomPosition',['../class_custom_random.html#a3d26bd301265c85a2bb9cbc2017b3c84',1,'CustomRandom']]],
+  ['getrange_13',['getRange',['../class_weapon.html#a7eb4c9a74d0c9311339ffaa976bc7f9d',1,'Weapon']]],
+  ['getscore_14',['getScore',['../class_score.html#a84e645a92c46f6a55bcc389711cd04b6',1,'Score']]],
+  ['getsize_15',['getSize',['../class_entity.html#a5c3e7abfb9e59cf2e4987f0183093a1f',1,'Entity']]],
+  ['gettexture_16',['getTexture',['../class_animation.html#a901af64c6589aac81406dde464749c89',1,'Animation']]],
+  ['gun_17',['Gun',['../class_gun.html',1,'Gun'],['../class_gun.html#a81093e023c6f294e00d768c60855eb4a',1,'Gun::Gun()']]],
+  ['gun_2ecpp_18',['gun.cpp',['../gun_8cpp.html',1,'']]],
+  ['gun_2eh_19',['gun.h',['../gun_8h.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['owner_0',['owner',['../class_attack.html#a07cbe6fdbfff2454db0a7efecbc6b699',1,'Attack']]]
+  ['maxspeed_0',['maxSpeed',['../class_entity.html#a73fafc743f63a3412c20144011eee683',1,'Entity']]],
+  ['moving_1',['moving',['../class_entity.html#ad3a6c43d8df035005a08dcee97a4f527',1,'Entity']]]
 ];

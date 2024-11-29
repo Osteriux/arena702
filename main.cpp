@@ -7,6 +7,7 @@
 #include "src/utils/display/score.h"
 #include "src/menus/startMenu.h"
 #include "src/menus/pauseMenu.h"
+#include "src/menus/gameOver.h"
 
 
 int main()
@@ -24,16 +25,20 @@ int main()
     bool isGameStarted = false;
     bool isGameExit = false;
     bool isGamePaused = false;
+    bool isGameOver = false;
+    bool isGameRestart = false;
     
     Score score;
     GameObjectManager gameObjectManager(&window, arenaSize, &score);
-    Player* player = new Player(&gameObjectManager, arenaSize);
+    Player* player = new Player(&gameObjectManager, arenaSize, &isGameOver);
     gameObjectManager.setPlayer(player);
     EventManager eventManager(player, &isGamePaused);
     HUD hud(&window, player, &score);
 
     StartMenu startMenu(&window, window.getSize(), &isGameStarted, &isGameExit);
     PauseMenu pauseMenu(&window, window.getSize(), &isGamePaused, &isGameExit);
+    GameOver gameOver(&window, window.getSize(), &isGameRestart, &isGameExit);
+
 
     while (window.isOpen())
     {
@@ -47,6 +52,12 @@ int main()
             if(!isGameStarted){
                 startMenu.handleInput(event.key.code, event.type == sf::Event::KeyPressed);
             }
+            if(isGamePaused){
+                pauseMenu.handleInput(event.key.code, event.type == sf::Event::KeyPressed);
+            }
+            if(isGameOver){
+                gameOver.handleInput(event.key.code, event.type == sf::Event::KeyPressed);
+            }
             eventManager.handleEvent(event);
         }
 
@@ -57,17 +68,28 @@ int main()
 
         window.draw(background);
 
-        hud.draw();
         gameObjectManager.draw();
-        if(isGamePaused){ // pause menu loop
+        if(isGameOver){ // game over menu loop
+            gameOver.draw();
+            if(isGameRestart){
+                isGameRestart = false;
+                isGameOver = false;
+                isGamePaused = false;
+                score.reset();
+                gameObjectManager.reset();
+                player->reset();
+            }
+        }else if(isGamePaused){ // pause menu loop
             pauseMenu.draw();
         }else if(isGameStarted){ // main game loop
+            hud.draw();
             gameObjectManager.collide();
             gameObjectManager.update(dt, sf::Mouse::getPosition(window));
+            hud.update(dt);
         }else{ // start menu loop
             startMenu.draw();
+            player->update(dt, sf::Vector2f(sf::Mouse::getPosition(window)));
         }
-        hud.update(dt);
 
         window.display();
     }

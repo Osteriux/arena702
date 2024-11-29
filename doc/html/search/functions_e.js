@@ -12,5 +12,7 @@ var searchData=
   ['slash_9',['Slash',['../class_slash.html#a79fd6c1bc0054fc9f4ab963fcc8580fa',1,'Slash']]],
   ['spawnkamikaze_10',['spawnKamikaze',['../class_game_object_manager.html#a3045707750834cee012745ca3951aa9b',1,'GameObjectManager']]],
   ['spawnrocketship_11',['spawnRocketShip',['../class_game_object_manager.html#a16a165d5906627596a5e9911c7d1ecdc',1,'GameObjectManager']]],
-  ['spawnshieldship_12',['spawnShieldShip',['../class_game_object_manager.html#ae9a268f136937fe7863a9fc000bed6a7',1,'GameObjectManager']]]
+  ['spawnshieldship_12',['spawnShieldShip',['../class_game_object_manager.html#ae9a268f136937fe7863a9fc000bed6a7',1,'GameObjectManager']]],
+  ['stagechange_13',['StageChange',['../class_stage_change.html#ad29c84dd10cceb69c2c17a49e06698f3',1,'StageChange']]],
+  ['startmenu_14',['StartMenu',['../class_start_menu.html#ab8cf7487f3ba2be5c2a649a3c4d3e111',1,'StartMenu']]]
 ];

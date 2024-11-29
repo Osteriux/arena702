@@ -75,6 +75,8 @@ public:
     /// @param score score à ajouter
     void addScore(unsigned int score);
 
+    void reset();
+
     /// @brief Destructeur par défaut de Score
     ~Score() = default;
 };

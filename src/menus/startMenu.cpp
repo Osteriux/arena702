@@ -25,9 +25,7 @@ StartMenu::StartMenu(sf::RenderWindow* window, sf::Vector2u windowSize, bool *is
 void StartMenu::draw() const
 {
     Menu::draw();
-    std::cout << "title : "<< title.getPosition().x << std::endl;
     window->draw(title);
-    std::cout << "draw start menu" << std::endl;
     window->draw(start);
     window->draw(exit);
 }

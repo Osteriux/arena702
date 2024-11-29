@@ -21,11 +21,13 @@ class Player : public Entity
     private:
         /// @brief indique si le joueur est en train d'attaquer
         bool attacking;
+
+        bool* isGameOver;
     public:
         /// @brief Constructeur de Player
         /// @param gameObjectManager pointeur vers l'GameObjectManager
         /// @param windowSize taille de la fenêtre
-        Player(GameObjectManager* gameObjectManager, sf::Vector2u windowSize);
+        Player(GameObjectManager* gameObjectManager, sf::Vector2u windowSize, bool* isGameOver);
 
         /// @brief setteur de l'attaque du joueur
         /// @param attacking si le joueur est en train d'attaquer
@@ -60,6 +62,8 @@ class Player : public Entity
 
         /// @brief appelé lors de la mort du joueur
         void onDeath() override;
+
+        void reset();
 
         /// @brief ~Player est le destructeur par default de Player
         ~Player() = default;

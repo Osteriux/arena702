@@ -121,3 +121,9 @@ void Score::addScore(unsigned int score)
     this->score += score * 10;
     checkStage();
 }
+
+void Score::reset()
+{
+    score = 0;
+    stage = 0;
+}
