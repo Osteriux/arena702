@@ -1,7 +1,7 @@
 var searchData=
 [
   ['gameobjectmanager_0',['GameObjectManager',['../class_game_object_manager.html#a3ab63286a78ea21394e04ecf62deb240',1,'GameObjectManager']]],
-  ['gameover_1',['GameOver',['../class_game_over.html#a8df373129c1221786fba82c9174c4bef',1,'GameOver']]],
+  ['gameover_1',['GameOver',['../class_game_over.html#a8c0e34cd5b75f5a0d1c2ecb3a1edb34b',1,'GameOver']]],
   ['getarenasize_2',['getArenaSize',['../class_game_object_manager.html#a8c5fc24b3527b796052eb08bf5687e36',1,'GameObjectManager']]],
   ['getdirection_3',['getDirection',['../class_entity.html#a294c4c3ba64ece9c2a03fa8309e111c8',1,'Entity']]],
   ['getenemycap_4',['getEnemyCap',['../class_score.html#a2a298c4948ce764807ebd384aefe9343',1,'Score']]],

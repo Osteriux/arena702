@@ -39,6 +39,10 @@ public:
     /// @param isPressed si la touche est appuyée
     virtual void handleInput(sf::Keyboard::Key key, bool isPressed) = 0;
 
+    /// @brief met à jour le menu
+    /// @details méthode virtuelle qui ne fait rien par default
+    virtual void update(){};
+
     /// @brief ~Menu est le destructeur par default de Menu
     ~Menu() = default;
 };

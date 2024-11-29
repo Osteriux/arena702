@@ -23,7 +23,7 @@ float* EnemyStatSupplier::getEliteStat(int gameStage)
 float* EnemyStatSupplier::getKamikazeStat(int gameStage)
 {
     float* stats = new float[4];
-    stats[0] = 50.0f + gameStage * 15.0f; // health
+    stats[0] = 10.0f + gameStage * 15.0f; // health
     stats[1] = 1000.0f + gameStage * 100.0f; // speed
     stats[2] = 15.0f + gameStage * 5.0f; // damage
     stats[3] = 0.0f; // fire rate (non applicable)

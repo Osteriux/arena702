@@ -110,12 +110,15 @@ Graphe d'héritage de GameOver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a8df373129c1221786fba82c9174c4bef" id="r_a8df373129c1221786fba82c9174c4bef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8df373129c1221786fba82c9174c4bef">GameOver</a> (sf::RenderWindow *<a class="el" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize, bool *isGameRestart, bool *isGameExit)</td></tr>
-<tr class="memdesc:a8df373129c1221786fba82c9174c4bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>.  <br /></td></tr>
-<tr class="separator:a8df373129c1221786fba82c9174c4bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0e34cd5b75f5a0d1c2ecb3a1edb34b" id="r_a8c0e34cd5b75f5a0d1c2ecb3a1edb34b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c0e34cd5b75f5a0d1c2ecb3a1edb34b">GameOver</a> (sf::RenderWindow *<a class="el" href="class_menu.html#a0889442f08056ce69d0f9ef3489faa73">window</a>, sf::Vector2u windowSize, bool *isGameRestart, bool *isGameExit, <a class="el" href="class_score.html">Score</a> *score)</td></tr>
+<tr class="memdesc:a8c0e34cd5b75f5a0d1c2ecb3a1edb34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>.  <br /></td></tr>
+<tr class="separator:a8c0e34cd5b75f5a0d1c2ecb3a1edb34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b8062d5168f1770096a7eee77b96e9" id="r_a18b8062d5168f1770096a7eee77b96e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b8062d5168f1770096a7eee77b96e9">draw</a> () const override</td></tr>
 <tr class="memdesc:a18b8062d5168f1770096a7eee77b96e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">dessine le menu à l'écran  <br /></td></tr>
 <tr class="separator:a18b8062d5168f1770096a7eee77b96e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18a8491a3842c7227cf0220fd3ea9c2" id="r_ae18a8491a3842c7227cf0220fd3ea9c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae18a8491a3842c7227cf0220fd3ea9c2">update</a> () override</td></tr>
+<tr class="memdesc:ae18a8491a3842c7227cf0220fd3ea9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">met à jour le menu  <br /></td></tr>
+<tr class="separator:ae18a8491a3842c7227cf0220fd3ea9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9eb9725eafd9b7dfaaa801c68c021e" id="r_acc9eb9725eafd9b7dfaaa801c68c021e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc9eb9725eafd9b7dfaaa801c68c021e">handleInput</a> (sf::Keyboard::Key key, bool isPressed) override</td></tr>
 <tr class="memdesc:acc9eb9725eafd9b7dfaaa801c68c021e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gère les entrées clavier du menu  <br /></td></tr>
 <tr class="separator:acc9eb9725eafd9b7dfaaa801c68c021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,8 +149,8 @@ Membres hérités additionnels</h2></td></tr>
 <div class="textblock"><p>gère le menu de <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a>. <br  />
  La classe <a class="el" href="class_game_over.html" title="gère le menu de GameOver.   La classe GameOver hérite de la classe abstraite Menu et permet de gérer ...">GameOver</a> hérite de la classe abstraite <a class="el" href="class_menu.html" title="classe abstraite qui permet de gérer un menu.   La classe Menu est une classe abstraite qui permet de...">Menu</a> et permet de gérer le menu de fin de jeu. Elle gère les propriétés du menu telles que le titre, les options de recommencer ou quitter le jeu, et les indicateurs de sélection. Elle fournit également des méthodes pour dessiner le menu à l'écran et gérer les entrées clavier. </p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a id="a8df373129c1221786fba82c9174c4bef" name="a8df373129c1221786fba82c9174c4bef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8df373129c1221786fba82c9174c4bef">&#9670;&#160;</a></span>GameOver()</h2>
+<a id="a8c0e34cd5b75f5a0d1c2ecb3a1edb34b" name="a8c0e34cd5b75f5a0d1c2ecb3a1edb34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0e34cd5b75f5a0d1c2ecb3a1edb34b">&#9670;&#160;</a></span>GameOver()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,7 +173,12 @@ Membres hérités additionnels</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>isGameExit</em></span>&#160;)</td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>isGameExit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_score.html">Score</a> *</td>          <td class="paramname"><span class="paramname"><em>score</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,6 +190,7 @@ Membres hérités additionnels</h2></td></tr>
     <tr><td class="paramname">windowSize</td><td>taille de la fenêtre </td></tr>
     <tr><td class="paramname">isGameRestart</td><td>pointeur vers l'indicateur de recommencer la partie </td></tr>
     <tr><td class="paramname">isGameExit</td><td>pointeur vers l'indicateur de quitter la partie </td></tr>
+    <tr><td class="paramname">score</td><td>score du joueur </td></tr>
   </table>
   </dd>
 </dl>
@@ -280,6 +289,36 @@ Membres hérités additionnels</h2></td></tr>
 </dl>
 
 <p>Implémente <a class="el" href="class_menu.html#ac37e684d967edd0f883ead792787e80f">Menu</a>.</p>
+
+</div>
+</div>
+<a id="ae18a8491a3842c7227cf0220fd3ea9c2" name="ae18a8491a3842c7227cf0220fd3ea9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18a8491a3842c7227cf0220fd3ea9c2">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameOver::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>met à jour le menu </p>
+<p>met le score à jour </p>
+
+<p>Réimplémentée à partir de <a class="el" href="class_menu.html#a2f3e462f3aac5a5cd86056bc140c75ce">Menu</a>.</p>
 
 </div>
 </div>

@@ -61,6 +61,10 @@ public:
     /// @details uniquement utilisé par certaines armes
     virtual void setOffset(float offset){};
 
+    /// @brief setteur des dégâts de l'arme
+    /// @param damage dégâts causés par l'arme
+    void setDamage(int damage);
+
     /// @brief reset le temps de recharge de l'arme
     /// @details uniquement utilisé par certaines armes
     virtual void resetCooldown(){};

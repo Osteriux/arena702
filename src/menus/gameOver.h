@@ -8,6 +8,7 @@
 
 #pragma once
 #include "menu.h"
+#include "../utils/display/score.h"
 
 /// @brief gère le menu de GameOver. <br/>
 /// La classe GameOver hérite de la classe abstraite Menu et permet de gérer le menu de fin de jeu.
@@ -17,6 +18,12 @@
 class GameOver : public Menu
 {
 private:
+    /// @brief score du joueur
+    Score* score;
+
+    /// @brief texte du score
+    sf::Text scoreText;
+
     /// @brief titre du menu game over
     sf::Text title;
 
@@ -37,10 +44,14 @@ public:
     /// @param windowSize taille de la fenêtre
     /// @param isGameRestart pointeur vers l'indicateur de recommencer la partie
     /// @param isGameExit pointeur vers l'indicateur de quitter la partie
-    GameOver(sf::RenderWindow* window, sf::Vector2u windowSize, bool* isGameRestart, bool* isGameExit);
+    /// @param score score du joueur
+    GameOver(sf::RenderWindow* window, sf::Vector2u windowSize, bool* isGameRestart, bool* isGameExit, Score* score);
 
     void draw() const override;
 
+    /// @brief met à jour le menu
+    /// @details met le score à jour
+    void update() override;
 
     void handleInput(sf::Keyboard::Key key, bool isPressed) override;
     

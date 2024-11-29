@@ -18,6 +18,11 @@ void Score::setGameObjectManager(GameObjectManager* gameObjectManager)
     this->gameObjectManager = gameObjectManager;
 }
 
+void Score::setPlayer(Player* player)
+{
+    this->player = player;
+}
+
 unsigned int Score::getScore() const
 {
     return score;
@@ -35,6 +40,7 @@ void Score::checkStage()
             gameObjectManager->spawnShieldShip();
             enemyFactory->setGameStage(6);
             stage = 7;
+            player->upgradeWeapon(stage);
         }
     }
     else if(score >= STAGE_6)
@@ -43,6 +49,7 @@ void Score::checkStage()
             gameObjectManager->addOnomatope(std::make_unique<StageChange>(6));
             enemyFactory->setGameStage(6);
             stage = 6;
+            player->upgradeWeapon(stage);
         }
     }
     else if(score >= STAGE_5)
@@ -53,6 +60,7 @@ void Score::checkStage()
             gameObjectManager->addOnomatope(std::make_unique<StageChange>(5));
             gameObjectManager->spawnShieldShip();
             stage = 5;
+            player->upgradeWeapon(stage);
         }
     }
     else if(score >= STAGE_4)
@@ -61,6 +69,7 @@ void Score::checkStage()
             gameObjectManager->addOnomatope(std::make_unique<StageChange>(4));
             enemyFactory->setGameStage(4);
             stage = 4;
+            player->upgradeWeapon(stage);
         }
     }
     else if(score >= STAGE_3)
@@ -71,6 +80,7 @@ void Score::checkStage()
             gameObjectManager->addOnomatope(std::make_unique<StageChange>(3));
             gameObjectManager->spawnRocketShip();
             stage = 3;
+            player->upgradeWeapon(stage);
         }
     }
     else if(score >= STAGE_2)
@@ -79,6 +89,7 @@ void Score::checkStage()
             gameObjectManager->addOnomatope(std::make_unique<StageChange>(2));
             enemyFactory->setGameStage(2);
             stage = 2;
+            player->upgradeWeapon(stage);
         }
     }
     else if(score >= STAGE_1)
@@ -87,6 +98,7 @@ void Score::checkStage()
             gameObjectManager->addOnomatope(std::make_unique<StageChange>(1));
             enemyFactory->setGameStage(1);
             stage = 1;
+            player->upgradeWeapon(stage);
         }
     }
 }

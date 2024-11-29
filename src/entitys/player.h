@@ -22,6 +22,9 @@ class Player : public Entity
         /// @brief indique si le joueur est en train d'attaquer
         bool attacking;
 
+        /// @brief dégâts de l'arme du joueur
+        int weaponDamage;
+
         /// @brief indique si le joueur est mort et notifi la boucle principale
         bool* isGameOver;
     public:
@@ -40,6 +43,8 @@ class Player : public Entity
         /// pour donner un meilleur effet de déplacement au joueur 
         /// @param moving indicateur de déplacement
         void setMoving(float moving) override;
+
+        void upgradeWeapon(int damage);
 
         /// @brief met à jour le joueur
         /// @param dt delta time

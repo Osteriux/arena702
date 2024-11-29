@@ -7,6 +7,7 @@
 #pragma once
 #include <memory>
 #include "../../animations/stageChange.h"
+#include "../../entitys/player.h"
 
 class EnemyFactory;
 class GameObjectManager;
@@ -26,30 +27,33 @@ private:
     /// @brief pointeur vers GameObjectManager pour faire apparaitre les bosses
     GameObjectManager* gameObjectManager;
 
+    /// @brief pointeur vers le joueur pour notifier du stage actuel
+    Player* player;
+
     /// @brief stage actuel du jeu
     int stage;
 
     /// différrents stages du jeux :
     /// @brief debut du jeu
-    static const unsigned long int STAGE_1 = 1000;
+    static const unsigned long int STAGE_1 = 500;
 
     /// @brief milieu du jeu
-    static const unsigned long int STAGE_2 = 4000;
+    static const unsigned long int STAGE_2 = 2000;
 
     /// @brief 1er boss
-    static const unsigned long int STAGE_3 = 8000;
+    static const unsigned long int STAGE_3 = 4000;
 
     /// @brief après le 1er boss
-    static const unsigned long int STAGE_4 = 15000;
+    static const unsigned long int STAGE_4 = 6500;
 
     /// @brief 2eme boss
-    static const unsigned long int STAGE_5 = 20000;
+    static const unsigned long int STAGE_5 = 9000;
 
     /// @brief après le 2eme boss
-    static const unsigned long int STAGE_6 = 30000;
+    static const unsigned long int STAGE_6 = 11111;
 
     /// @brief double boss
-    static const unsigned long int STAGE_7 = 50000;
+    static const unsigned long int STAGE_7 = 15000;
 
     /// @brief vérifie le stage du jeu
     /// @details notifie l'EnemyFactory du stage actuel
@@ -63,7 +67,13 @@ public:
     /// @param enemyFactory pointeur vers EnemyFactory
     void setEnemyFactory(EnemyFactory* enemyFactory);
 
+    /// @brief passe une référence de GameObjectManager à Score
+    /// @param gameObjectManager pointeur vers GameObjectManager
     void setGameObjectManager(GameObjectManager* gameObjectManager);
+
+    /// @brief passe une référence de Player à Score
+    /// @param player pointeur vers Player
+    void setPlayer(Player* player);
 
     /// @brief getteur du score
     /// @return le score du joueur

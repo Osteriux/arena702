@@ -31,13 +31,14 @@ int main()
     Score score;
     GameObjectManager gameObjectManager(&window, arenaSize, &score);
     Player* player = new Player(&gameObjectManager, arenaSize, &isGameOver);
+    score.setPlayer(player);
     gameObjectManager.setPlayer(player);
     EventManager eventManager(player, &isGamePaused);
     HUD hud(&window, player, &score);
 
     StartMenu startMenu(&window, window.getSize(), &isGameStarted, &isGameExit);
     PauseMenu pauseMenu(&window, window.getSize(), &isGamePaused, &isGameExit);
-    GameOver gameOver(&window, window.getSize(), &isGameRestart, &isGameExit);
+    GameOver gameOver(&window, window.getSize(), &isGameRestart, &isGameExit, &score);
 
 
     while (window.isOpen())
@@ -70,12 +71,13 @@ int main()
 
         gameObjectManager.draw();
         if(isGameOver){ // game over menu loop
+            gameOver.update();
             gameOver.draw();
             if(isGameRestart){
                 isGameRestart = false;
                 isGameOver = false;
                 isGamePaused = false;
-                score.reset();
+                // score.reset();
                 gameObjectManager.reset();
                 player->reset();
             }

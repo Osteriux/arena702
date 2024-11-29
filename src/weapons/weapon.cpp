@@ -15,6 +15,11 @@ int Weapon::getRange() const
     return range;
 }
 
+void Weapon::setDamage(int damage)
+{
+    this->damage = damage;
+}
+
 bool Weapon::isReady() const
 {
     return currCooldown <= 0;

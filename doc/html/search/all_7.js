@@ -4,7 +4,7 @@ var searchData=
   ['gameobjectmanager_1',['gameObjectManager',['../class_entity.html#a269c75743f704324c60484a4252d1236',1,'Entity']]],
   ['gameobjectmanager_2ecpp_2',['gameObjectManager.cpp',['../game_object_manager_8cpp.html',1,'']]],
   ['gameobjectmanager_2eh_3',['gameObjectManager.h',['../game_object_manager_8h.html',1,'']]],
-  ['gameover_4',['GameOver',['../class_game_over.html',1,'GameOver'],['../class_game_over.html#a8df373129c1221786fba82c9174c4bef',1,'GameOver::GameOver()']]],
+  ['gameover_4',['GameOver',['../class_game_over.html',1,'GameOver'],['../class_game_over.html#a8c0e34cd5b75f5a0d1c2ecb3a1edb34b',1,'GameOver::GameOver()']]],
   ['gameover_2ecpp_5',['gameOver.cpp',['../game_over_8cpp.html',1,'']]],
   ['gameover_2eh_6',['gameOver.h',['../game_over_8h.html',1,'']]],
   ['getarenasize_7',['getArenaSize',['../class_game_object_manager.html#a8c5fc24b3527b796052eb08bf5687e36',1,'GameObjectManager']]],
