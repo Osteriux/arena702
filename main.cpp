@@ -77,7 +77,7 @@ int main()
                 isGameRestart = false;
                 isGameOver = false;
                 isGamePaused = false;
-                // score.reset();
+                score.reset();
                 gameObjectManager.reset();
                 player->reset();
             }
